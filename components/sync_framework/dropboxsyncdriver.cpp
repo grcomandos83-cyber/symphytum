@@ -160,7 +160,7 @@ void DropboxSyncDriver::processFinished(int exitCode,
         {
             QString url;
             if (result.contains("URL:")) {
-                QStringList list = result.split(':', QString::SkipEmptyParts);
+                QStringList list = result.split(':', Qt::SkipEmptyParts);
                 for (int i = 0; i < list.size(); i++) {
                     QString s = list.at(i);
                     if (s == "URL") {
@@ -181,7 +181,7 @@ void DropboxSyncDriver::processFinished(int exitCode,
         {
             if (result.contains("Access token:")) {
                 QString token;
-                QStringList list = result.split(':', QString::SkipEmptyParts);
+                QStringList list = result.split(':', Qt::SkipEmptyParts);
                 for (int i = 0; i < list.size(); i++) {
                     QString s = list.at(i);
                     if (s == "Access token") {
@@ -203,7 +203,7 @@ void DropboxSyncDriver::processFinished(int exitCode,
         {
             if (result.contains("User:")) {
                 QString user;
-                QStringList list = result.split(':', QString::SkipEmptyParts);
+                QStringList list = result.split(':', Qt::SkipEmptyParts);
                 for (int i = 0; i < list.size(); i++) {
                     QString s = list.at(i);
                     if (s == "User") {

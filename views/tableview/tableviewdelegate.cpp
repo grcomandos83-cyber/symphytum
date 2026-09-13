@@ -157,7 +157,7 @@ QWidget* TableViewDelegate::createEditor(QWidget *parent, const QStyleOptionView
         MetadataPropertiesParser displayParser(displayProperties);
         if (displayProperties.size()) {
             QStringList items = displayParser.getValue("items")
-                    .split(',', QString::SkipEmptyParts);
+                    .split(',', Qt::SkipEmptyParts);
             foreach (QString s, items) {
                 //replace some escape codes
                 s.replace("\\comma", ",");
@@ -728,7 +728,7 @@ void TableViewDelegate::paintComboboxType(QPainter *painter,
 
         //load items from display properties
         QStringList items = parser.getValue("items")
-                .split(',', QString::SkipEmptyParts);
+                .split(',', Qt::SkipEmptyParts);
 
         //handle default
         v = parser.getValue("default");
@@ -790,7 +790,7 @@ void TableViewDelegate::paintProgressType(QPainter *painter,
     progressBarOption.textVisible = true;
     progressBarOption.progress = value;
     int progressPercent = ((double) value) / ((double) max) * 100.0;
-    progressBarOption.text = QString().sprintf("%d%%", progressPercent);
+    progressBarOption.text = QString("%1%").arg(progressPercent);
 
     QApplication::style()->drawControl(QStyle::CE_ProgressBar, &progressBarOption, painter);
 }
@@ -867,7 +867,7 @@ void TableViewDelegate::paintFilesType(QPainter *painter,
     QString dataString = index.data().toString();
     QStyleOptionViewItem opt(option);
 
-    int fileCount = dataString.split(',', QString::SkipEmptyParts).size();
+    int fileCount = dataString.split(',', Qt::SkipEmptyParts).size();
     //opt.text = tr("%n file(s)", "", fileCount);
     //BUG workaround: investigate why it doesn't work (http://qt-project.org/doc/qt-4.8/i18n-source-translation.html#handling-plurals)
     opt.text = (fileCount == 1 )? tr("%1 file").arg(fileCount) :

@@ -51,38 +51,40 @@ PreferencesDialog::PreferencesDialog(QWidget *parent) :
     loadSettings();
 
     //connections
-    connect(ui->closeButton, SIGNAL(clicked()),
-            this, SLOT(accept()));
-    connect(ui->listWidget, SIGNAL(currentRowChanged(int)),
-            this, SLOT(currentCategoryChanged()));
-    connect(ui->updatesComboBox, SIGNAL(activated(int)),
-            this, SLOT(updatesComboBoxChanged()));
-    connect(ui->cloudStatusComboBox, SIGNAL(activated(int)),
-            this, SLOT(cloudStateComboBoxChanged()));
-    connect(ui->cloudUnlinkButton, SIGNAL(clicked()),
-            this, SLOT(cloundUnlinkButtonClicked()));
-    connect(ui->softwareResetButton, SIGNAL(clicked()),
-            this, SLOT(softwareResetButtonClicked()));
-    connect(ui->formViewColorCombo, SIGNAL(activated(int)),
-            this, SLOT(formViewColorComboChanged()));
-    connect(ui->formViewFontSizeComboBox, SIGNAL(activated(int)),
-            this, SLOT(formViewFontSizeComboChanged()));
+    connect(ui->closeButton, &QPushButton::clicked,
+            this, &QDialog::accept);
+    connect(ui->listWidget, &QListWidget::currentRowChanged,
+            this, &PreferencesDialog::currentCategoryChanged);
+    connect(ui->updatesComboBox, QOverload<int>::of(&QComboBox::activated),
+            this, &PreferencesDialog::updatesComboBoxChanged);
+    connect(ui->languageComboBox, QOverload<int>::of(&QComboBox::activated),
+            this, &PreferencesDialog::languageComboBoxChanged);
+    connect(ui->cloudStatusComboBox, QOverload<int>::of(&QComboBox::activated),
+            this, &PreferencesDialog::cloudStateComboBoxChanged);
+    connect(ui->cloudUnlinkButton, &QPushButton::clicked,
+            this, &PreferencesDialog::cloundUnlinkButtonClicked);
+    connect(ui->softwareResetButton, &QPushButton::clicked,
+            this, &PreferencesDialog::softwareResetButtonClicked);
+    connect(ui->formViewColorCombo, QOverload<int>::of(&QComboBox::activated),
+            this, &PreferencesDialog::formViewColorComboChanged);
+    connect(ui->formViewFontSizeComboBox, QOverload<int>::of(&QComboBox::activated),
+            this, &PreferencesDialog::formViewFontSizeComboChanged);
     connect(ui->formViewFontCombo, &QFontComboBox::currentTextChanged,
             this, &PreferencesDialog::formViewFontComboChanged);
-    connect(ui->unusedSpaceStrategyComboBox, SIGNAL(activated(int)),
-            this, SLOT(unusedSpaceStrategyComboChanged()));
-    connect(ui->tableRowSizeSpinBox, SIGNAL(editingFinished()),
-            this, SLOT(tableViewRowSizeSpinChanged()));
-    connect(ui->columnWidthComboBox, SIGNAL(activated(int)),
-            this, SLOT(columnWidthComboChanged()));
-    connect(ui->cacheImagesTableViewCheckBox, SIGNAL(stateChanged(int)),
-            this, SLOT(cacheImagesTableViewCheckBoxChanged()));
+    connect(ui->unusedSpaceStrategyComboBox, QOverload<int>::of(&QComboBox::activated),
+            this, &PreferencesDialog::unusedSpaceStrategyComboChanged);
+    connect(ui->tableRowSizeSpinBox, &QSpinBox::editingFinished,
+            this, &PreferencesDialog::tableViewRowSizeSpinChanged);
+    connect(ui->columnWidthComboBox, QOverload<int>::of(&QComboBox::activated),
+            this, &PreferencesDialog::columnWidthComboChanged);
+    connect(ui->cacheImagesTableViewCheckBox, &QCheckBox::stateChanged,
+            this, &PreferencesDialog::cacheImagesTableViewCheckBoxChanged);
     connect(ui->hideImagesTableViewCheckBox, &QCheckBox::stateChanged,
             this, &PreferencesDialog::hideImagesTableViewCheckBoxChanged);
-    connect(ui->browseDbPathButton, SIGNAL(clicked(bool)),
-            this, SLOT(browseDbPathButtonClicked()));
-    connect(ui->resetDbPathButton, SIGNAL(clicked(bool)),
-            this, SLOT(resetDbPathButtonClicked()));
+    connect(ui->browseDbPathButton, &QPushButton::clicked,
+            this, &PreferencesDialog::browseDbPathButtonClicked);
+    connect(ui->resetDbPathButton, &QPushButton::clicked,
+            this, &PreferencesDialog::resetDbPathButtonClicked);
 
     if (DefinitionHolder::APP_STORE) {
         //disable updates
@@ -132,6 +134,15 @@ void PreferencesDialog::updatesComboBoxChanged()
 {
     m_settingsManager->saveCheckUpdates(
                 ui->updatesComboBox->currentIndex() == 0);
+}
+
+void PreferencesDialog::languageComboBoxChanged(int index)
+{
+    Q_UNUSED(index);
+    QString lang = ui->languageComboBox->currentData().toString();
+    m_settingsManager->saveProperty("language", "preferences", lang);
+    QMessageBox::information(this, tr("Restart required!"),
+                tr("A restart is required for this setting to take effect."));
 }
 
 void PreferencesDialog::cloudStateComboBoxChanged()
@@ -352,6 +363,11 @@ void PreferencesDialog::initSettings()
     }
 
     ui->formViewFontCombo->setCurrentText("Default");
+
+    //language
+    ui->languageComboBox->setItemData(0, "system");
+    ui->languageComboBox->setItemData(1, "el");
+    ui->languageComboBox->setItemData(2, "en");
 }
 
 void PreferencesDialog::loadSettings()
@@ -360,6 +376,16 @@ void PreferencesDialog::loadSettings()
         ui->updatesComboBox->setCurrentIndex(1);
     if (m_settingsManager->isCloudSyncActive())
         ui->cloudStatusComboBox->setCurrentIndex(1);
+
+    //language
+    QString lang = m_settingsManager->restoreProperty("language", "preferences").toString();
+    if (lang == "el") {
+        ui->languageComboBox->setCurrentIndex(1);
+    } else if (lang == "en") {
+        ui->languageComboBox->setCurrentIndex(2);
+    } else {
+        ui->languageComboBox->setCurrentIndex(0);
+    }
 
     //database path
     QString dbPath = m_settingsManager->restoreCustomDatabaseDir();

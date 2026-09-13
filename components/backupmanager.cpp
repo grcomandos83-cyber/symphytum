@@ -197,9 +197,9 @@ bool BackupTask::fullImport(const QString &filePath,
     QStringList metaparse;
     srcFile.seek(metadatOffset);
     in >> metadataString;
-    metaparse = metadataString.split(";", QString::SkipEmptyParts);
+    metaparse = metadataString.split(";", Qt::SkipEmptyParts);
     foreach (QString s, metaparse) {
-        QStringList l = s.split(":", QString::SkipEmptyParts);
+        QStringList l = s.split(":", Qt::SkipEmptyParts);
         if (l.size() == 2) {
             fileOffset.insert(l.at(0).toLongLong(), l.at(1));
         }

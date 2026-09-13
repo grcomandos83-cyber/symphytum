@@ -113,7 +113,7 @@ void ComboboxFieldWizard::loadField(const int fieldId, const int collectionId)
     //get items
     if (displayProperties.size()) {
         QStringList items = displayParser.getValue("items")
-                .split(',', QString::SkipEmptyParts);
+                .split(',', Qt::SkipEmptyParts);
         foreach (QString s, items) {
             //replace some escape codes
             s.replace("\\comma", ",");

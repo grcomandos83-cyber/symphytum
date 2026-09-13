@@ -54,7 +54,7 @@ void UpdateManager::updateResponseSlot(QNetworkReply *reply)
         return;
     }
 
-    QStringList s = tmp.split(";", QString::SkipEmptyParts);
+    QStringList s = tmp.split(";", Qt::SkipEmptyParts);
 
     if (s.size() < 1) { //software_build;
         emit updateErrorSignal();

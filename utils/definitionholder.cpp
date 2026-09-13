@@ -16,7 +16,7 @@
 // Static variables initialization
 //-----------------------------------------------------------------------------
 
-QString DefinitionHolder::VERSION = "2.6";
+QString DefinitionHolder::VERSION = "2.7";
 QString DefinitionHolder::NAME = "Symphytum";
 QString DefinitionHolder::COMPANY = "giowisys";
 QString DefinitionHolder::DOMAIN_NAME = "giowisys.com";

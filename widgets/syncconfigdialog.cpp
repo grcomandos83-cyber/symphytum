@@ -14,7 +14,8 @@
 
 #include <QtGui/QDesktopServices>
 #include <QtCore/QUrl>
-#include <QtGui/QRegExpValidator>
+#include <QtGui/QRegularExpressionValidator>
+#include <QtCore/QRegularExpression>
 #include <QtWidgets/QFileDialog>
 
 
@@ -252,8 +253,8 @@ void SyncConfigDialog::init()
     ui->loginButton->setDefault(true);
 
     //2FA mega
-    QRegExp re("^[0-9]{6}$");
-    QRegExpValidator *mega2faValidator = new QRegExpValidator(re, this);
+    QRegularExpression re("^[0-9]{6}$");
+    QRegularExpressionValidator *mega2faValidator = new QRegularExpressionValidator(re, this);
     ui->mega2FALineEdit->setValidator(mega2faValidator);
     ui->mega2FAGroupBox->hide();
 }

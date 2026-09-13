@@ -22,7 +22,6 @@ Symphytum is a personal database software for everyone who desires to manage and
 * [Build from Source](#build-from-source)
 * [Contribute](#contribute)
 * [License](#license)
-* [Donate](#donate)
 
 ## Introduction
 Symphytum is a free and open-source personal database software written in C++ and Qt for Windows, macOS and Linux. Design and edit simple databases in a visual and intuitive way, without any need to study complex database languages. Symphytum is directed at users who just want to organize data in custom designed collections without giving up advantages of database engines like fast loading speed, large data set handling, fast searching, sorting and more.
@@ -43,7 +42,7 @@ SQLite is tiny, efficient and very fast. It can handle huge amount of data while
 * **Date Reminder**. Date fields keep you informed on tasks, appointments or birthdays, if requested. All Reminders, once triggered, are listed in one place.
 * **Fast Search**. Search while typing with highlighted results in a table view.
 * **Backup and Export**. Backup your data with a simple backup wizard and export your data to CSV.
-* **Multilingual**. User interface available in English, German, Polish, French and Italian. More info at the [project Wiki](https://github.com/giowck/symphytum/wiki/Help-Translate-Symphytum).
+* **Multilingual**. User interface available in English, German, Polish, French, Italian and Greek. More info at the [project Wiki](https://github.com/giowck/symphytum/wiki/Help-Translate-Symphytum).
 
 
 ### How it Looks
@@ -60,25 +59,25 @@ Please visit the [project wiki](https://github.com/giowck/symphytum/wiki) for ad
 
 ## Download
 Please see the appropriate download section for your operating system below.
-General releases, source archives and other info can be found on the [releases](https://github.com/giowck/symphytum/releases) page. Thank you for downloading Symphytum, please consider a small [donation](https://github.com/giowck/symphytum/blob/master/doc/donate.md) if you like it.
+General releases, source archives and other info can be found on the [releases](https://github.com/giowck/symphytum/releases) page. Thank you for downloading Symphytum.
 
 ### Windows
 For Windows 7, 8 and 10 32 or 64 bit
 
 #### Installer
-Download the Windows installer [symphytum-2.6-setup.exe](https://github.com/giowck/symphytum/releases/download/v2.6/symphytum-2.6-setup.exe)
+Download the Windows installer [symphytum-2.7-setup.exe](https://github.com/giowck/symphytum/releases/download/v2.7/symphytum-2.7-setup.exe)
 
 #### Portable ZIP Archive
 A portable ZIP for Windows is just a ZIP archive that, once extracted, can be moved and launched on any machine. The personal data is contained inside the folder alongside the main executable (symphytum.exe).
 
-Download [Symphytum-windows-portable.zip](https://github.com/giowck/symphytum/releases/download/v2.6/Symphytum-windows-portable.zip)
+Download [Symphytum-windows-portable.zip](https://github.com/giowck/symphytum/releases/download/v2.7/Symphytum-windows-portable.zip)
 
 ---
 
 ### macOS
 For macOS 10.12 (Sierra) and later, 64bit
 
-Download [symphytum-2.6.dmg](https://github.com/giowck/symphytum/releases/download/v2.6/symphytum-2.6.dmg)
+Download [symphytum-2.7.dmg](https://github.com/giowck/symphytum/releases/download/v2.7/symphytum-2.7.dmg)
 
 ---
 
@@ -88,7 +87,7 @@ For GNU/Linux, 64 bit. The AppImage should run on most linux machines, choose th
 #### Ubuntu Based
 Ubuntu 18.04 and other derivatives such as Linux Mint, elementaryOS and other.
 
-Download [symphytum-2.6-x86_64.deb](https://github.com/giowck/symphytum/releases/download/v2.6/symphytum-2.6-x86_64.deb)
+Download [symphytum-2.7-x86_64.deb](https://github.com/giowck/symphytum/releases/download/v2.7/symphytum-2.7-x86_64.deb)
 
 #### Arch Linux Based
 Arch Linux and derivatives like Manjaro can install Symphytum from the Arch User Repository (AUR).
@@ -98,7 +97,7 @@ Arch Linux and derivatives like Manjaro can install Symphytum from the Arch User
 #### AppImage
 An [AppImage](https://appimage.org/) is a self containing executable which should run on most common modern Linux distributions. For more info on how to make the downloaded image executable, please visit [this page](https://discourse.appimage.org/t/how-to-make-an-appimage-executable/80). To improve the system integration of the AppImage, please visit the [AppImage Wiki](https://github.com/AppImage/AppImageKit/wiki).
 
-Download [Symphytum-x86_64.AppImage](https://github.com/giowck/symphytum/releases/download/v2.6/Symphytum-x86_64.AppImage)
+Download [Symphytum-x86_64.AppImage](https://github.com/giowck/symphytum/releases/download/v2.7/Symphytum-x86_64.AppImage)
 
 #### Snap
 A [Snap package](https://snapcraft.io/) is a new self containing distribution format, supposed to work on most Linux distributions (Ubuntu, Debian, Arch Linux, Fedora, etc). The technology is still young with some limitations.
@@ -122,9 +121,6 @@ Report an issue, bug or feature proposal at the [project's issue tracker](https:
 ## License
 Symphytum is licensed under the BSD 2-Clause License, see [LICENSE](https://github.com/giowck/symphytum/blob/master/LICENSE). 
 You can use Symphytum for free and for any purprose.
-
-## Donate
-If you find Symphytum useful. please consider [donating](https://github.com/giowck/symphytum/blob/master/doc/donate.md) to support this project, thanks.
 
 Copyright (c) 2014-2020 Symphytum Developers  
 Copyright (c) 2012-2014 GIOWISYS Software UG

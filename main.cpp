@@ -9,6 +9,7 @@
 #include "widgets/mainwindow.h"
 #include "utils/definitionholder.h"
 #include "utils/qtsingleapplication/qtsingleapplication.h"
+#include "components/settingsmanager.h"
 
 #include <QtCore/QTranslator>
 #include <QtCore/QLocale>
@@ -37,13 +38,25 @@ int main(int argc, char *argv[])
         return 0;
 
     //setup translations
+    SettingsManager settingsManager;
+    QString lang = settingsManager.restoreProperty("language", "preferences").toString();
+    if (lang.isEmpty() || lang == "system") {
+        lang = QLocale::system().name();
+    }
+
     QTranslator qtTranslator;
-    qtTranslator.load("qt_" + QLocale::system().name(),
-                      ":/languages");
-    symphytumApp.installTranslator(&qtTranslator);
     QTranslator myappTranslator;
-    myappTranslator.load("symphytum_" + QLocale::system().name(), ":/languages");
-    symphytumApp.installTranslator(&myappTranslator);
+
+    if (!lang.startsWith("en", Qt::CaseInsensitive)) {
+        QString langCode = lang;
+        if (langCode.startsWith("el", Qt::CaseInsensitive)) {
+            langCode = "el";
+        }
+        qtTranslator.load("qt_" + langCode, ":/languages");
+        symphytumApp.installTranslator(&qtTranslator);
+        myappTranslator.load("symphytum_" + langCode, ":/languages");
+        symphytumApp.installTranslator(&myappTranslator);
+    }
 
     //init gui
     MainWindow w;

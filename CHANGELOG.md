@@ -1,5 +1,31 @@
 CHANGELOG
 
+Version 2.7
+===========
+
+### New Features
+- Full Greek translation (100% Greek localization)
+- Language selection option in Preferences (System / Greek / English)
+- Modern CMake build system support (`CMakeLists.txt`) alongside qmake
+
+### Improvements
+- Full codebase modernization for Qt 5.15+ and Qt 6 readiness
+- Replaced deprecated `QRegExp` with modern PCRE `QRegularExpression`
+- Replaced obsolete `qSort` with standard `std::sort`
+- Modernized signal and slot connections to type-safe pointer-to-member syntax
+- Search engine improvements: added search support across Combobox and Date fields
+- Search engine escaping: safe handling of search queries containing single quotes and apostrophes
+- CSV Import: upgraded to prepared statements with parameterized queries (`bindValue`) for high performance and reliability
+- CSV Import: automatic database transaction rollback on error or user cancellation
+- Removed donation section and links
+
+### Bug Fixes
+- Fixed search filter query formatting issue for the primary display field
+- Fixed deprecated container methods (`QSet::toList()` to `QSet::values()`)
+- Fixed deprecated string enum (`QString::SkipEmptyParts` to `Qt::SkipEmptyParts`)
+- Fixed potential SQL syntax issues with special characters during CSV import
+
+
 Version 2.6
 ===========
 

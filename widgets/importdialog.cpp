@@ -39,18 +39,18 @@ ImportDialog::ImportDialog(QWidget *parent) :
     m_metadataEngine = &MetadataEngine::getInstance();
 
     //connections
-    connect(ui->nextButton, SIGNAL(clicked()),
-            this, SLOT(nextButtonClicked()));
-    connect(ui->backCSVButton, SIGNAL(clicked()),
-            this, SLOT(backButtonClicked()));
-    connect(ui->cancelButton, SIGNAL(clicked()),
-            this, SLOT(reject()));
-    connect(ui->importCancelButton, SIGNAL(clicked()),
-            this, SLOT(cancelImportButtonClicked()));
-    connect(ui->importCSVButton, SIGNAL(clicked()),
-            this, SLOT(importCSVButtonClicked()));
-    connect(ui->collectionNameLineEdit, SIGNAL(textEdited(QString)),
-            this, SLOT(updateImportCSVButton()));
+    connect(ui->nextButton, &QPushButton::clicked,
+            this, &ImportDialog::nextButtonClicked);
+    connect(ui->backCSVButton, &QPushButton::clicked,
+            this, &ImportDialog::backButtonClicked);
+    connect(ui->cancelButton, &QPushButton::clicked,
+            this, &QDialog::reject);
+    connect(ui->importCancelButton, &QPushButton::clicked,
+            this, &ImportDialog::cancelImportButtonClicked);
+    connect(ui->importCSVButton, &QPushButton::clicked,
+            this, &ImportDialog::importCSVButtonClicked);
+    connect(ui->collectionNameLineEdit, &QLineEdit::textEdited,
+            this, &ImportDialog::updateImportCSVButton);
 }
 
 ImportDialog::~ImportDialog()
@@ -151,10 +151,9 @@ void ImportDialog::importCSVButtonClicked()
     //create new collection
     int collectionId = -1;
     QString collectionName = ui->collectionNameLineEdit->text();
-    QString sql = QString("INSERT INTO \"collections\" (\"name\")"
-                          " VALUES (\"%1\")").arg(QString(collectionName)
-                                                  .replace("\"", "\"\"")); //escape double quotes for SQL
-    if (query.exec(sql))
+    query.prepare("INSERT INTO \"collections\" (\"name\") VALUES (:name)");
+    query.bindValue(":name", collectionName);
+    if (query.exec())
         collectionId = m_metadataEngine->createNewCollection();
     else
         return;
@@ -174,6 +173,8 @@ void ImportDialog::importCSVButtonClicked()
 
         qApp->processEvents();
         if (m_importCancelled) {
+            db.rollback();
+            m_metadataEngine->deleteCollection(collectionId);
             fileCvs.close();
             reject();
             return;
@@ -181,12 +182,21 @@ void ImportDialog::importCSVButtonClicked()
     }
     QString tableName = m_metadataEngine->getTableName(collectionId);
     QString columnList;
+    QString placeholders;
     int headersSize = headers.size();
     for (int i = 0; i < headersSize; i++) {
         columnList.append(QString("\"%1\"").arg(i+1)); //+1 because of _id
-        if ((i+1) < headersSize)
+        placeholders.append("?");
+        if ((i+1) < headersSize) {
             columnList.append(",");
+            placeholders.append(",");
+        }
     }
+
+    //prepare insert statement once for batch execution
+    QString insertSql = QString("INSERT INTO \"%1\" (%2) VALUES (%3)")
+                            .arg(tableName, columnList, placeholders);
+    query.prepare(insertSql);
 
     //import data
     while (!in.atEnd()) {
@@ -195,22 +205,16 @@ void ImportDialog::importCSVButtonClicked()
                                           embeddedEscape);
         int fieldsSize = fields.size();
         if (fieldsSize == headersSize) {
-            QString valueList;
             for (int i = 0; i < fieldsSize; i++) {
-                QString fieldValue = fields.at(i);
-                fieldValue.replace('"', "\"\""); //replace double-quotes for sql (escape)
-                valueList.append(QString("\"%1\"").arg(fieldValue));
-                if ((i+1) < fieldsSize)
-                    valueList.append(",");
+                query.bindValue(i, fields.at(i));
             }
-            sql = QString("INSERT INTO \"%1\" (%2) VALUES (%3)")
-                    .arg(tableName).arg(columnList).arg(valueList);
-            query.prepare(sql);
             query.exec();
         }
 
         qApp->processEvents();
         if (m_importCancelled) {
+            db.rollback();
+            m_metadataEngine->deleteCollection(collectionId);
             fileCvs.close();
             reject();
             return;

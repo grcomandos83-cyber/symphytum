@@ -54,6 +54,7 @@ public:
 private slots:
     void currentCategoryChanged();
     void updatesComboBoxChanged();
+    void languageComboBoxChanged(int index);
     void cloudStateComboBoxChanged();
     void cloundUnlinkButtonClicked();
     void softwareResetButtonClicked();

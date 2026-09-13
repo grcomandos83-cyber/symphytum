@@ -90,7 +90,7 @@ void ComboboxFormWidget::loadMetadataDisplayProperties(const QString &metadata)
 
     //load items
     v = parser.getValue("items");
-    m_itemNameList = v.split(',', QString::SkipEmptyParts);
+    m_itemNameList = v.split(',', Qt::SkipEmptyParts);
     foreach (QString s, m_itemNameList) {
         //replace some escape codes
         s.replace("\\comma", ",");

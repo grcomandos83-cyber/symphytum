@@ -19,6 +19,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtCore/QVariant>
 #include <QtWidgets/QPushButton>
+#include <algorithm>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QFileDialog>
 #include <QtCore/QDir>
@@ -241,7 +242,7 @@ void FilesFormWidget::setData(const QVariant &data)
 {
     if (!data.isNull()) {
         QStringList idList = data.toString().split(',',
-                                                   QString::SkipEmptyParts);
+                                                   Qt::SkipEmptyParts);
 
         //table size
         int rows = idList.size();
@@ -486,7 +487,7 @@ void FilesFormWidget::removeButtonClicked()
     }
 
     //sort list so that removing from bottom to top works
-    qSort(rowList.begin(), rowList.end());
+    std::sort(rowList.begin(), rowList.end());
 
     FileManager fm(this);
     QEventLoop waitLoop(this);

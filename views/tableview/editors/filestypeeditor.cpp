@@ -56,7 +56,7 @@ FilesTypeEditor::FilesTypeEditor(QWidget *parent) :
 void FilesTypeEditor::setFiles(const QString &files)
 {
     m_fileList.clear();
-    QStringList list = files.split(",", QString::SkipEmptyParts);
+    QStringList list = files.split(",", Qt::SkipEmptyParts);
     foreach(QString s, list) {
         bool ok;
         int id = s.toInt(&ok);

@@ -245,7 +245,7 @@ QStringList FileManager::orphanDatabaseFileList()
                 query.exec(sql);
 
                 while(query.next()) {
-                    QStringList ids = query.value(0).toString().split(",", QString::SkipEmptyParts);
+                    QStringList ids = query.value(0).toString().split(",", Qt::SkipEmptyParts);
                     foreach (QString xs, ids) {
                         filesInRecords.append(xs);
                     }

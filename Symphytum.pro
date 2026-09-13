@@ -225,7 +225,8 @@ FORMS += \
 TRANSLATIONS = stuff/translations/symphytum_de.ts \
     stuff/translations/symphytum_it.ts \
     stuff/translations/symphytum_fr.ts \
-    stuff/translations/symphytum_pl.ts
+    stuff/translations/symphytum_pl.ts \
+    stuff/translations/symphytum_el.ts
 
 ICON = resources/images/icons/symphytum.icns # for mac
 RC_FILE = resources/symphytum.rc # for windows

@@ -489,7 +489,7 @@ QString ExportDialog::comboboxTypeItemText(const QVariant &data, int fieldId)
 
         //load items from display properties
         QStringList items = parser.getValue("items")
-                .split(',', QString::SkipEmptyParts);
+                .split(',', Qt::SkipEmptyParts);
 
         //handle default
         v = parser.getValue("default");
@@ -554,7 +554,7 @@ QString ExportDialog::filesTypeItemText(const QVariant &data, int fieldId)
 
     QString dataString = data.toString();
 
-    int fileCount = dataString.split(',', QString::SkipEmptyParts).size();
+    int fileCount = dataString.split(',', Qt::SkipEmptyParts).size();
     //opt.text = tr("%n file(s)", "", fileCount);
     //BUG workaround: investigate why it doesn't work (http://qt-project.org/doc/qt-4.8/i18n-source-translation.html#handling-plurals)
     QString countString = (fileCount == 1 )? tr("%1 file").arg(fileCount) :

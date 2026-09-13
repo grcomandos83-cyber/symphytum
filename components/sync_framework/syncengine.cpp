@@ -166,7 +166,7 @@ SyncEngine::MetadataFile SyncEngine::readMetadataFile()
     }
 
     QString metadataString = QString::fromUtf8(file.readAll().data());
-    QStringList metadataList = metadataString.split(';', QString::SkipEmptyParts);
+    QStringList metadataList = metadataString.split(';', Qt::SkipEmptyParts);
     file.close();
 
     if (metadataList.size() < 5) {

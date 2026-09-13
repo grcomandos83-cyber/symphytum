@@ -5,3 +5,15 @@ object_script.*
 *.pro.user*
 .directory
 ./doc/doxygen/*
+build/
+build-*/
+release/
+debug/
+*.o
+*.obj
+*.exe
+*.dll
+*.a
+.vscode/
+.idea/
+CMakeLists.txt.user*

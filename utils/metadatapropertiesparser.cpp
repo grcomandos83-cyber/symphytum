@@ -23,11 +23,11 @@ MetadataPropertiesParser::MetadataPropertiesParser(const QString &metadataString
 
     //parse
     QString s;
-    QStringList properties = metadataString.split(";", QString::SkipEmptyParts);
+    QStringList properties = metadataString.split(";", Qt::SkipEmptyParts);
     QStringList pair;
 
     foreach (s, properties) {
-        pair = s.split(":", QString::SkipEmptyParts);
+        pair = s.split(":", Qt::SkipEmptyParts);
         if (pair.size() == 2) {
             //add key-value pair to map
             m_propertiesMap->insert(pair.at(0), pair.at(1));

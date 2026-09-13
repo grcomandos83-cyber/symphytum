@@ -17,6 +17,7 @@
 #include <QtWidgets/QVBoxLayout>
 #include <QtCore/QVariant>
 #include <QtCore/QLocale>
+#include <QtCore/QRegularExpression>
 
 
 //-----------------------------------------------------------------------------
@@ -109,7 +110,7 @@ QVariant NumberFormWidget::getData() const
         notDecimal = '.';
 
     //remove all invalid characters ('e' and 'E' is for scientific notation)
-    s.remove(QRegExp(QString("[A-DF-Za-df-z\\%1]").arg(notDecimal)));
+    s.remove(QRegularExpression(QString("[A-DF-Za-df-z\\%1]").arg(notDecimal)));
 
     //toDouble handles automagically (LOL)
     //all conversions between the different formats

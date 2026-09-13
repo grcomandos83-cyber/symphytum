@@ -28,6 +28,8 @@
 #include "printdialog.h"
 #include "exportdialog.h"
 #include "importdialog.h"
+
+#include <algorithm>
 #include "alarmlistdialog.h"
 #include "aboutdialog.h"
 #include "upgradesuccessdialog.h"
@@ -754,8 +756,8 @@ void MainWindow::deleteRecordActionTriggered()
         DatabaseManager::getInstance().beginTransaction(); //speed up writes
 
         //sort rows in a list so that removing from bottom to top works
-        QList<int> rowList = rows.toList();
-        qSort(rowList.begin(), rowList.end());
+        QList<int> rowList = rows.values();
+        std::sort(rowList.begin(), rowList.end());
         int rowListSize = rowList.size();
         for (int i = rowListSize - 1; i >= 0; i--) {
 #ifdef Q_OS_WIN
@@ -1126,10 +1128,8 @@ void MainWindow::searchSlot(const QString &s)
     if (locale.decimalPoint() == ',')
         key.replace(',', '.');
 
-    //remove the "'" char because model gets messed up
-    //even if removed from search, model is not able
-    //to populate again (SQL injection risk?)
-    key.remove(QRegExp("'"));
+    //escape single quote for SQL query (replace ' with '')
+    key.replace("'", "''");
 
     //adapt if new collection types are added,
     //for now assuming only standard collection
@@ -1138,30 +1138,22 @@ void MainWindow::searchSlot(const QString &s)
         int count = m_metadataEngine->getFieldCount();
 
         //generate filter (where clause)
-        QString filter;
-        if (count > 0) {
-            filter.append(QString("\"1\" LIKE '%%2%'").arg(key));
-        }
-        for (int i = 2; i < count; i++) { //start with 2 cause 0 is _id and 1 done
+        QStringList fieldFilters;
+        for (int i = 1; i < count; i++) { //start with 1 cause 0 is _id
             switch(m_metadataEngine->getFieldType(i)) {
             case MetadataEngine::CheckboxType:
-            case MetadataEngine::ComboboxType:
             case MetadataEngine::ProgressType:
             case MetadataEngine::ImageType:
             case MetadataEngine::FilesType:
-            case MetadataEngine::DateType:
-            case MetadataEngine::CreationDateType:
-            case MetadataEngine::ModDateType:
-                //exclude field type from search results
+                //exclude non-text/binary field types from search results
                 break;
             default:
-                filter.append(QString(" OR \"%1\" LIKE '%%2%'")
-                              .arg(i).arg(key));
+                fieldFilters.append(QString("\"%1\" LIKE '%%2%'").arg(i).arg(key));
                 break;
             }
         }
-        if (!s.isEmpty())
-            sModel->setFilter(filter);
+        if (!s.isEmpty() && !fieldFilters.isEmpty())
+            sModel->setFilter(fieldFilters.join(" OR "));
         else
             sModel->setFilter(""); //clear filter
     }
@@ -1280,7 +1272,7 @@ void MainWindow::printActionTriggered()
             rows.insert(indexes.at(i).row());
         }
 
-        QList<int> rowList = rows.toList();
+        QList<int> rowList = rows.values();
         int size = rowList.size();
         QModelIndex index;
         //extract record ids
@@ -1338,7 +1330,7 @@ void MainWindow::exportActionTriggered()
             rows.insert(indexes.at(i).row());
         }
 
-        QList<int> rowList = rows.toList();
+        QList<int> rowList = rows.values();
         int size = rowList.size();
         QModelIndex index;
         //extract record ids
@@ -1966,44 +1958,44 @@ void MainWindow::createCentralWidget()
 void MainWindow::createConnections()
 {
     //main window
-    connect(m_quitAction, SIGNAL(triggered()),
-            this, SLOT(close()));
-    connect(m_aboutAction, SIGNAL(triggered()),
-            this, SLOT(aboutActionTriggered()));
-    connect(m_aboutQtAction, SIGNAL(triggered()),
-            this, SLOT(aboutQtActionTriggered()));
+    connect(m_quitAction, &QAction::triggered,
+            this, &QWidget::close);
+    connect(m_aboutAction, &QAction::triggered,
+            this, &MainWindow::aboutActionTriggered);
+    connect(m_aboutQtAction, &QAction::triggered,
+            this, &MainWindow::aboutQtActionTriggered);
     connect(m_onlineDocAction, &QAction::triggered,
             this, &MainWindow::onlineDocActionTriggered);
     connect(m_donateAction, &QAction::triggered,
             this, &MainWindow::donateActionTriggered);
-    connect(m_settingsAction, SIGNAL(triggered()),
-            this, SLOT(preferenceActionTriggered()));
-    connect(m_findAction, SIGNAL(triggered()),
-            m_viewToolBar, SLOT(setSearchLineFocus()));
-    connect(m_formViewModeAction, SIGNAL(triggered()),
-            this, SLOT(formViewModeTriggered()));
-    connect(m_tableViewModeAction, SIGNAL(triggered()),
-            this, SLOT(tableViewModeTriggered()));
-    connect(m_fullscreenAction, SIGNAL(triggered()),
-            this, SLOT(fullscreenActionTriggered()));
-    connect(m_toggleDockAction, SIGNAL(triggered()),
-            this, SLOT(toggleDockActionTriggered()));
-    connect(m_syncAction, SIGNAL(triggered()),
-            this, SLOT(syncActionTriggered()));
-    connect(m_selectAllAction, SIGNAL(triggered()),
-            this, SLOT(selectAllActionTriggered()));
-    connect(m_backupAction, SIGNAL(triggered()),
-            this, SLOT(backupActionTriggered()));
-    connect(m_checkUpdatesAction, SIGNAL(triggered()),
-            this, SLOT(checkForUpdatesSlot()));
-    connect(m_showAlarmDialogAction, SIGNAL(triggered()),
-            this, SLOT(showAlarmListDialog()));
-    connect(m_printAction, SIGNAL(triggered()),
-            this, SLOT(printActionTriggered()));
-    connect(m_exportAction, SIGNAL(triggered()),
-            this, SLOT(exportActionTriggered()));
-    connect(m_importAction, SIGNAL(triggered()),
-            this, SLOT(importActionTriggered()));
+    connect(m_settingsAction, &QAction::triggered,
+            this, &MainWindow::preferenceActionTriggered);
+    connect(m_findAction, &QAction::triggered,
+            m_viewToolBar, &ViewToolBarWidget::setSearchLineFocus);
+    connect(m_formViewModeAction, &QAction::triggered,
+            this, &MainWindow::formViewModeTriggered);
+    connect(m_tableViewModeAction, &QAction::triggered,
+            this, &MainWindow::tableViewModeTriggered);
+    connect(m_fullscreenAction, &QAction::triggered,
+            this, &MainWindow::fullscreenActionTriggered);
+    connect(m_toggleDockAction, &QAction::triggered,
+            this, &MainWindow::toggleDockActionTriggered);
+    connect(m_syncAction, &QAction::triggered,
+            this, &MainWindow::syncActionTriggered);
+    connect(m_selectAllAction, &QAction::triggered,
+            this, &MainWindow::selectAllActionTriggered);
+    connect(m_backupAction, &QAction::triggered,
+            this, &MainWindow::backupActionTriggered);
+    connect(m_checkUpdatesAction, &QAction::triggered,
+            this, &MainWindow::checkForUpdatesSlot);
+    connect(m_showAlarmDialogAction, &QAction::triggered,
+            this, &MainWindow::showAlarmListDialog);
+    connect(m_printAction, &QAction::triggered,
+            this, &MainWindow::printActionTriggered);
+    connect(m_exportAction, &QAction::triggered,
+            this, &MainWindow::exportActionTriggered);
+    connect(m_importAction, &QAction::triggered,
+            this, &MainWindow::importActionTriggered);
     connect(m_lockFormViewAction, &QAction::toggled,
             this, &MainWindow::lockFormViewActionToggled);
     connect(m_safeEditModeAction, &QAction::toggled,

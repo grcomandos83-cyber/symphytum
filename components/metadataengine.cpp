@@ -18,6 +18,7 @@
 #include <QtCore/QStringList>
 #include <QtCore/QDateTime>
 #include <QtCore/QCryptographicHash>
+#include <QtCore/QRegularExpression>
 #include <QtWidgets/QProgressDialog>
 #include <QtWidgets/QApplication>
 
@@ -237,7 +238,7 @@ bool MetadataEngine::getFieldCoordinate(const int column, int &xpos,
     if (query.next()) {
         //metadata for pos is saved as "x;y" where x is the column and y the row
         QString s = query.value(0).toString();
-        QStringList l = s.split(";", QString::SkipEmptyParts);
+        QStringList l = s.split(";", Qt::SkipEmptyParts);
         if (l.size() == 2) {
             valid = true;
             xpos = l.at(0).toInt();
@@ -285,7 +286,7 @@ void MetadataEngine::getFieldFormLayoutSize(const int column, int &widthUnits,
         //metadata for size is saved as "a;b"
         //where a is the width and b the height
         QString s = query.value(0).toString();
-        QStringList l = s.split(";", QString::SkipEmptyParts);
+        QStringList l = s.split(";", Qt::SkipEmptyParts);
         if (l.size() == 2) {
             widthUnits = l.at(0).toInt();
             heightUnits = l.at(1).toInt();
@@ -649,7 +650,7 @@ int MetadataEngine::duplicateCollection(int collectionId, bool copyMetadataOnly)
                 //build new raw file id string to push into the duplicate collection
                 foreach (QString originalRawString, fileIdsRawList) {
                     QString duplicateRawString;
-                    foreach (QString t, originalRawString.split(',', QString::SkipEmptyParts)) {
+                    foreach (QString t, originalRawString.split(',', Qt::SkipEmptyParts)) {
                         int d_id = originalFileIdToDuplicateIdBridge.value(t.toInt()) ;
                         if (d_id)
                             duplicateRawString.append(QString::number(d_id) + ",");
@@ -867,7 +868,7 @@ void MetadataEngine::deleteField(const int fieldId, int collectionId)
     //execute drop column procedure
     //splitting commands because query.exec()
     //can execute only one command at time
-    QStringList commands = dropSQL.split(';', QString::SkipEmptyParts);
+    QStringList commands = dropSQL.split(';', Qt::SkipEmptyParts);
     foreach (QString q, commands) {
         query.exec(q);
     }
@@ -892,7 +893,7 @@ void MetadataEngine::deleteField(const int fieldId, int collectionId)
     while (query.next()) {
         QString key = query.value(0).toString();
         QString s = key;
-        int column = s.remove(QRegExp("\\D")).toInt(); //extract column id
+        int column = s.remove(QRegularExpression("\\D")).toInt(); //extract column id
         if (column > fieldId) {
             columnsToDecrement.append(key);
             QString newKey = key;
@@ -1111,7 +1112,7 @@ QStringList MetadataEngine::getAllCollectionContentFiles(const int collectionId,
             if (!rawData.isEmpty()) {
                 if (rawData.contains(",")) { //file list type has comma separated ids
                     fileIdList.append(rawData.split(',',
-                                                    QString::SkipEmptyParts));
+                                                    Qt::SkipEmptyParts));
                 } else {
                     fileIdList.append(rawData); //img type has only one id
                 }

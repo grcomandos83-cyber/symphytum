@@ -195,7 +195,7 @@ void MegaSyncDriver::processFinished(int exitCode,
         {
             if (result.contains("Your (secret) session is:")) {
                 QString token;
-                QStringList list = result.split("session is: ", QString::SkipEmptyParts);
+                QStringList list = result.split("session is: ", Qt::SkipEmptyParts);
                 if (list.size() >= 2) {
                     token = list.at(1);
                     token.remove("\n");
@@ -214,7 +214,7 @@ void MegaSyncDriver::processFinished(int exitCode,
         {
             if (result.contains("Account e-mail:")) {
                 QString user;
-                QStringList list = result.split("e-mail: ", QString::SkipEmptyParts);
+                QStringList list = result.split("e-mail: ", Qt::SkipEmptyParts);
                 if (list.size() >= 2) {
                     user = list.at(1);
                     user.remove("\n");
