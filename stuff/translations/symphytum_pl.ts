@@ -1868,6 +1868,11 @@ p, li { white-space: pre-wrap; }
         <source>Unknown error during Dropbox sync process (in switch default)</source>
         <translation>Podczas synchronizacji z Dropbox wystąpił nieznany błąd (w ustawieniach domyślnych)</translation>
     </message>
+    <message>
+        <location filename="../../components/sync_framework/dropboxsyncdriver.cpp" line="435"/>
+        <source>The Dropbox client helper was not found on your system.&lt;br /&gt;&lt;br /&gt;Please use the recommended &lt;b&gt;&apos;Cloud / Local Folder&apos;&lt;/b&gt; option with your local Dropbox folder instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>EmailFieldWizard</name>
@@ -2158,125 +2163,125 @@ Można dołączyć dodatkowe sekcje:</translation>
 <context>
     <name>FilesFormWidget</name>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="130"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="131"/>
         <source>&lt;i&gt;No files present&lt;br&gt;Drag files here to import  them or click the add button&lt;/i&gt;</source>
         <translation>&lt;i&gt;Brak plików&lt;br&gt;Przeciągnij tutaj pliki by zaimportować je lub kliknij przycisk Dodaj&lt;/i&gt;</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="142"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="143"/>
         <source>Add file</source>
         <translation>Dodaj plik</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="145"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="146"/>
         <source>Remove file</source>
         <translation>Usuń plik</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="148"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="149"/>
         <source>Export file</source>
         <translation>Eksportuj plik</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="177"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="178"/>
         <source>Add files...</source>
         <translation>Dodaj pliki...</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="178"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="179"/>
         <source>Delete files</source>
         <translation>Usuń pliki</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="179"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="180"/>
         <source>Export files to...</source>
         <translation>Eksportuj pliki do...</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="180"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="181"/>
         <source>Open file</source>
         <translation>Otwórz plik</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="181"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="182"/>
         <source>Open original directory path</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="357"/>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="431"/>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="459"/>
-        <source>Invalid Input</source>
-        <translation>Niewłaściwe dane</translation>
     </message>
     <message>
         <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="358"/>
         <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="432"/>
         <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="460"/>
+        <source>Invalid Input</source>
+        <translation>Niewłaściwe dane</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="359"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="433"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="461"/>
         <source>The entered data is not valid!&lt;br&gt;%1</source>
         <translation>Wprowadzone dane nie są poprawne!&lt;br&gt;%1</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="442"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="443"/>
         <source>Import Files</source>
         <translation>Importuj pliki</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="470"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="471"/>
         <source>Delete Files</source>
         <translation>Usuń pliki</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="471"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="472"/>
         <source>Are you sure you want to delete the selected files?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Czy na pewno chcesz usunąć zaznaczone pliki?&lt;br&gt;&lt;br&gt;&lt;b&gt;Uwaga:&lt;/b&gt; Tej operacji nie można cofnąć!</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="499"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="500"/>
         <source>Removing file 0 of %1</source>
         <translation>Usuwanie pliku 0 z %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="501"/>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="571"/>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="716"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="502"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="572"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="717"/>
         <source>Cancel</source>
         <translation>Anuluj</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="504"/>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="574"/>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="719"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="505"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="575"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="720"/>
         <source>Progress</source>
         <translation>Postęp</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="517"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="518"/>
         <source>Removing file %1 of %2</source>
         <translation>Usuwanie pliku %1 z %2</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="552"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="553"/>
         <source>Export selected files to</source>
         <translation>Eksportuj zaznaczone pliki do</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="569"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="570"/>
         <source>Copying file 0 of %1</source>
         <translation>Kopiowanie pliku 0 z %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="587"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="588"/>
         <source>Copying file %1 of %2</source>
         <translation>Kopiowanie pliku %1 z %2</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="714"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="715"/>
         <source>Importing file 0 of %1</source>
         <translation>Importowanie pliku 0 z %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="732"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="733"/>
         <source>Importing file %1 of %2</source>
         <translation>Importowanie pliku %1 z %2</translation>
     </message>
@@ -2650,687 +2655,687 @@ Można dołączyć dodatkowe sekcje:</translation>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="97"/>
+        <location filename="../../widgets/mainwindow.cpp" line="99"/>
         <source>%1</source>
         <translation>%1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="231"/>
-        <location filename="../../widgets/mainwindow.cpp" line="300"/>
+        <location filename="../../widgets/mainwindow.cpp" line="233"/>
+        <location filename="../../widgets/mainwindow.cpp" line="302"/>
         <source>Software Reset</source>
         <translation>Resetowanie programu</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="232"/>
+        <location filename="../../widgets/mainwindow.cpp" line="234"/>
         <source>Are you sure you want to delete all data from the database including all files and settings?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Czy na pewno chcesz usunąć wszystkie dane z bazy wraz z plikami i ustawieniami?&lt;br&gt;&lt;br&gt;&lt;b&gt;Uwaga:&lt;/b&gt; Tej operacji nie można cofnąć!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="247"/>
-        <location filename="../../widgets/mainwindow.cpp" line="323"/>
-        <location filename="../../widgets/mainwindow.cpp" line="1215"/>
+        <location filename="../../widgets/mainwindow.cpp" line="249"/>
+        <location filename="../../widgets/mainwindow.cpp" line="325"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1207"/>
         <source>Closing Session</source>
         <translation>Zamykanie sesji</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="248"/>
-        <location filename="../../widgets/mainwindow.cpp" line="324"/>
-        <location filename="../../widgets/mainwindow.cpp" line="1216"/>
+        <location filename="../../widgets/mainwindow.cpp" line="250"/>
+        <location filename="../../widgets/mainwindow.cpp" line="326"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1208"/>
         <source>Closing sync session... Please wait!</source>
         <translation>Zamykanie sesji synchronizacji... Proszę czekać!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="263"/>
-        <location filename="../../widgets/mainwindow.cpp" line="599"/>
-        <location filename="../../widgets/mainwindow.cpp" line="744"/>
-        <location filename="../../widgets/mainwindow.cpp" line="922"/>
+        <location filename="../../widgets/mainwindow.cpp" line="265"/>
+        <location filename="../../widgets/mainwindow.cpp" line="601"/>
+        <location filename="../../widgets/mainwindow.cpp" line="746"/>
+        <location filename="../../widgets/mainwindow.cpp" line="924"/>
         <source>Progress</source>
         <translation>Postęp</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="264"/>
+        <location filename="../../widgets/mainwindow.cpp" line="266"/>
         <source>Deleting files... Please wait!</source>
         <translation>Usuwanie plików... Proszę czekać!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="301"/>
+        <location filename="../../widgets/mainwindow.cpp" line="303"/>
         <source>Software successfully resetted. Terminating now.</source>
         <translation>Program został zresetowany. Nastąpi zamknięcie.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="310"/>
+        <location filename="../../widgets/mainwindow.cpp" line="312"/>
         <source>Database Directory Change</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="311"/>
+        <location filename="../../widgets/mainwindow.cpp" line="313"/>
         <source>The database directory change will not take effect until software restart.&lt;br /&gt;Use the backup function to export and import your data to the new location.&lt;br /&gt;If the selected directory is empty, a new database file will be created.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="466"/>
+        <location filename="../../widgets/mainwindow.cpp" line="468"/>
         <source>No Fields</source>
         <translation>Brak Pól</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="467"/>
+        <location filename="../../widgets/mainwindow.cpp" line="469"/>
         <source>Failed to create new record!&lt;br&gt;Add some fields first.</source>
         <translation>Nie udało się utworzyć nowego rekordu!&lt;br&gt;Dodaj najpierw pola.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="504"/>
+        <location filename="../../widgets/mainwindow.cpp" line="506"/>
         <source>New record created</source>
         <translation>Utworzono nowy rekord</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="523"/>
+        <location filename="../../widgets/mainwindow.cpp" line="525"/>
         <source>Duplication Failed</source>
         <translation>Nie udało się skopiować</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="524"/>
+        <location filename="../../widgets/mainwindow.cpp" line="526"/>
         <source>Failed to duplicate record!&lt;br&gt;Add some records first.</source>
         <translation>Nie udało się skopiować rekordu!&lt;br&gt;Dodaj najpierw rekordy.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="552"/>
+        <location filename="../../widgets/mainwindow.cpp" line="554"/>
         <source>Record %1 duplicated</source>
         <translation>Skopiowano rekord %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="576"/>
+        <location filename="../../widgets/mainwindow.cpp" line="578"/>
         <source>Duplicate Record</source>
         <translation>Duplikuj rekord</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="577"/>
+        <location filename="../../widgets/mainwindow.cpp" line="579"/>
         <source>Are you sure you want to duplicate all selected records?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Czy na pewno chcesz skopiować wszystkie zaznaczone rekordy?&lt;br&gt;&lt;br&gt;&lt;b&gt;Uwaga:&lt;/b&gt; Tej operacji nie można cofnąć!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="588"/>
+        <location filename="../../widgets/mainwindow.cpp" line="590"/>
         <source>record duplication</source>
         <translation>duplikowanie rekordów</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="594"/>
+        <location filename="../../widgets/mainwindow.cpp" line="596"/>
         <source>Duplicating record 0 of %1</source>
         <translation>Kopiowanie rekordu 0 z %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="596"/>
-        <location filename="../../widgets/mainwindow.cpp" line="741"/>
-        <location filename="../../widgets/mainwindow.cpp" line="919"/>
+        <location filename="../../widgets/mainwindow.cpp" line="598"/>
+        <location filename="../../widgets/mainwindow.cpp" line="743"/>
+        <location filename="../../widgets/mainwindow.cpp" line="921"/>
         <source>Cancel</source>
         <translation>Anuluj</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="614"/>
+        <location filename="../../widgets/mainwindow.cpp" line="616"/>
         <source>Duplicating record %1 of %2</source>
         <translation>Kopiowanie rekordu %1 z %2</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="640"/>
+        <location filename="../../widgets/mainwindow.cpp" line="642"/>
         <source>%1 record(s) duplicated</source>
         <translation>Skopiowano %1 rekordów</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="656"/>
+        <location filename="../../widgets/mainwindow.cpp" line="658"/>
         <source>Deletion Failed</source>
         <translation>Błąd usuwania</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="657"/>
+        <location filename="../../widgets/mainwindow.cpp" line="659"/>
         <source>Failed to delete record!&lt;br&gt;The collection is empty.</source>
         <translation>Nie udało się usunąć rekordu!&lt;br&gt;Zbiór jest pusty.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="668"/>
-        <location filename="../../widgets/mainwindow.cpp" line="714"/>
-        <location filename="../../widgets/mainwindow.cpp" line="724"/>
+        <location filename="../../widgets/mainwindow.cpp" line="670"/>
+        <location filename="../../widgets/mainwindow.cpp" line="716"/>
+        <location filename="../../widgets/mainwindow.cpp" line="726"/>
         <source>Delete Record</source>
         <translation>Usuń rekord</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="669"/>
+        <location filename="../../widgets/mainwindow.cpp" line="671"/>
         <source>Delete current record?</source>
         <translation>Czy usunąć bieżący rekord?</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="696"/>
+        <location filename="../../widgets/mainwindow.cpp" line="698"/>
         <source>Record %1 deleted</source>
         <translation>Usunięto rekord %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="715"/>
+        <location filename="../../widgets/mainwindow.cpp" line="717"/>
         <source>Delete selected records?</source>
         <translation>Czy usunąć zaznaczone rekordy?</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="725"/>
+        <location filename="../../widgets/mainwindow.cpp" line="727"/>
         <source>Are you sure you want to delete all selected records?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Czy chcesz usunąć wszystkie zaznaczone rekordy?&lt;br&gt;&lt;br&gt;&lt;b&gt;Uwaga:&lt;/b&gt; Tej operacji nie można cofnąć!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="736"/>
+        <location filename="../../widgets/mainwindow.cpp" line="738"/>
         <source>record deletion</source>
         <translation>usuwanie rekordu</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="739"/>
+        <location filename="../../widgets/mainwindow.cpp" line="741"/>
         <source>Deleting record 0 of %1</source>
         <translation>Usuwanie rekordu 0 z %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="768"/>
+        <location filename="../../widgets/mainwindow.cpp" line="770"/>
         <source>Deleting record %1 of %2</source>
         <translation>Usuwanie rekordu %1 z %2</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="795"/>
+        <location filename="../../widgets/mainwindow.cpp" line="797"/>
         <source>%1 record(s) deleted</source>
         <translation>Usunięto %1 rekordów</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="822"/>
+        <location filename="../../widgets/mainwindow.cpp" line="824"/>
         <source>Cloud not connected.</source>
         <translation>Nie podłączono do chmury.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="864"/>
+        <location filename="../../widgets/mainwindow.cpp" line="866"/>
         <source>Delete All Records</source>
         <translation>Usuń wszystkie rekordy</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="865"/>
+        <location filename="../../widgets/mainwindow.cpp" line="867"/>
         <source>Are you sure you want to delete all records from the current collection?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Czy chcesz usunąć wszystkie rekordy z bieżącego zbioru?&lt;br&gt;&lt;br&gt;&lt;b&gt;Uwaga:&lt;/b&gt; Tej operacji nie można cofnąć!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="884"/>
+        <location filename="../../widgets/mainwindow.cpp" line="886"/>
         <source>All records successfully deleted</source>
         <translation>Usunięto wszystkie rekordy</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="918"/>
+        <location filename="../../widgets/mainwindow.cpp" line="920"/>
         <source>Removing obsolete data...</source>
         <translation>Usuwanie nieaktualnych danych...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="958"/>
+        <location filename="../../widgets/mainwindow.cpp" line="960"/>
         <source>Database Size</source>
         <translation>Rozmiar bazy danych</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="959"/>
+        <location filename="../../widgets/mainwindow.cpp" line="961"/>
         <source>Database size reduced by %1 KiB
 Files archive reduced by %2 MiB</source>
         <translation>Rozmiar bazy danych zmniejszono o %1 KiB
 Archiwum plików zmniejszono o %2 MiB</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1003"/>
-        <location filename="../../widgets/mainwindow.cpp" line="1047"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1005"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1049"/>
         <source>Missing Field Selection</source>
         <translation>Brak zaznaczenia pola</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1004"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1006"/>
         <source>Select a field to duplicate first!</source>
         <translation>Najpierw wybierz pole do duplikacji!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1048"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1050"/>
         <source>Select a field to delete first!</source>
         <translation>Najpierw wybierz pole do usunięcia!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1056"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1058"/>
         <source>Field Deletion</source>
         <translation>Usuwanie pola</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1057"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1059"/>
         <source>Are you sure you want to delete the selected collection field with all data related?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Czy na pewno chcesz usunąć wybrane pole wraz z zawartymi w nim danymi?&lt;br&gt;&lt;br&gt;&lt;b&gt;Uwaga:&lt;/b&gt; Tej operacji nie można cofnąć!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1235"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1227"/>
         <source>Software Restart</source>
         <translation>Restart programu</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1236"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1228"/>
         <source>Software restart required! Please restart %1 manually.</source>
         <translation>Wymagany restart programu. Proszę uruchomić ponownie %1 ręcznie.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1253"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1245"/>
         <source>Printing aborted</source>
         <translation>Anulowano drukowanie</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1254"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1246"/>
         <source>There are no records to print!</source>
         <translation>Brak rekordów do wydrukowania!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1311"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1303"/>
         <source>Export aborted</source>
         <translation>Anulowano eksport</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1312"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1304"/>
         <source>There are no records to export!</source>
         <translation>Brak rekordów do wyeksportowania!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1369"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1361"/>
         <source>Import not available</source>
         <translation>Niedostępne importowanie</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1370"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1362"/>
         <source>Import is disabled due read-only session!</source>
         <translation>W sesji tylko do odczytu importowanie jest niemożliwe!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1485"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1477"/>
         <source>Sync Error</source>
         <translation>Błąd synchronizacji</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1486"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1478"/>
         <source>Cloud sync error: </source>
         <translation>Błąd synchronizacji z chmurą: </translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1499"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1491"/>
         <source>Sync Session</source>
         <translation>Sesja synchronizacji</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1500"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1492"/>
         <source>Sync session is already open. This happens when another client is running in online mode. Please continue in read-only mode until the first client exits. It is also possible to force  write access by taking ownership of the session. This is useful for cases where the connection was accidentaly interrupted, leaving the session open.&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; Forcing access could lead to data loss!</source>
         <translation>Sesja synchronizacji jest już otwarta. Może być to spowodowane innym programem korzystającym z usługi lub nieoczekiwanie zakończonym transferem. Możesz kontynuować pracę w trybie tylko do odczytu dopóki aplikacja blokująca sesję nie zakończy działań lub wymusić zapis i przejęcie sesji.&lt;br&gt;&lt;br&gt;&lt;b&gt;Uwaga:&lt;/b&gt; Wymuszenie zapisu może spowodować utratę danych!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1517"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1509"/>
         <source>force access</source>
         <translation>Wymuś dostęp</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1518"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1510"/>
         <source>read-only access</source>
         <translation>Dostęp tylko do odczytu</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1593"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1585"/>
         <source>Software Updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1594"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1586"/>
         <source>Should %1 &lt;b&gt;check automatically&lt;/b&gt; for software updates?&lt;br /&gt;This option can be changes later at any time in the software preferences.&lt;br /&gt;&lt;br /&gt;The information about the latest release is downloaded from GitHub, their &lt;a href=&quot;https://help.github.com/en/articles/github-privacy-statement&quot;&gt;privacy policy&lt;/a&gt; may apply.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1619"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1611"/>
         <source>Checking for updates...</source>
         <translation>Sprawdzanie aktualizacji...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1626"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1618"/>
         <source>Your software version is up to date</source>
         <translation>Program jest aktualny</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1631"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1623"/>
         <source>Error while checking for software updates</source>
         <translation>Błąd podczas sprawdzania aktualizacji</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1647"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1639"/>
         <source>&amp;Quit</source>
         <translation>&amp;Zakończ</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1648"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1640"/>
         <source>Exit from this application</source>
         <translation>Zamyka aplikację</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1652"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1644"/>
         <source>About %1</source>
         <translation>O programie %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1655"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1647"/>
         <source>About Qt</source>
         <translation>O Qt</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1658"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1650"/>
         <source>Online documentation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1659"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1651"/>
         <source>View the project wiki on GitHub</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1661"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1653"/>
         <source>Donate!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1662"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1654"/>
         <source>Say thanks by donating any amount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1664"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1656"/>
         <source>New Collection...</source>
         <translation>Nowy zbiór...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1666"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1658"/>
         <source>Create a new collection</source>
         <translation>Tworzenie nowego zbioru</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1668"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1660"/>
         <source>Duplicate Collection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1670"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1662"/>
         <source>Duplicate current collection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1672"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1664"/>
         <source>Delete Collection</source>
         <translation>Usuń zbiór</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1674"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1666"/>
         <source>Delete current collection</source>
         <translation>Usuń bieżący zbiór</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1676"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1668"/>
         <source>New Record</source>
         <translation>Nowy rekord</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1680"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1672"/>
         <source>New Field...</source>
         <translation>Nowe pole...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1683"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1675"/>
         <source>Backup...</source>
         <translation>Kopia zapasowa...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1684"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1676"/>
         <source>Backup or restore a database file</source>
         <translation>Utwórz lub przywróć dane z kopii zapasowej</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1686"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1678"/>
         <source>Preferences</source>
         <translation>Preferencje</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1689"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1681"/>
         <source>Change application settings</source>
         <translation>Zmiana ustawień programu</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1691"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1683"/>
         <source>Undo</source>
         <translation>Cofnij</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1694"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1686"/>
         <source>Redo</source>
         <translation>Ponów</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1697"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1689"/>
         <source>Select all records</source>
         <translation>Zaznacz wszystkie rekordy</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1699"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1691"/>
         <source>Find</source>
         <translation>Znajdź</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1702"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1694"/>
         <source>Form View</source>
         <translation>Widok formularza</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1704"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1696"/>
         <source>Change current view mode to a form-like view</source>
         <translation>Zmienia tryb widoku na widok formularza</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1708"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1700"/>
         <source>Table View</source>
         <translation>Widok tabeli</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1710"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1702"/>
         <source>Change current view mode to a table-like view</source>
         <translation>Zmienia widok na tabelę z danymi</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1713"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1705"/>
         <source>View Mode</source>
         <translation>Tryb widoku</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1721"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1713"/>
         <source>Minimize</source>
         <translation>Minimalizuj</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1724"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1716"/>
         <source>Close</source>
         <translation>Zamknij</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1728"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1720"/>
         <source>Fullscreen</source>
         <translation>Pełny ekran</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1733"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1725"/>
         <source>Hide collection sidebar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1737"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1729"/>
         <source>Delete all records</source>
         <translation>Usuń wszystkie rekordy</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1739"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1731"/>
         <source>Remove all records from current collection</source>
         <translation>Usuwa wszystkie rekordy ze zbioru</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1741"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1733"/>
         <source>Free unused space</source>
         <translation>Zwolnij nieużywane miejsce</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1742"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1734"/>
         <source>Optimize size of database file by freeing unused resources</source>
         <translation>Optymalizuje rozmiar bazy danych usuwając nieużywane zasoby</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1745"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1737"/>
         <source>Cloud synchronization...</source>
         <translation>Synchronizacja z chmurą...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1746"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1738"/>
         <source>Synchronize your database with a cloud service</source>
         <translation>Synchronizacja bazy danych z usługą w chmurze</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1750"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1742"/>
         <source>Read-only mode</source>
         <translation>Tryb tylko do odczytu</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1751"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1743"/>
         <source>Toggle read-only mode. If enabled, other clients can access and write to the database.</source>
         <translation>Włącza tryb tylko do odczytu. W tym trybie inni użytkownicy mogą dostać się i zapisywać do bazy.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1756"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1748"/>
         <source>Check for updates</source>
         <translation>Sprawdź aktualizacje</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1757"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1749"/>
         <source>Check for %1 updates</source>
         <translation>Sprawdź aktualizacje %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1761"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1753"/>
         <source>Date reminder list...</source>
         <translation>Lista przypomnień...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1763"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1755"/>
         <source>Print...</source>
         <translation>Drukuj...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1764"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1756"/>
         <source>Print records or export them as PDF</source>
         <translation>Drukowanie lub eksport rekordów do PDF</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1767"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1759"/>
         <source>Import...</source>
         <translation>Import...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1768"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1760"/>
         <source>Import existing records to the database</source>
         <translation>Importowanie istniejących danych do bazy</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1770"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1762"/>
         <source>Export...</source>
         <translation>Eksport...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1771"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1763"/>
         <source>Export all or only selected records</source>
         <translation>Eksport wszystkich lub zaznaczonych rekordów</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1773"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1765"/>
         <source>Lock form view</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1777"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1769"/>
         <source>Lock the form view design to prevent unwanted field movements</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1780"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1772"/>
         <source>Simple edit mode (safe mode)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1782"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1774"/>
         <source>Lock all destructive actions to prevent changes to collections. Only editing of records is allowed.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1788"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1780"/>
         <source>Toolbar</source>
         <translation>Pasek narzędzi</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1823"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1815"/>
         <source>COLLECTIONS</source>
         <translation>ZBIORY</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1851"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1843"/>
         <source>New</source>
         <translation>Nowy</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1856"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1848"/>
         <source>&amp;File</source>
         <translation>&amp;Plik</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1868"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1860"/>
         <source>&amp;Edit</source>
         <translation>&amp;Edycja</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1879"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1871"/>
         <source>&amp;View</source>
         <translation>&amp;Widok</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1888"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1880"/>
         <source>Cloud</source>
         <translation>Usługi chmurowe</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1891"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1883"/>
         <source>Records</source>
         <translation>Rekordy</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1894"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1886"/>
         <source>Database</source>
         <translation>Baza danych</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1897"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1889"/>
         <source>&amp;Tools</source>
         <translation>&amp;Narzędzia</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1907"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1899"/>
         <source>&amp;Window</source>
         <translation>&amp;Okno</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1912"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1904"/>
         <source>&amp;Help</source>
         <translation>Po&amp;moc</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1926"/>
+        <location filename="../../widgets/mainwindow.cpp" line="1918"/>
         <source> Ready </source>
         <translation>Gotowy</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="2380"/>
+        <location filename="../../widgets/mainwindow.cpp" line="2372"/>
         <source>Support %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="2381"/>
+        <location filename="../../widgets/mainwindow.cpp" line="2373"/>
         <source>Dear user, you have been using %1 for a while. If you enjoy using this software, please consider supporting our development effort by making a small donation, thanks!&lt;br /&gt;Would you like to donate now?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3379,26 +3384,31 @@ Archiwum plików zmniejszono o %2 MiB</translation>
 </source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../../components/sync_framework/megasyncdriver.cpp" line="535"/>
+        <source>MEGAcmd client was not found at:&lt;br /&gt;%1&lt;br /&gt;&lt;br /&gt;Please install MEGAcmd from &lt;a href=&quot;https://mega.io/cmd&quot;&gt;https://mega.io/cmd&lt;/a&gt; to use MEGA sync.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MetadataEngine</name>
     <message>
-        <location filename="../../components/metadataengine.cpp" line="543"/>
+        <location filename="../../components/metadataengine.cpp" line="544"/>
         <source>Progress</source>
         <translation type="unfinished">Postęp</translation>
     </message>
     <message>
-        <location filename="../../components/metadataengine.cpp" line="544"/>
+        <location filename="../../components/metadataengine.cpp" line="545"/>
         <source>Duplicating collection data... Please wait!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../components/metadataengine.cpp" line="574"/>
+        <location filename="../../components/metadataengine.cpp" line="575"/>
         <source>Duplicating collection files... Please wait!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../components/metadataengine.cpp" line="623"/>
+        <location filename="../../components/metadataengine.cpp" line="624"/>
         <source>Updating files metadata... Please wait!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3571,7 +3581,7 @@ Archiwum plików zmniejszono o %2 MiB</translation>
     </message>
     <message>
         <location filename="../../ui/preferencesdialog.ui" line="67"/>
-        <location filename="../../ui/preferencesdialog.ui" line="236"/>
+        <location filename="../../ui/preferencesdialog.ui" line="288"/>
         <source>Appearance</source>
         <translation>Wygląd</translation>
     </message>
@@ -3586,293 +3596,320 @@ Archiwum plików zmniejszono o %2 MiB</translation>
         <translation>Zaawansowane</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="120"/>
+        <location filename="../../ui/preferencesdialog.ui" line="172"/>
         <source>Updates</source>
         <translation>Aktualizacje</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="128"/>
+        <location filename="../../ui/preferencesdialog.ui" line="180"/>
         <source>Check for updates:</source>
         <translation>Sprawdzaj aktualizacje:</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="139"/>
+        <location filename="../../ui/preferencesdialog.ui" line="191"/>
         <source>At startup</source>
         <translation>Przy starcie</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="144"/>
+        <location filename="../../ui/preferencesdialog.ui" line="196"/>
         <source>Manually</source>
         <translation>Ręcznie</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="170"/>
+        <location filename="../../ui/preferencesdialog.ui" line="222"/>
         <source>Database Directory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="199"/>
+        <location filename="../../ui/preferencesdialog.ui" line="251"/>
         <source>&amp;Browse...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="206"/>
+        <location filename="../../ui/preferencesdialog.ui" line="258"/>
         <source>&amp;Restore default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="243"/>
+        <location filename="../../ui/preferencesdialog.ui" line="295"/>
         <source>Form View</source>
         <translation>Widok formularza</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="344"/>
+        <location filename="../../ui/preferencesdialog.ui" line="396"/>
         <source>Background color:</source>
         <translation>Kolor tła:</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="253"/>
-        <location filename="../../ui/preferencesdialog.ui" line="329"/>
+        <location filename="../../ui/preferencesdialog.ui" line="305"/>
+        <location filename="../../ui/preferencesdialog.ui" line="381"/>
         <source>Default</source>
         <translation>Domyślny</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="337"/>
+        <location filename="../../ui/preferencesdialog.ui" line="389"/>
         <source>Font size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="258"/>
+        <location filename="../../ui/preferencesdialog.ui" line="310"/>
         <source>System</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="263"/>
+        <location filename="../../ui/preferencesdialog.ui" line="120"/>
+        <source>Language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/preferencesdialog.ui" line="128"/>
+        <source>Language:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/preferencesdialog.ui" line="136"/>
+        <source>System (Default)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/preferencesdialog.ui" line="141"/>
+        <source>Greek</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/preferencesdialog.ui" line="146"/>
+        <source>English</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/preferencesdialog.ui" line="315"/>
         <source>16px</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="268"/>
+        <location filename="../../ui/preferencesdialog.ui" line="320"/>
         <source>15px</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="273"/>
+        <location filename="../../ui/preferencesdialog.ui" line="325"/>
         <source>14px</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="278"/>
+        <location filename="../../ui/preferencesdialog.ui" line="330"/>
         <source>13px</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="283"/>
+        <location filename="../../ui/preferencesdialog.ui" line="335"/>
         <source>12px</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="288"/>
+        <location filename="../../ui/preferencesdialog.ui" line="340"/>
         <source>11px</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="293"/>
+        <location filename="../../ui/preferencesdialog.ui" line="345"/>
         <source>10px</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="298"/>
+        <location filename="../../ui/preferencesdialog.ui" line="350"/>
         <source>9px</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="303"/>
+        <location filename="../../ui/preferencesdialog.ui" line="355"/>
         <source>8px</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="311"/>
+        <location filename="../../ui/preferencesdialog.ui" line="363"/>
         <source>Font style:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="351"/>
+        <location filename="../../ui/preferencesdialog.ui" line="403"/>
         <source>Strategy for unused space:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="358"/>
+        <location filename="../../ui/preferencesdialog.ui" line="410"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Allow free space:&lt;/span&gt; free rows and columns are allowed between fields&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Remove unused space&lt;/span&gt;: free rows and columns between fields are automatically removed&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="362"/>
+        <location filename="../../ui/preferencesdialog.ui" line="414"/>
         <source>Allow free space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="367"/>
+        <location filename="../../ui/preferencesdialog.ui" line="419"/>
         <source>Remove unused space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="378"/>
+        <location filename="../../ui/preferencesdialog.ui" line="430"/>
         <source>Table View</source>
         <translation type="unfinished">Widok tabeli</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="384"/>
+        <location filename="../../ui/preferencesdialog.ui" line="436"/>
         <source>Row size:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="391"/>
+        <location filename="../../ui/preferencesdialog.ui" line="443"/>
         <source>Number of lines of text that are shown for each row in table view</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="394"/>
+        <location filename="../../ui/preferencesdialog.ui" line="446"/>
         <source> line(s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="407"/>
+        <location filename="../../ui/preferencesdialog.ui" line="459"/>
         <source>Column width:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="414"/>
+        <location filename="../../ui/preferencesdialog.ui" line="466"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Adjustable:&lt;/span&gt; the width of the columns can be freely adjusted&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Automatic width:&lt;/span&gt; the width of the columns is fixed and always resized automatically to fit all content&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="418"/>
+        <location filename="../../ui/preferencesdialog.ui" line="470"/>
         <source>Adjustable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="423"/>
+        <location filename="../../ui/preferencesdialog.ui" line="475"/>
         <source>Automatic width</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="454"/>
+        <location filename="../../ui/preferencesdialog.ui" line="506"/>
         <source>Cloud Synchronization</source>
         <translation>Synchronizacja</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="463"/>
+        <location filename="../../ui/preferencesdialog.ui" line="515"/>
         <source>Status:</source>
         <translation>Status:</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="471"/>
+        <location filename="../../ui/preferencesdialog.ui" line="523"/>
         <source>Disabled</source>
         <translation>Wyłączony</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="476"/>
+        <location filename="../../ui/preferencesdialog.ui" line="528"/>
         <source>Enabled</source>
         <translation>Włączony</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="499"/>
-        <location filename="../../ui/preferencesdialog.ui" line="572"/>
+        <location filename="../../ui/preferencesdialog.ui" line="551"/>
+        <location filename="../../ui/preferencesdialog.ui" line="624"/>
         <source>Tools</source>
         <translation>Narzędzia</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="507"/>
+        <location filename="../../ui/preferencesdialog.ui" line="559"/>
         <source>&lt;b&gt;Cloud Unlink&lt;/b&gt;:&lt;br&gt;Unlink this client from cloud service</source>
         <translation>&lt;b&gt;Odłącz od chmury&lt;/b&gt;:&lt;br&gt;Odłącza tego klienta od usług chmurowych</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="517"/>
+        <location filename="../../ui/preferencesdialog.ui" line="569"/>
         <source>Unlink</source>
         <translation>Odłącz</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="565"/>
+        <location filename="../../ui/preferencesdialog.ui" line="617"/>
         <source>Adanced Properties</source>
         <translation>Zaawansowane ustawienia</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="580"/>
+        <location filename="../../ui/preferencesdialog.ui" line="632"/>
         <source>&lt;b&gt;Software Reset&lt;/b&gt;:&lt;br&gt;Reset all settings and delete all data from local database</source>
         <translation>&lt;b&gt;Resetowanie programu&lt;/b&gt;:&lt;br&gt;Resetuje wszystkie ustawienia i usuwa wszystkie dane z bazy</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="590"/>
+        <location filename="../../ui/preferencesdialog.ui" line="642"/>
         <source>Reset</source>
         <translation>Resetowanie</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="618"/>
+        <location filename="../../ui/preferencesdialog.ui" line="670"/>
         <source>Performance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="632"/>
-        <location filename="../../ui/preferencesdialog.ui" line="642"/>
-        <location filename="../../ui/preferencesdialog.ui" line="675"/>
+        <location filename="../../ui/preferencesdialog.ui" line="684"/>
+        <location filename="../../ui/preferencesdialog.ui" line="694"/>
+        <location filename="../../ui/preferencesdialog.ui" line="727"/>
         <source>Images that are loaded from disk in table view can cause a poor scrolling experience. &lt;br /&gt;Caching images into memory allows a smooth scrolling experience after the first disk read.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="645"/>
+        <location filename="../../ui/preferencesdialog.ui" line="697"/>
         <source>Improve scrolling in table view by caching images. Increases RAM usage.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="665"/>
+        <location filename="../../ui/preferencesdialog.ui" line="717"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Images that are loaded from disk in table view can cause a poor scrolling experience. &lt;br/&gt;Hiding images from the table view allows a smooth scrolling experience on weak devices.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="678"/>
+        <location filename="../../ui/preferencesdialog.ui" line="730"/>
         <source>Improve scrolling in table view by hiding images</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="727"/>
+        <location filename="../../ui/preferencesdialog.ui" line="779"/>
         <source>&amp;Close</source>
         <translation>&amp;Zamknij</translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="207"/>
+        <location filename="../../widgets/preferencesdialog.cpp" line="218"/>
         <source>Restart Required</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="208"/>
+        <location filename="../../widgets/preferencesdialog.cpp" line="219"/>
         <source>Please restart %1 to apply the new background color</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="240"/>
+        <location filename="../../widgets/preferencesdialog.cpp" line="251"/>
         <source>Unused space</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="241"/>
+        <location filename="../../widgets/preferencesdialog.cpp" line="252"/>
         <source>Already existing unused space will be removed the next time a field is rearranged.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="271"/>
+        <location filename="../../widgets/preferencesdialog.cpp" line="144"/>
         <location filename="../../widgets/preferencesdialog.cpp" line="282"/>
+        <location filename="../../widgets/preferencesdialog.cpp" line="293"/>
         <source>Restart required!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="272"/>
+        <location filename="../../widgets/preferencesdialog.cpp" line="145"/>
         <location filename="../../widgets/preferencesdialog.cpp" line="283"/>
+        <location filename="../../widgets/preferencesdialog.cpp" line="294"/>
         <source>A restart is required for this setting to take effect.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="298"/>
+        <location filename="../../widgets/preferencesdialog.cpp" line="309"/>
         <source>Select database directory</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4134,9 +4171,9 @@ Archiwum plików zmniejszono o %2 MiB</translation>
         <location filename="../../utils/formwidgetvalidator.cpp" line="43"/>
         <location filename="../../views/tableview/editors/filestypeeditor.cpp" line="89"/>
         <location filename="../../views/tableview/editors/imagetypeeditor.cpp" line="85"/>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="354"/>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="428"/>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="456"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="355"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="429"/>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="457"/>
         <location filename="../../widgets/form_widgets/imageformwidget.cpp" line="343"/>
         <location filename="../../widgets/form_widgets/imageformwidget.cpp" line="411"/>
         <source>Read-only mode: Editing is not allowed.</source>
@@ -4209,187 +4246,233 @@ Archiwum plików zmniejszono o %2 MiB</translation>
         <translation>Usługa chmury:</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="120"/>
-        <location filename="../../ui/syncconfigdialog.ui" line="255"/>
-        <location filename="../../ui/syncconfigdialog.ui" line="359"/>
-        <location filename="../../ui/syncconfigdialog.ui" line="524"/>
-        <location filename="../../ui/syncconfigdialog.ui" line="639"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="133"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="268"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="372"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="537"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="679"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Anuluj</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="130"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="143"/>
         <source>&amp;Login</source>
         <translation>Za&amp;loguj</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="149"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="162"/>
         <source>Please authorize access to your cloud service: &lt;br /&gt; copy the code from the opened browser window and paste it below</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="165"/>
-        <location filename="../../ui/syncconfigdialog.ui" line="287"/>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="133"/>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="141"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="178"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="300"/>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="140"/>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="148"/>
         <source>Please wait...</source>
         <translation>Proszę czekać...</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="180"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="193"/>
         <source>Requesting URL...</source>
         <translation>Żądanie URL...</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="201"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="214"/>
         <source>&amp;Code:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="398"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="411"/>
         <source>Please authorize access to your MEGA account</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="413"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="426"/>
         <source>MEGA email:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="420"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="433"/>
         <source>name@example.com</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="427"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="440"/>
         <source>MEGA password:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="446"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="459"/>
         <source>Enable this if your MEGA account is protected by 2FA. &lt;br /&gt; If you don&apos;t know what this is then your account is probably not using 2FA.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="449"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="462"/>
         <source>Use two factor authentication (2FA)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="456"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="469"/>
         <source>2FA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="462"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="475"/>
         <source>Two factor code (2FA):</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="469"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="482"/>
         <source>(optional, use if 2FA is enabled)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="479"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="492"/>
         <source>&lt;i&gt;Your password will not be stored, only a session key&lt;/i&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="556"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="569"/>
         <source>Please configure your sync target folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="571"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="584"/>
         <source>Sync Folder:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="578"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="591"/>
         <source>path to your sync folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="585"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="598"/>
         <source>&amp;Browse</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="594"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="609"/>
+        <source>Detected Cloud Folders:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/syncconfigdialog.ui" line="634"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;The sync folder can be any folder and will be used by Symphytum as the target for saving sync related files. For example, this folder could be located inside your Nextcloud, OwnCloud or any other folder that is then scanned and synced by your sync provider of choice.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="211"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="224"/>
         <source>Paste here the code from the browser window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="268"/>
-        <location filename="../../ui/syncconfigdialog.ui" line="537"/>
-        <location filename="../../ui/syncconfigdialog.ui" line="652"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="281"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="550"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="692"/>
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="305"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="318"/>
         <source>Authorizing...</source>
         <translation>Uwierzytelnianie...</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="369"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="382"/>
         <source>&amp;Retry</source>
         <translation>&amp;Ponów próbę</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="379"/>
+        <location filename="../../ui/syncconfigdialog.ui" line="392"/>
         <source>&amp;Finish</source>
         <translation>&amp;Zakończ</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="168"/>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="175"/>
         <source>Select sync folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="186"/>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="193"/>
         <source>%1 Please try again.</source>
         <translation>%1 Proszę spróbować ponownie.</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="193"/>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="200"/>
         <source>The authentication token is invalid or expired.</source>
         <translation>Komponent uwierzytelnienia jest niewłaściwy lub nieważny.</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="198"/>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="205"/>
         <source>Connection to cloud service failed, check your connection.</source>
         <translation>Nie udało się połączyć z usługą. Sprawdź połączenie z siecią.</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="223"/>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="230"/>
         <source>Accessing...</source>
         <translation>Uzyskiwanie dostępu...</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="231"/>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="238"/>
         <source>Logged in as %1</source>
         <translation>Zalogowany jako %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="247"/>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="256"/>
+        <source>Cloud / Local Folder (OneDrive, Google Drive, Dropbox, Nextcloud...)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="259"/>
+        <source>Dropbox (Legacy API)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="262"/>
+        <source>MEGA (requires MEGAcmd)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="281"/>
+        <source>&lt;b&gt;Recommended:&lt;/b&gt; Automatically syncs your database with any cloud provider folder (such as &lt;b&gt;OneDrive&lt;/b&gt;, &lt;b&gt;Google Drive&lt;/b&gt;, &lt;b&gt;Dropbox&lt;/b&gt;, &lt;b&gt;Nextcloud&lt;/b&gt;, &lt;b&gt;iCloud&lt;/b&gt;) or a local/network shared folder.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="284"/>
+        <source>&lt;b&gt;Notice:&lt;/b&gt; The direct Dropbox API is deprecated and may not connect on modern systems. We strongly recommend using the &lt;b&gt;Cloud / Local Folder&lt;/b&gt; option with your local Dropbox folder instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="287"/>
+        <source>&lt;b&gt;Notice:&lt;/b&gt; Requires the official &lt;b&gt;MEGAcmd&lt;/b&gt; command-line tool (&lt;a href=&quot;https://mega.io/cmd&quot;&gt;https://mega.io/cmd&lt;/a&gt;) to be installed on your computer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="305"/>
+        <source>OneDrive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="311"/>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="313"/>
+        <source>Google Drive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="318"/>
         <source>Dropbox</source>
         <translation>Dropbox</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="249"/>
-        <source>MEGA</source>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="323"/>
+        <source>iCloud Drive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="251"/>
-        <source>Generic provider (folder based)</source>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="332"/>
+        <source>Use %1 folder: %2</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4555,9 +4638,9 @@ Archiwum plików zmniejszono o %2 MiB</translation>
     <message>
         <location filename="../../widgets/syncprocessdialog.cpp" line="147"/>
         <location filename="../../widgets/syncprocessdialog.cpp" line="265"/>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="603"/>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="677"/>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="719"/>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="612"/>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="686"/>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="728"/>
         <source>Uploading...</source>
         <translation>Przesyłanie...</translation>
     </message>
@@ -4592,33 +4675,42 @@ Archiwum plików zmniejszono o %2 MiB</translation>
         <translation>Zamiana...</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="312"/>
-        <source>Error: Failed to delete old database file.</source>
-        <translation>Błąd: Nie udało się usunąć starej wersji pliku bazy danych.</translation>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="317"/>
+        <source>Error: Failed to replace old database file.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="565"/>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="323"/>
+        <source>Error: Failed to apply new database file. Restored from backup.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error: Failed to delete old database file.</source>
+        <translation type="vanished">Błąd: Nie udało się usunąć starej wersji pliku bazy danych.</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="574"/>
         <source>Sync process could not be started: unexpected case.</source>
         <translation>Nie udało się rozpocząć procesu synchronizacji: Nieznany przypadek.</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="608"/>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="685"/>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="617"/>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="694"/>
         <source>Downloading...</source>
         <translation>Pobieranie...</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="693"/>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="702"/>
         <source>Removing...</source>
         <translation>Usuwanie...</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="708"/>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="717"/>
         <source>Removing from cloud...</source>
         <translation>Usuwanie z dysku zdalnego...</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="738"/>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="747"/>
         <source>Your database has been successfully synchronized.</source>
         <translation>Baza danych została pomyślnie zsynchronizowana.</translation>
     </message>

@@ -17,6 +17,10 @@ Version 2.7
 - Search engine escaping: safe handling of search queries containing single quotes and apostrophes
 - CSV Import: upgraded to prepared statements with parameterized queries (`bindValue`) for high performance and reliability
 - CSV Import: automatic database transaction rollback on error or user cancellation
+- Cloud Sync overhaul: Folder Sync (OneDrive, Google Drive, Dropbox, Nextcloud) is now the default and primary sync method
+- Cloud Sync: smart auto-detection for OneDrive, Google Drive, Dropbox, and iCloud folders
+- Cloud Sync: pre-sync safety backup (`.sync-backup`) protecting against database corruption or replacement failure
+- Cloud Sync: clear diagnostic messages and guidance for legacy Dropbox and MEGAcmd drivers
 - Removed donation section and links
 
 ### Bug Fixes

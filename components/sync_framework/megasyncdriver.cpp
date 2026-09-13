@@ -419,6 +419,12 @@ void MegaSyncDriver::startRequest()
     megaCmdPath =  QString(QStandardPaths::standardLocations(
                                QStandardPaths::GenericDataLocation).at(0))
             .append("/MEGAcmd/").append("MEGAclient.exe");
+    if (!QFile::exists(megaCmdPath)) {
+        QString pfPath = "C:/Program Files/MEGAcmd/MEGAclient.exe";
+        if (QFile::exists(pfPath)) {
+            megaCmdPath = pfPath;
+        }
+    }
 #endif
 #ifdef Q_OS_OSX
     megaCmdPath = QString("/Applications/MEGAcmd.app/Contents/MacOS/");
@@ -524,6 +530,13 @@ void MegaSyncDriver::startRequest()
     args.append(extraArgs);
 
     m_processOutput.clear();
+#ifdef Q_OS_WIN
+    if (!QFile::exists(megaCmdPath)) {
+        emit errorSignal(tr("MEGAcmd client was not found at:<br />%1<br /><br />"
+                            "Please install MEGAcmd from <a href=\"https://mega.io/cmd\">https://mega.io/cmd</a> to use MEGA sync.").arg(megaCmdPath));
+        return;
+    }
+#endif
     m_process->start(megaCmdPath, args);
 
     if (m_currentRequest == AuthRequest) {

@@ -59,6 +59,7 @@ private slots:
     void megaCredentialsInputEdited();
     void folderSyncPathEdited();
     void folderSyncBrowseButtonClicked();
+    void serviceComboBoxChanged(int index);
 
     //sync slots
     /** Called if an error occurred */
@@ -84,6 +85,7 @@ private:
     void createConnections();
     void updateFinishButton(bool enabled);
     void createSyncConnections();
+    void detectCloudFolders();
 
     Ui::SyncConfigDialog *ui;
     SyncEngine::SyncService m_syncService;

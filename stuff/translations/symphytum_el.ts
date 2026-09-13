@@ -2894,6 +2894,11 @@ p, li { white-space: pre-wrap; }
         <translatorcomment>Debug info about cloud services (in switch default)</translatorcomment>
         <translation>Άγνωστο σφάλμα κατά τη διαδικασία συγχρονισμού Dropbox (switch default)</translation>
     </message>
+    <message>
+        <location filename="../../components/sync_framework/dropboxsyncdriver.cpp" line="435" />
+        <source>The Dropbox client helper was not found on your system.&lt;br /&gt;&lt;br /&gt;Please use the recommended &lt;b&gt;'Cloud / Local Folder'&lt;/b&gt; option with your local Dropbox folder instead.</source>
+        <translation>Το εργαλείο υποστήριξης Dropbox δεν βρέθηκε στο σύστημά σας.&lt;br /&gt;&lt;br /&gt;Παρακαλούμε χρησιμοποιήστε την προτεινόμενη επιλογή &lt;b&gt;'Φάκελος Cloud / Τοπικός'&lt;/b&gt; με τον τοπικό σας φάκελο Dropbox.</translation>
+    </message>
 </context>
 <context>
     <name>EmailFieldWizard</name>
@@ -3184,125 +3189,125 @@ Additional sections can be configured:</source>
 <context>
     <name>FilesFormWidget</name>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="130" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="131" />
         <source>&lt;i&gt;No files present&lt;br&gt;Drag files here to import  them or click the add button&lt;/i&gt;</source>
         <translation>&lt;i&gt;Δεν υπάρχουν αρχεία&lt;br&gt;Σύρετε αρχεία εδώ ή πατήστε το κουμπί προσθήκης&lt;/i&gt;</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="142" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="143" />
         <source>Add file</source>
         <translation>Προσθήκη αρχείου</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="145" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="146" />
         <source>Remove file</source>
         <translation>Αφαίρεση αρχείου</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="148" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="149" />
         <source>Export file</source>
         <translation>Εξαγωγή αρχείου</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="177" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="178" />
         <source>Add files...</source>
         <translation>Προσθήκη αρχείων...</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="178" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="179" />
         <source>Delete files</source>
         <translation>Διαγραφή αρχείων</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="179" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="180" />
         <source>Export files to...</source>
         <translation>Εξαγωγή αρχείων σε...</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="180" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="181" />
         <source>Open file</source>
         <translation>Άνοιγμα αρχείου</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="181" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="182" />
         <source>Open original directory path</source>
         <translation>Άνοιγμα αρχικής διαδρομής καταλόγου</translation>
-    </message>
-    <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="357" />
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="431" />
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="459" />
-        <source>Invalid Input</source>
-        <translation>Μη έγκυρη είσοδος</translation>
     </message>
     <message>
         <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="358" />
         <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="432" />
         <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="460" />
+        <source>Invalid Input</source>
+        <translation>Μη έγκυρη είσοδος</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="359" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="433" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="461" />
         <source>The entered data is not valid!&lt;br&gt;%1</source>
         <translation>Τα δεδομένα που εισαγάγατε δεν είναι έγκυρα!&lt;br&gt;%1</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="442" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="443" />
         <source>Import Files</source>
         <translation>Εισαγωγή Αρχείων</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="470" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="471" />
         <source>Delete Files</source>
         <translation>Διαγραφή Αρχείων</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="471" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="472" />
         <source>Are you sure you want to delete the selected files?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Είστε βέβαιοι ότι θέλετε να διαγράψετε τα επιλεγμένα αρχεία;&lt;br&gt;&lt;br&gt;&lt;b&gt;Προειδοποίηση:&lt;/b&gt; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί!</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="499" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="500" />
         <source>Removing file 0 of %1</source>
         <translation>Αφαίρεση αρχείου 0 από %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="501" />
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="571" />
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="716" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="502" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="572" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="717" />
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="504" />
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="574" />
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="719" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="505" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="575" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="720" />
         <source>Progress</source>
         <translation>Πρόοδος</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="517" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="518" />
         <source>Removing file %1 of %2</source>
         <translation>Αφαίρεση αρχείου %1 από %2</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="552" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="553" />
         <source>Export selected files to</source>
         <translation>Εξαγωγή επιλεγμένων αρχείων σε</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="569" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="570" />
         <source>Copying file 0 of %1</source>
         <translation>Αντιγραφή αρχείου 0 από %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="587" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="588" />
         <source>Copying file %1 of %2</source>
         <translation>Αντιγραφή αρχείου %1 από %2</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="714" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="715" />
         <source>Importing file 0 of %1</source>
         <translation>Εισαγωγή αρχείου 0 από %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="732" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="733" />
         <source>Importing file %1 of %2</source>
         <translation>Εισαγωγή αρχείου %1 από %2</translation>
     </message>
@@ -3676,687 +3681,687 @@ Additional sections can be configured:</source>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="97" />
+        <location filename="../../widgets/mainwindow.cpp" line="99" />
         <source>%1</source>
         <translation>%1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="231" />
-        <location filename="../../widgets/mainwindow.cpp" line="300" />
+        <location filename="../../widgets/mainwindow.cpp" line="233" />
+        <location filename="../../widgets/mainwindow.cpp" line="302" />
         <source>Software Reset</source>
         <translation>Επαναφορά Λογισμικού</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="232" />
+        <location filename="../../widgets/mainwindow.cpp" line="234" />
         <source>Are you sure you want to delete all data from the database including all files and settings?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Είστε βέβαιοι ότι θέλετε να διαγράψετε όλα τα δεδομένα της βάσης, συμπεριλαμβανομένων των αρχείων και των ρυθμίσεων;&lt;br&gt;&lt;br&gt;&lt;b&gt;Προειδοποίηση:&lt;/b&gt; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="247" />
-        <location filename="../../widgets/mainwindow.cpp" line="323" />
-        <location filename="../../widgets/mainwindow.cpp" line="1215" />
+        <location filename="../../widgets/mainwindow.cpp" line="249" />
+        <location filename="../../widgets/mainwindow.cpp" line="325" />
+        <location filename="../../widgets/mainwindow.cpp" line="1207" />
         <source>Closing Session</source>
         <translation>Κλείσιμο Συνεδρίας</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="248" />
-        <location filename="../../widgets/mainwindow.cpp" line="324" />
-        <location filename="../../widgets/mainwindow.cpp" line="1216" />
+        <location filename="../../widgets/mainwindow.cpp" line="250" />
+        <location filename="../../widgets/mainwindow.cpp" line="326" />
+        <location filename="../../widgets/mainwindow.cpp" line="1208" />
         <source>Closing sync session... Please wait!</source>
         <translation>Κλείσιμο συνεδρίας συγχρονισμού... Παρακαλώ περιμένετε!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="263" />
-        <location filename="../../widgets/mainwindow.cpp" line="599" />
-        <location filename="../../widgets/mainwindow.cpp" line="744" />
-        <location filename="../../widgets/mainwindow.cpp" line="922" />
+        <location filename="../../widgets/mainwindow.cpp" line="265" />
+        <location filename="../../widgets/mainwindow.cpp" line="601" />
+        <location filename="../../widgets/mainwindow.cpp" line="746" />
+        <location filename="../../widgets/mainwindow.cpp" line="924" />
         <source>Progress</source>
         <translation>Πρόοδος</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="264" />
+        <location filename="../../widgets/mainwindow.cpp" line="266" />
         <source>Deleting files... Please wait!</source>
         <translation>Διαγραφή αρχείων... Παρακαλώ περιμένετε!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="301" />
+        <location filename="../../widgets/mainwindow.cpp" line="303" />
         <source>Software successfully resetted. Terminating now.</source>
         <translation>Η επαναφορά ολοκληρώθηκε επιτυχώς. Τερματισμός εφαρμογής.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="310" />
+        <location filename="../../widgets/mainwindow.cpp" line="312" />
         <source>Database Directory Change</source>
         <translation>Αλλαγή Φακέλου Βάσης Δεδομένων</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="311" />
+        <location filename="../../widgets/mainwindow.cpp" line="313" />
         <source>The database directory change will not take effect until software restart.&lt;br /&gt;Use the backup function to export and import your data to the new location.&lt;br /&gt;If the selected directory is empty, a new database file will be created.</source>
         <translation>Η αλλαγή του φακέλου της βάσης δεδομένων δεν θα τεθεί σε ισχύ πριν την επανεκκίνηση της εφαρμογής.&lt;br /&gt;Χρησιμοποιήστε τη λειτουργία αντιγράφου ασφαλείας για να εξάγετε και να εισάγετε τα δεδομένα σας στη νέα θέση.&lt;br /&gt;Εάν ο επιλεγμένος φάκελος είναι κενός, θα δημιουργηθεί ένα νέο αρχείο βάσης δεδομένων.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="466" />
+        <location filename="../../widgets/mainwindow.cpp" line="468" />
         <source>No Fields</source>
         <translation>Χωρίς Πεδία</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="467" />
+        <location filename="../../widgets/mainwindow.cpp" line="469" />
         <source>Failed to create new record!&lt;br&gt;Add some fields first.</source>
         <translation>Αποτυχία δημιουργίας νέας εγγραφής!&lt;br&gt;Προσθέστε πρώτα μερικά πεδία.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="504" />
+        <location filename="../../widgets/mainwindow.cpp" line="506" />
         <source>New record created</source>
         <translation>Δημιουργήθηκε νέα εγγραφή</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="523" />
+        <location filename="../../widgets/mainwindow.cpp" line="525" />
         <source>Duplication Failed</source>
         <translation>Αποτυχία Διπλασιασμού</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="524" />
+        <location filename="../../widgets/mainwindow.cpp" line="526" />
         <source>Failed to duplicate record!&lt;br&gt;Add some records first.</source>
         <translation>Αποτυχία διπλασιασμού εγγραφής!&lt;br&gt;Προσθέστε πρώτα μερικές εγγραφές.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="552" />
+        <location filename="../../widgets/mainwindow.cpp" line="554" />
         <source>Record %1 duplicated</source>
         <translation>Η εγγραφή %1 διπλασιάστηκε</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="576" />
+        <location filename="../../widgets/mainwindow.cpp" line="578" />
         <source>Duplicate Record</source>
         <translation>Διπλασιασμός Εγγραφής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="577" />
+        <location filename="../../widgets/mainwindow.cpp" line="579" />
         <source>Are you sure you want to duplicate all selected records?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Είστε βέβαιοι ότι θέλετε να διπλασιάσετε όλες τις επιλεγμένες εγγραφές;&lt;br&gt;&lt;br&gt;&lt;b&gt;Προειδοποίηση:&lt;/b&gt; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="588" />
+        <location filename="../../widgets/mainwindow.cpp" line="590" />
         <source>record duplication</source>
         <translation>διπλασιασμός εγγραφών</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="594" />
+        <location filename="../../widgets/mainwindow.cpp" line="596" />
         <source>Duplicating record 0 of %1</source>
         <translation>Διπλασιασμός εγγραφής 0 από %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="596" />
-        <location filename="../../widgets/mainwindow.cpp" line="741" />
-        <location filename="../../widgets/mainwindow.cpp" line="919" />
+        <location filename="../../widgets/mainwindow.cpp" line="598" />
+        <location filename="../../widgets/mainwindow.cpp" line="743" />
+        <location filename="../../widgets/mainwindow.cpp" line="921" />
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="614" />
+        <location filename="../../widgets/mainwindow.cpp" line="616" />
         <source>Duplicating record %1 of %2</source>
         <translation>Διπλασιασμός εγγραφής %1 από %2</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="640" />
+        <location filename="../../widgets/mainwindow.cpp" line="642" />
         <source>%1 record(s) duplicated</source>
         <translation>%1 εγγραφή(-ές) διπλασιάστηκαν</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="656" />
+        <location filename="../../widgets/mainwindow.cpp" line="658" />
         <source>Deletion Failed</source>
         <translation>Αποτυχία Διαγραφής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="657" />
+        <location filename="../../widgets/mainwindow.cpp" line="659" />
         <source>Failed to delete record!&lt;br&gt;The collection is empty.</source>
         <translation>Αποτυχία διαγραφής εγγραφής!&lt;br&gt;Η συλλογή είναι κενή.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="668" />
-        <location filename="../../widgets/mainwindow.cpp" line="714" />
-        <location filename="../../widgets/mainwindow.cpp" line="724" />
+        <location filename="../../widgets/mainwindow.cpp" line="670" />
+        <location filename="../../widgets/mainwindow.cpp" line="716" />
+        <location filename="../../widgets/mainwindow.cpp" line="726" />
         <source>Delete Record</source>
         <translation>Διαγραφή Εγγραφής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="669" />
+        <location filename="../../widgets/mainwindow.cpp" line="671" />
         <source>Delete current record?</source>
         <translation>Διαγραφή της τρέχουσας εγγραφής;</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="696" />
+        <location filename="../../widgets/mainwindow.cpp" line="698" />
         <source>Record %1 deleted</source>
         <translation>Η εγγραφή %1 διαγράφηκε</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="715" />
+        <location filename="../../widgets/mainwindow.cpp" line="717" />
         <source>Delete selected records?</source>
         <translation>Διαγραφή επιλεγμένων εγγραφών;</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="725" />
+        <location filename="../../widgets/mainwindow.cpp" line="727" />
         <source>Are you sure you want to delete all selected records?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Είστε βέβαιοι ότι θέλετε να διαγράψετε όλες τις επιλεγμένες εγγραφές;&lt;br&gt;&lt;br&gt;&lt;b&gt;Προειδοποίηση:&lt;/b&gt; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="736" />
+        <location filename="../../widgets/mainwindow.cpp" line="738" />
         <source>record deletion</source>
         <translation>διαγραφή εγγραφής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="739" />
+        <location filename="../../widgets/mainwindow.cpp" line="741" />
         <source>Deleting record 0 of %1</source>
         <translation>Διαγραφή εγγραφής 0 από %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="768" />
+        <location filename="../../widgets/mainwindow.cpp" line="770" />
         <source>Deleting record %1 of %2</source>
         <translation>Διαγραφή εγγραφής %1 από %2</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="795" />
+        <location filename="../../widgets/mainwindow.cpp" line="797" />
         <source>%1 record(s) deleted</source>
         <translation>%1 εγγραφή(-ές) διαγράφηκαν</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="822" />
+        <location filename="../../widgets/mainwindow.cpp" line="824" />
         <source>Cloud not connected.</source>
         <translation>Το cloud δεν είναι συνδεδεμένο.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="864" />
+        <location filename="../../widgets/mainwindow.cpp" line="866" />
         <source>Delete All Records</source>
         <translation>Διαγραφή Όλων των Εγγραφών</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="865" />
+        <location filename="../../widgets/mainwindow.cpp" line="867" />
         <source>Are you sure you want to delete all records from the current collection?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Είστε βέβαιοι ότι θέλετε να διαγράψετε όλες τις εγγραφές από την τρέχουσα συλλογή;&lt;br&gt;&lt;br&gt;&lt;b&gt;Προειδοποίηση:&lt;/b&gt; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="884" />
+        <location filename="../../widgets/mainwindow.cpp" line="886" />
         <source>All records successfully deleted</source>
         <translation>Όλες οι εγγραφές διαγράφηκαν με επιτυχία</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="918" />
+        <location filename="../../widgets/mainwindow.cpp" line="920" />
         <source>Removing obsolete data...</source>
         <translation>Αφαίρεση παρωχημένων δεδομένων...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="958" />
+        <location filename="../../widgets/mainwindow.cpp" line="960" />
         <source>Database Size</source>
         <translation>Μέγεθος Βάσης Δεδομένων</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="959" />
+        <location filename="../../widgets/mainwindow.cpp" line="961" />
         <source>Database size reduced by %1 KiB
 Files archive reduced by %2 MiB</source>
         <translation>Το μέγεθος της βάσης δεδομένων μειώθηκε κατά %1 KiB
 Το αρχείο αρχείων μειώθηκε κατά %2 MiB</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1003" />
-        <location filename="../../widgets/mainwindow.cpp" line="1047" />
+        <location filename="../../widgets/mainwindow.cpp" line="1005" />
+        <location filename="../../widgets/mainwindow.cpp" line="1049" />
         <source>Missing Field Selection</source>
         <translation>Δεν επιλέχθηκε πεδίο</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1004" />
+        <location filename="../../widgets/mainwindow.cpp" line="1006" />
         <source>Select a field to duplicate first!</source>
         <translation>Επιλέξτε πρώτα ένα πεδίο προς διπλασιασμό!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1048" />
+        <location filename="../../widgets/mainwindow.cpp" line="1050" />
         <source>Select a field to delete first!</source>
         <translation>Επιλέξτε πρώτα ένα πεδίο προς διαγραφή!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1056" />
+        <location filename="../../widgets/mainwindow.cpp" line="1058" />
         <source>Field Deletion</source>
         <translation>Διαγραφή Πεδίου</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1057" />
+        <location filename="../../widgets/mainwindow.cpp" line="1059" />
         <source>Are you sure you want to delete the selected collection field with all data related?&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; This cannot be undone!</source>
         <translation>Είστε βέβαιοι ότι θέλετε να διαγράψετε το επιλεγμένο πεδίο της συλλογής μαζί με όλα τα σχετικά δεδομένα;&lt;br&gt;&lt;br&gt;&lt;b&gt;Προειδοποίηση:&lt;/b&gt; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1235" />
+        <location filename="../../widgets/mainwindow.cpp" line="1227" />
         <source>Software Restart</source>
         <translation>Επανεκκίνηση Εφαρμογής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1236" />
+        <location filename="../../widgets/mainwindow.cpp" line="1228" />
         <source>Software restart required! Please restart %1 manually.</source>
         <translation>Απαιτείται επανεκκίνηση της εφαρμογής! Παρακαλώ επανεκκινήστε το %1 χειροκίνητα.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1253" />
+        <location filename="../../widgets/mainwindow.cpp" line="1245" />
         <source>Printing aborted</source>
         <translation>Η εκτύπωση ματαιώθηκε</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1254" />
+        <location filename="../../widgets/mainwindow.cpp" line="1246" />
         <source>There are no records to print!</source>
         <translation>Δεν υπάρχουν εγγραφές προς εκτύπωση!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1311" />
+        <location filename="../../widgets/mainwindow.cpp" line="1303" />
         <source>Export aborted</source>
         <translation>Η εξαγωγή ματαιώθηκε</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1312" />
+        <location filename="../../widgets/mainwindow.cpp" line="1304" />
         <source>There are no records to export!</source>
         <translation>Δεν υπάρχουν εγγραφές προς εξαγωγή!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1369" />
+        <location filename="../../widgets/mainwindow.cpp" line="1361" />
         <source>Import not available</source>
         <translation>Η εισαγωγή δεν είναι διαθέσιμη</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1370" />
+        <location filename="../../widgets/mainwindow.cpp" line="1362" />
         <source>Import is disabled due read-only session!</source>
         <translation>Η εισαγωγή είναι απενεργοποιημένη λόγω λειτουργίας μόνο για ανάγνωση!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1485" />
+        <location filename="../../widgets/mainwindow.cpp" line="1477" />
         <source>Sync Error</source>
         <translation>Σφάλμα Συγχρονισμού</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1486" />
+        <location filename="../../widgets/mainwindow.cpp" line="1478" />
         <source>Cloud sync error: </source>
         <translation>Σφάλμα συγχρονισμού cloud: </translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1499" />
+        <location filename="../../widgets/mainwindow.cpp" line="1491" />
         <source>Sync Session</source>
         <translation>Συνεδρία Συγχρονισμού</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1500" />
+        <location filename="../../widgets/mainwindow.cpp" line="1492" />
         <source>Sync session is already open. This happens when another client is running in online mode. Please continue in read-only mode until the first client exits. It is also possible to force  write access by taking ownership of the session. This is useful for cases where the connection was accidentaly interrupted, leaving the session open.&lt;br&gt;&lt;br&gt;&lt;b&gt;Warning:&lt;/b&gt; Forcing access could lead to data loss!</source>
         <translation>Μια συνεδρία συγχρονισμού είναι ήδη ανοιχτή. Αυτό συμβαίνει όταν ένας άλλος υπολογιστής/πελάτης εκτελείται σε λειτουργία σύνδεσης. Παρακαλώ συνεχίστε σε λειτουργία μόνο για ανάγνωση μέχρι να τερματιστεί ο πρώτος πελάτης. Μπορείτε επίσης να εξαναγκάσετε πρόσβαση εγγραφής αναλαμβάνοντας την κυριότητα της συνεδρίας. Αυτό είναι χρήσιμο αν η σύνδεση διακόπηκε απότομα αφήνοντας τη συνεδρία ανοιχτή.&lt;br&gt;&lt;br&gt;&lt;b&gt;Προειδοποίηση:&lt;/b&gt; Ο εξαναγκασμός πρόσβασης μπορεί να προκαλέσει απώλεια δεδομένων!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1517" />
+        <location filename="../../widgets/mainwindow.cpp" line="1509" />
         <source>force access</source>
         <translation>εξαναγκασμός πρόσβασης</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1518" />
+        <location filename="../../widgets/mainwindow.cpp" line="1510" />
         <source>read-only access</source>
         <translation>πρόσβαση μόνο για ανάγνωση</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1593" />
+        <location filename="../../widgets/mainwindow.cpp" line="1585" />
         <source>Software Updates</source>
         <translation>Ενημερώσεις Λογισμικού</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1594" />
+        <location filename="../../widgets/mainwindow.cpp" line="1586" />
         <source>Should %1 &lt;b&gt;check automatically&lt;/b&gt; for software updates?&lt;br /&gt;This option can be changes later at any time in the software preferences.&lt;br /&gt;&lt;br /&gt;The information about the latest release is downloaded from GitHub, their &lt;a href="https://help.github.com/en/articles/github-privacy-statement"&gt;privacy policy&lt;/a&gt; may apply.</source>
         <translation>Θέλετε το %1 να &lt;b&gt;ελέγχει αυτόματα&lt;/b&gt; για ενημερώσεις λογισμικού;&lt;br /&gt;Αυτή η επιλογή μπορεί να αλλάξει οποιαδήποτε στιγμή στις προτιμήσεις του λογισμικού.&lt;br /&gt;&lt;br /&gt;Οι πληροφορίες για την πιο πρόσφατη έκδοση λαμβάνονται από το GitHub, σύμφωνα με την &lt;a href="https://help.github.com/en/articles/github-privacy-statement"&gt;πολιτική απορρήτου&lt;/a&gt; τους.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1619" />
+        <location filename="../../widgets/mainwindow.cpp" line="1611" />
         <source>Checking for updates...</source>
         <translation>Έλεγχος για ενημερώσεις...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1626" />
+        <location filename="../../widgets/mainwindow.cpp" line="1618" />
         <source>Your software version is up to date</source>
         <translation>Η έκδοση του λογισμικού σας είναι ενημερωμένη</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1631" />
+        <location filename="../../widgets/mainwindow.cpp" line="1623" />
         <source>Error while checking for software updates</source>
         <translation>Σφάλμα κατά τον έλεγχο για ενημερώσεις λογισμικού</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1647" />
+        <location filename="../../widgets/mainwindow.cpp" line="1639" />
         <source>&amp;Quit</source>
         <translation>&amp;Έξοδος</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1648" />
+        <location filename="../../widgets/mainwindow.cpp" line="1640" />
         <source>Exit from this application</source>
         <translation>Έξοδος από την εφαρμογή</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1652" />
+        <location filename="../../widgets/mainwindow.cpp" line="1644" />
         <source>About %1</source>
         <translation>Σχετικά με το %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1655" />
+        <location filename="../../widgets/mainwindow.cpp" line="1647" />
         <source>About Qt</source>
         <translation>Σχετικά με το Qt</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1658" />
+        <location filename="../../widgets/mainwindow.cpp" line="1650" />
         <source>Online documentation</source>
         <translation>Ηλεκτρονική τεκμηρίωση</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1659" />
+        <location filename="../../widgets/mainwindow.cpp" line="1651" />
         <source>View the project wiki on GitHub</source>
         <translation>Προβολή του wiki του έργου στο GitHub</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1661" />
+        <location filename="../../widgets/mainwindow.cpp" line="1653" />
         <source>Donate!</source>
         <translation>Δωρεά!</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1662" />
+        <location filename="../../widgets/mainwindow.cpp" line="1654" />
         <source>Say thanks by donating any amount</source>
         <translation>Πείτε ένα ευχαριστώ κάνοντας μια μικρή δωρεά</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1664" />
+        <location filename="../../widgets/mainwindow.cpp" line="1656" />
         <source>New Collection...</source>
         <translation>Νέα Συλλογή...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1666" />
+        <location filename="../../widgets/mainwindow.cpp" line="1658" />
         <source>Create a new collection</source>
         <translation>Δημιουργία νέας συλλογής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1668" />
+        <location filename="../../widgets/mainwindow.cpp" line="1660" />
         <source>Duplicate Collection</source>
         <translation>Διπλασιασμός Συλλογής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1670" />
+        <location filename="../../widgets/mainwindow.cpp" line="1662" />
         <source>Duplicate current collection</source>
         <translation>Διπλασιασμός τρέχουσας συλλογής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1672" />
+        <location filename="../../widgets/mainwindow.cpp" line="1664" />
         <source>Delete Collection</source>
         <translation>Διαγραφή Συλλογής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1674" />
+        <location filename="../../widgets/mainwindow.cpp" line="1666" />
         <source>Delete current collection</source>
         <translation>Διαγραφή τρέχουσας συλλογής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1676" />
+        <location filename="../../widgets/mainwindow.cpp" line="1668" />
         <source>New Record</source>
         <translation>Νέα Εγγραφή</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1680" />
+        <location filename="../../widgets/mainwindow.cpp" line="1672" />
         <source>New Field...</source>
         <translation>Νέο Πεδίο...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1683" />
+        <location filename="../../widgets/mainwindow.cpp" line="1675" />
         <source>Backup...</source>
         <translation>Αντίγραφο Ασφαλείας...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1684" />
+        <location filename="../../widgets/mainwindow.cpp" line="1676" />
         <source>Backup or restore a database file</source>
         <translation>Δημιουργία ή επαναφορά αρχείου αντιγράφου ασφαλείας βάσης δεδομένων</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1686" />
+        <location filename="../../widgets/mainwindow.cpp" line="1678" />
         <source>Preferences</source>
         <translation>Προτιμήσεις</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1689" />
+        <location filename="../../widgets/mainwindow.cpp" line="1681" />
         <source>Change application settings</source>
         <translation>Αλλαγή ρυθμίσεων εφαρμογής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1691" />
+        <location filename="../../widgets/mainwindow.cpp" line="1683" />
         <source>Undo</source>
         <translation>Αναίρεση</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1694" />
+        <location filename="../../widgets/mainwindow.cpp" line="1686" />
         <source>Redo</source>
         <translation>Επανάληψη</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1697" />
+        <location filename="../../widgets/mainwindow.cpp" line="1689" />
         <source>Select all records</source>
         <translation>Επιλογή όλων των εγγραφών</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1699" />
+        <location filename="../../widgets/mainwindow.cpp" line="1691" />
         <source>Find</source>
         <translation>Εύρεση</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1702" />
+        <location filename="../../widgets/mainwindow.cpp" line="1694" />
         <source>Form View</source>
         <translation>Προβολή Φόρμας</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1704" />
+        <location filename="../../widgets/mainwindow.cpp" line="1696" />
         <source>Change current view mode to a form-like view</source>
         <translation>Αλλαγή λειτουργίας προβολής σε προβολή φόρμας</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1708" />
+        <location filename="../../widgets/mainwindow.cpp" line="1700" />
         <source>Table View</source>
         <translation>Προβολή Πίνακα</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1710" />
+        <location filename="../../widgets/mainwindow.cpp" line="1702" />
         <source>Change current view mode to a table-like view</source>
         <translation>Αλλαγή λειτουργίας προβολής σε προβολή πίνακα</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1713" />
+        <location filename="../../widgets/mainwindow.cpp" line="1705" />
         <source>View Mode</source>
         <translation>Λειτουργία Προβολής</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1721" />
+        <location filename="../../widgets/mainwindow.cpp" line="1713" />
         <source>Minimize</source>
         <translation>Ελαχιστοποίηση</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1724" />
+        <location filename="../../widgets/mainwindow.cpp" line="1716" />
         <source>Close</source>
         <translation>Κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1728" />
+        <location filename="../../widgets/mainwindow.cpp" line="1720" />
         <source>Fullscreen</source>
         <translation>Πλήρης οθόνη</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1733" />
+        <location filename="../../widgets/mainwindow.cpp" line="1725" />
         <source>Hide collection sidebar</source>
         <translation>Απόκρυψη πλευρικής στήλης συλλογών</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1737" />
+        <location filename="../../widgets/mainwindow.cpp" line="1729" />
         <source>Delete all records</source>
         <translation>Διαγραφή όλων των εγγραφών</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1739" />
+        <location filename="../../widgets/mainwindow.cpp" line="1731" />
         <source>Remove all records from current collection</source>
         <translation>Αφαίρεση όλων των εγγραφών από την τρέχουσα συλλογή</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1741" />
+        <location filename="../../widgets/mainwindow.cpp" line="1733" />
         <source>Free unused space</source>
         <translation>Απελευθέρωση αχρησιμοποίητου χώρου</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1742" />
+        <location filename="../../widgets/mainwindow.cpp" line="1734" />
         <source>Optimize size of database file by freeing unused resources</source>
         <translation>Βελτιστοποίηση μεγέθους της βάσης δεδομένων με απελευθέρωση μη χρησιμοποιούμενων πόρων</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1745" />
+        <location filename="../../widgets/mainwindow.cpp" line="1737" />
         <source>Cloud synchronization...</source>
         <translation>Συγχρονισμός cloud...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1746" />
+        <location filename="../../widgets/mainwindow.cpp" line="1738" />
         <source>Synchronize your database with a cloud service</source>
         <translation>Συγχρονισμός της βάσης δεδομένων σας με μια υπηρεσία cloud</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1750" />
+        <location filename="../../widgets/mainwindow.cpp" line="1742" />
         <source>Read-only mode</source>
         <translation>Λειτουργία μόνο για ανάγνωση</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1751" />
+        <location filename="../../widgets/mainwindow.cpp" line="1743" />
         <source>Toggle read-only mode. If enabled, other clients can access and write to the database.</source>
         <translation>Εναλλαγή λειτουργίας μόνο για ανάγνωση. Αν ενεργοποιηθεί, άλλοι πελάτες μπορούν να έχουν πρόσβαση και να εγγράψουν στη βάση δεδομένων.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1756" />
+        <location filename="../../widgets/mainwindow.cpp" line="1748" />
         <source>Check for updates</source>
         <translation>Έλεγχος για ενημερώσεις</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1757" />
+        <location filename="../../widgets/mainwindow.cpp" line="1749" />
         <source>Check for %1 updates</source>
         <translation>Έλεγχος για ενημερώσεις του %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1761" />
+        <location filename="../../widgets/mainwindow.cpp" line="1753" />
         <source>Date reminder list...</source>
         <translation>Λίστα υπενθυμίσεων ημερομηνιών...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1763" />
+        <location filename="../../widgets/mainwindow.cpp" line="1755" />
         <source>Print...</source>
         <translation>Εκτύπωση...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1764" />
+        <location filename="../../widgets/mainwindow.cpp" line="1756" />
         <source>Print records or export them as PDF</source>
         <translation>Εκτύπωση εγγραφών ή εξαγωγή τους σε PDF</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1767" />
+        <location filename="../../widgets/mainwindow.cpp" line="1759" />
         <source>Import...</source>
         <translation>Εισαγωγή...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1768" />
+        <location filename="../../widgets/mainwindow.cpp" line="1760" />
         <source>Import existing records to the database</source>
         <translation>Εισαγωγή υπαρχουσών εγγραφών στη βάση δεδομένων</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1770" />
+        <location filename="../../widgets/mainwindow.cpp" line="1762" />
         <source>Export...</source>
         <translation>Εξαγωγή...</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1771" />
+        <location filename="../../widgets/mainwindow.cpp" line="1763" />
         <source>Export all or only selected records</source>
         <translation>Εξαγωγή όλων ή μόνο των επιλεγμένων εγγραφών</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1773" />
+        <location filename="../../widgets/mainwindow.cpp" line="1765" />
         <source>Lock form view</source>
         <translation>Κλείδωμα προβολής φόρμας</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1777" />
+        <location filename="../../widgets/mainwindow.cpp" line="1769" />
         <source>Lock the form view design to prevent unwanted field movements</source>
         <translation>Κλείδωμα της σχεδίασης προβολής φόρμας για αποτροπή ακούσιας μετακίνησης πεδίων</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1780" />
+        <location filename="../../widgets/mainwindow.cpp" line="1772" />
         <source>Simple edit mode (safe mode)</source>
         <translation>Απλή λειτουργία επεξεργασίας (ασφαλής λειτουργία)</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1782" />
+        <location filename="../../widgets/mainwindow.cpp" line="1774" />
         <source>Lock all destructive actions to prevent changes to collections. Only editing of records is allowed.</source>
         <translation>Κλείδωμα όλων των ενεργειών αλλαγής δομής για αποτροπή αλλαγών στις συλλογές. Επιτρέπεται μόνο η επεξεργασία εγγραφών.</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1788" />
+        <location filename="../../widgets/mainwindow.cpp" line="1780" />
         <source>Toolbar</source>
         <translation>Γραμμή εργαλείων</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1823" />
+        <location filename="../../widgets/mainwindow.cpp" line="1815" />
         <source>COLLECTIONS</source>
         <translation>ΣΥΛΛΟΓΕΣ</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1851" />
+        <location filename="../../widgets/mainwindow.cpp" line="1843" />
         <source>New</source>
         <translation>Νέα</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1856" />
+        <location filename="../../widgets/mainwindow.cpp" line="1848" />
         <source>&amp;File</source>
         <translation>&amp;Αρχείο</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1868" />
+        <location filename="../../widgets/mainwindow.cpp" line="1860" />
         <source>&amp;Edit</source>
         <translation>&amp;Επεξεργασία</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1879" />
+        <location filename="../../widgets/mainwindow.cpp" line="1871" />
         <source>&amp;View</source>
         <translation>&amp;Προβολή</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1888" />
+        <location filename="../../widgets/mainwindow.cpp" line="1880" />
         <source>Cloud</source>
         <translation>Cloud</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1891" />
+        <location filename="../../widgets/mainwindow.cpp" line="1883" />
         <source>Records</source>
         <translation>Εγγραφές</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1894" />
+        <location filename="../../widgets/mainwindow.cpp" line="1886" />
         <source>Database</source>
         <translation>Βάση δεδομένων</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1897" />
+        <location filename="../../widgets/mainwindow.cpp" line="1889" />
         <source>&amp;Tools</source>
         <translation>&amp;Εργαλεία</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1907" />
+        <location filename="../../widgets/mainwindow.cpp" line="1899" />
         <source>&amp;Window</source>
         <translation>&amp;Παράθυρο</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1912" />
+        <location filename="../../widgets/mainwindow.cpp" line="1904" />
         <source>&amp;Help</source>
         <translation>&amp;Βοήθεια</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="1926" />
+        <location filename="../../widgets/mainwindow.cpp" line="1918" />
         <source> Ready </source>
         <translation>Έτοιμο</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="2380" />
+        <location filename="../../widgets/mainwindow.cpp" line="2372" />
         <source>Support %1</source>
         <translation>Υποστηρίξτε το %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/mainwindow.cpp" line="2381" />
+        <location filename="../../widgets/mainwindow.cpp" line="2373" />
         <source>Dear user, you have been using %1 for a while. If you enjoy using this software, please consider supporting our development effort by making a small donation, thanks!&lt;br /&gt;Would you like to donate now?</source>
         <translation>Αγαπητέ χρήστη, χρησιμοποιείτε το %1 εδώ και αρκετό καιρό. Εάν απολαμβάνετε τη χρήση αυτού του λογισμικού, σκεφτείτε να υποστηρίξετε την προσπάθεια ανάπτυξής μας κάνοντας μια μικρή δωρεά, ευχαριστούμε!&lt;br /&gt;Θα θέλατε να κάνετε μια δωρεά τώρα;</translation>
     </message>
@@ -4408,26 +4413,31 @@ Files archive reduced by %2 MiB</source>
         <translation>Αποτυχία αντικατάστασης προσωρινού ληφθέντος αρχείου: %1
 </translation>
     </message>
+    <message>
+        <location filename="../../components/sync_framework/megasyncdriver.cpp" line="535" />
+        <source>MEGAcmd client was not found at:&lt;br /&gt;%1&lt;br /&gt;&lt;br /&gt;Please install MEGAcmd from &lt;a href="https://mega.io/cmd"&gt;https://mega.io/cmd&lt;/a&gt; to use MEGA sync.</source>
+        <translation>Η εφαρμογή MEGAcmd δεν βρέθηκε στη διαδρομή:&lt;br /&gt;%1&lt;br /&gt;&lt;br /&gt;Παρακαλούμε εγκαταστήστε το MEGAcmd από τη διεύθυνση &lt;a href="https://mega.io/cmd"&gt;https://mega.io/cmd&lt;/a&gt; για να χρησιμοποιήσετε τον συγχρονισμό MEGA.</translation>
+    </message>
 </context>
 <context>
     <name>MetadataEngine</name>
     <message>
-        <location filename="../../components/metadataengine.cpp" line="543" />
+        <location filename="../../components/metadataengine.cpp" line="544" />
         <source>Progress</source>
         <translation>Πρόοδος</translation>
     </message>
     <message>
-        <location filename="../../components/metadataengine.cpp" line="544" />
+        <location filename="../../components/metadataengine.cpp" line="545" />
         <source>Duplicating collection data... Please wait!</source>
         <translation>Παρακαλώ περιμένετε...</translation>
     </message>
     <message>
-        <location filename="../../components/metadataengine.cpp" line="574" />
+        <location filename="../../components/metadataengine.cpp" line="575" />
         <source>Duplicating collection files... Please wait!</source>
         <translation>Παρακαλώ περιμένετε...</translation>
     </message>
     <message>
-        <location filename="../../components/metadataengine.cpp" line="623" />
+        <location filename="../../components/metadataengine.cpp" line="624" />
         <source>Updating files metadata... Please wait!</source>
         <translation>Παρακαλώ περιμένετε...</translation>
     </message>
@@ -4600,7 +4610,7 @@ Files archive reduced by %2 MiB</source>
     </message>
     <message>
         <location filename="../../ui/preferencesdialog.ui" line="67" />
-        <location filename="../../ui/preferencesdialog.ui" line="236" />
+        <location filename="../../ui/preferencesdialog.ui" line="288" />
         <source>Appearance</source>
         <translation>Εμφάνιση</translation>
     </message>
@@ -4615,293 +4625,320 @@ Files archive reduced by %2 MiB</source>
         <translation>Για προχωρημένους</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="120" />
+        <location filename="../../ui/preferencesdialog.ui" line="172" />
         <source>Updates</source>
         <translation>Ενημερώσεις</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="128" />
+        <location filename="../../ui/preferencesdialog.ui" line="180" />
         <source>Check for updates:</source>
         <translation>Έλεγχος για ενημερώσεις:</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="139" />
+        <location filename="../../ui/preferencesdialog.ui" line="191" />
         <source>At startup</source>
         <translation>Κατά την εκκίνηση</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="144" />
+        <location filename="../../ui/preferencesdialog.ui" line="196" />
         <source>Manually</source>
         <translation>Χειροκίνητα</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="170" />
+        <location filename="../../ui/preferencesdialog.ui" line="222" />
         <source>Database Directory</source>
         <translation>Φάκελος Βάσης Δεδομένων</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="199" />
+        <location filename="../../ui/preferencesdialog.ui" line="251" />
         <source>&amp;Browse...</source>
         <translation>&amp;Αναζήτηση...</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="206" />
+        <location filename="../../ui/preferencesdialog.ui" line="258" />
         <source>&amp;Restore default</source>
         <translation>&amp;Επαναφορά προεπιλογών</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="243" />
+        <location filename="../../ui/preferencesdialog.ui" line="295" />
         <source>Form View</source>
         <translation>Προβολή Φόρμας</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="344" />
+        <location filename="../../ui/preferencesdialog.ui" line="396" />
         <source>Background color:</source>
         <translation>Χρώμα φόντου:</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="253" />
-        <location filename="../../ui/preferencesdialog.ui" line="329" />
+        <location filename="../../ui/preferencesdialog.ui" line="305" />
+        <location filename="../../ui/preferencesdialog.ui" line="381" />
         <source>Default</source>
         <translation>Προεπιλογή</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="337" />
+        <location filename="../../ui/preferencesdialog.ui" line="389" />
         <source>Font size:</source>
         <translation>Μέγεθος γραμματοσειράς:</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="258" />
+        <location filename="../../ui/preferencesdialog.ui" line="310" />
         <source>System</source>
         <translation>Σύστημα</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="263" />
+        <location filename="../../ui/preferencesdialog.ui" line="120" />
+        <source>Language</source>
+        <translation>Γλώσσα</translation>
+    </message>
+    <message>
+        <location filename="../../ui/preferencesdialog.ui" line="128" />
+        <source>Language:</source>
+        <translation>Γλώσσα:</translation>
+    </message>
+    <message>
+        <location filename="../../ui/preferencesdialog.ui" line="136" />
+        <source>System (Default)</source>
+        <translation>Σύστημα (Προεπιλογή)</translation>
+    </message>
+    <message>
+        <location filename="../../ui/preferencesdialog.ui" line="141" />
+        <source>Greek</source>
+        <translation>Ελληνικά</translation>
+    </message>
+    <message>
+        <location filename="../../ui/preferencesdialog.ui" line="146" />
+        <source>English</source>
+        <translation>Αγγλικά</translation>
+    </message>
+    <message>
+        <location filename="../../ui/preferencesdialog.ui" line="315" />
         <source>16px</source>
         <translation>16px</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="268" />
+        <location filename="../../ui/preferencesdialog.ui" line="320" />
         <source>15px</source>
         <translation>15px</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="273" />
+        <location filename="../../ui/preferencesdialog.ui" line="325" />
         <source>14px</source>
         <translation>14px</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="278" />
+        <location filename="../../ui/preferencesdialog.ui" line="330" />
         <source>13px</source>
         <translation>13px</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="283" />
+        <location filename="../../ui/preferencesdialog.ui" line="335" />
         <source>12px</source>
         <translation>12px</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="288" />
+        <location filename="../../ui/preferencesdialog.ui" line="340" />
         <source>11px</source>
         <translation>11px</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="293" />
+        <location filename="../../ui/preferencesdialog.ui" line="345" />
         <source>10px</source>
         <translation>10px</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="298" />
+        <location filename="../../ui/preferencesdialog.ui" line="350" />
         <source>9px</source>
         <translation>9px</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="303" />
+        <location filename="../../ui/preferencesdialog.ui" line="355" />
         <source>8px</source>
         <translation>8px</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="311" />
+        <location filename="../../ui/preferencesdialog.ui" line="363" />
         <source>Font style:</source>
         <translation>Στυλ γραμματοσειράς:</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="351" />
+        <location filename="../../ui/preferencesdialog.ui" line="403" />
         <source>Strategy for unused space:</source>
         <translation>Διαχείριση αχρησιμοποίητου χώρου:</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="358" />
+        <location filename="../../ui/preferencesdialog.ui" line="410" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Allow free space:&lt;/span&gt; free rows and columns are allowed between fields&lt;/p&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Remove unused space&lt;/span&gt;: free rows and columns between fields are automatically removed&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Να επιτρέπεται κενός χώρος:&lt;/span&gt; επιτρέπονται κενές γραμμές και στήλες μεταξύ των πεδίων&lt;/p&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Αφαίρεση αχρησιμοποίητου χώρου&lt;/span&gt;: οι κενές γραμμές και στήλες μεταξύ πεδίων αφαιρούνται αυτόματα&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="362" />
+        <location filename="../../ui/preferencesdialog.ui" line="414" />
         <source>Allow free space</source>
         <translation>Να επιτρέπεται κενός χώρος</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="367" />
+        <location filename="../../ui/preferencesdialog.ui" line="419" />
         <source>Remove unused space</source>
         <translation>Αφαίρεση αχρησιμοποίητου χώρου</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="378" />
+        <location filename="../../ui/preferencesdialog.ui" line="430" />
         <source>Table View</source>
         <translation>Προβολή Πίνακα</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="384" />
+        <location filename="../../ui/preferencesdialog.ui" line="436" />
         <source>Row size:</source>
         <translation>Μέγεθος γραμμής:</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="391" />
+        <location filename="../../ui/preferencesdialog.ui" line="443" />
         <source>Number of lines of text that are shown for each row in table view</source>
         <translation>Αριθμός γραμμών κειμένου που εμφανίζονται για κάθε σειρά στην προβολή πίνακα</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="394" />
+        <location filename="../../ui/preferencesdialog.ui" line="446" />
         <source> line(s)</source>
         <translation> γραμμή(-ές)</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="407" />
+        <location filename="../../ui/preferencesdialog.ui" line="459" />
         <source>Column width:</source>
         <translation>Πλάτος στηλών:</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="414" />
+        <location filename="../../ui/preferencesdialog.ui" line="466" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Adjustable:&lt;/span&gt; the width of the columns can be freely adjusted&lt;/p&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Automatic width:&lt;/span&gt; the width of the columns is fixed and always resized automatically to fit all content&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Προσαρμόσιμο:&lt;/span&gt; το πλάτος των στηλών μπορεί να ρυθμιστεί ελεύθερα&lt;/p&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Αυτόματο πλάτος:&lt;/span&gt; το πλάτος των στηλών είναι σταθερό και προσαρμόζεται αυτόματα ώστε να χωρά όλο το περιεχόμενο&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="418" />
+        <location filename="../../ui/preferencesdialog.ui" line="470" />
         <source>Adjustable</source>
         <translation>Προσαρμόσιμο</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="423" />
+        <location filename="../../ui/preferencesdialog.ui" line="475" />
         <source>Automatic width</source>
         <translation>Αυτόματο πλάτος</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="454" />
+        <location filename="../../ui/preferencesdialog.ui" line="506" />
         <source>Cloud Synchronization</source>
         <translation>Συγχρονισμός Cloud</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="463" />
+        <location filename="../../ui/preferencesdialog.ui" line="515" />
         <source>Status:</source>
         <translation>Κατάσταση:</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="471" />
+        <location filename="../../ui/preferencesdialog.ui" line="523" />
         <source>Disabled</source>
         <translation>Απενεργοποιημένο</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="476" />
+        <location filename="../../ui/preferencesdialog.ui" line="528" />
         <source>Enabled</source>
         <translation>Ενεργοποιημένο</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="499" />
-        <location filename="../../ui/preferencesdialog.ui" line="572" />
+        <location filename="../../ui/preferencesdialog.ui" line="551" />
+        <location filename="../../ui/preferencesdialog.ui" line="624" />
         <source>Tools</source>
         <translation>Εργαλεία</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="507" />
+        <location filename="../../ui/preferencesdialog.ui" line="559" />
         <source>&lt;b&gt;Cloud Unlink&lt;/b&gt;:&lt;br&gt;Unlink this client from cloud service</source>
         <translation>&lt;b&gt;Αποσύνδεση Cloud&lt;/b&gt;:&lt;br&gt;Αποσύνδεση αυτής της εφαρμογής από την υπηρεσία cloud</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="517" />
+        <location filename="../../ui/preferencesdialog.ui" line="569" />
         <source>Unlink</source>
         <translation>Αποσύνδεση</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="565" />
+        <location filename="../../ui/preferencesdialog.ui" line="617" />
         <source>Adanced Properties</source>
         <translation>Προχωρημένες Ιδιότητες</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="580" />
+        <location filename="../../ui/preferencesdialog.ui" line="632" />
         <source>&lt;b&gt;Software Reset&lt;/b&gt;:&lt;br&gt;Reset all settings and delete all data from local database</source>
         <translation>&lt;b&gt;Επαναφορά Εφαρμογής&lt;/b&gt;:&lt;br&gt;Επαναφορά όλων των ρυθμίσεων και διαγραφή όλων των δεδομένων από την τοπική βάση δεδομένων</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="590" />
+        <location filename="../../ui/preferencesdialog.ui" line="642" />
         <source>Reset</source>
         <translation>Επαναφορά</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="618" />
+        <location filename="../../ui/preferencesdialog.ui" line="670" />
         <source>Performance</source>
         <translation>Απόδοση</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="632" />
-        <location filename="../../ui/preferencesdialog.ui" line="642" />
-        <location filename="../../ui/preferencesdialog.ui" line="675" />
+        <location filename="../../ui/preferencesdialog.ui" line="684" />
+        <location filename="../../ui/preferencesdialog.ui" line="694" />
+        <location filename="../../ui/preferencesdialog.ui" line="727" />
         <source>Images that are loaded from disk in table view can cause a poor scrolling experience. &lt;br /&gt;Caching images into memory allows a smooth scrolling experience after the first disk read.</source>
         <translation>Οι εικόνες που φορτώνονται από το δίσκο στην προβολή πίνακα μπορεί να προκαλέσουν αργή κύλιση. &lt;br /&gt;Η αποθήκευση εικόνων στη μνήμη RAM επιτρέπει ομαλή κύλιση μετά την πρώτη ανάγνωση.</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="645" />
+        <location filename="../../ui/preferencesdialog.ui" line="697" />
         <source>Improve scrolling in table view by caching images. Increases RAM usage.</source>
         <translation>Βελτίωση κύλισης στην προβολή πίνακα με αποθήκευση εικόνων στη μνήμη. Αυξάνει τη χρήση RAM.</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="665" />
+        <location filename="../../ui/preferencesdialog.ui" line="717" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Images that are loaded from disk in table view can cause a poor scrolling experience. &lt;br/&gt;Hiding images from the table view allows a smooth scrolling experience on weak devices.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Οι εικόνες που φορτώνονται από το δίσκο στην προβολή πίνακα μπορεί να προκαλέσουν αργή κύλιση. &lt;br/&gt;Η απόκρυψη των εικόνων από την προβολή πίνακα προσφέρει ομαλή κύλιση σε πιο αργές συσκευές.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="678" />
+        <location filename="../../ui/preferencesdialog.ui" line="730" />
         <source>Improve scrolling in table view by hiding images</source>
         <translation>Βελτίωση κύλισης στην προβολή πίνακα με απόκρυψη των εικόνων</translation>
     </message>
     <message>
-        <location filename="../../ui/preferencesdialog.ui" line="727" />
+        <location filename="../../ui/preferencesdialog.ui" line="779" />
         <source>&amp;Close</source>
         <translation>&amp;Κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="207" />
+        <location filename="../../widgets/preferencesdialog.cpp" line="218" />
         <source>Restart Required</source>
         <translation>Απαιτείται Επανεκκίνηση</translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="208" />
+        <location filename="../../widgets/preferencesdialog.cpp" line="219" />
         <source>Please restart %1 to apply the new background color</source>
         <translation>Παρακαλώ επανεκκινήστε το %1 για να εφαρμοστεί το νέο χρώμα φόντου</translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="240" />
+        <location filename="../../widgets/preferencesdialog.cpp" line="251" />
         <source>Unused space</source>
         <translation>Αχρησιμοποίητος χώρος</translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="241" />
+        <location filename="../../widgets/preferencesdialog.cpp" line="252" />
         <source>Already existing unused space will be removed the next time a field is rearranged.</source>
         <translation>Ο υπάρχων αχρησιμοποίητος χώρος θα αφαιρεθεί την επόμενη φορά που θα αναδιαταχθεί κάποιο πεδίο.</translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="271" />
+        <location filename="../../widgets/preferencesdialog.cpp" line="144" />
         <location filename="../../widgets/preferencesdialog.cpp" line="282" />
+        <location filename="../../widgets/preferencesdialog.cpp" line="293" />
         <source>Restart required!</source>
         <translation>Απαιτείται επανεκκίνηση!</translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="272" />
+        <location filename="../../widgets/preferencesdialog.cpp" line="145" />
         <location filename="../../widgets/preferencesdialog.cpp" line="283" />
+        <location filename="../../widgets/preferencesdialog.cpp" line="294" />
         <source>A restart is required for this setting to take effect.</source>
         <translation>Απαιτείται επανεκκίνηση της εφαρμογής για να τεθεί σε ισχύ αυτή η ρύθμιση.</translation>
     </message>
     <message>
-        <location filename="../../widgets/preferencesdialog.cpp" line="298" />
+        <location filename="../../widgets/preferencesdialog.cpp" line="309" />
         <source>Select database directory</source>
         <translation>Επιλογή φακέλου βάσης δεδομένων</translation>
     </message>
@@ -5163,9 +5200,9 @@ Files archive reduced by %2 MiB</source>
         <location filename="../../utils/formwidgetvalidator.cpp" line="43" />
         <location filename="../../views/tableview/editors/filestypeeditor.cpp" line="89" />
         <location filename="../../views/tableview/editors/imagetypeeditor.cpp" line="85" />
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="354" />
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="428" />
-        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="456" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="355" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="429" />
+        <location filename="../../widgets/form_widgets/filesformwidget.cpp" line="457" />
         <location filename="../../widgets/form_widgets/imageformwidget.cpp" line="343" />
         <location filename="../../widgets/form_widgets/imageformwidget.cpp" line="411" />
         <source>Read-only mode: Editing is not allowed.</source>
@@ -5238,188 +5275,242 @@ Files archive reduced by %2 MiB</source>
         <translation>Υπηρεσία cloud:</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="120" />
-        <location filename="../../ui/syncconfigdialog.ui" line="255" />
-        <location filename="../../ui/syncconfigdialog.ui" line="359" />
-        <location filename="../../ui/syncconfigdialog.ui" line="524" />
-        <location filename="../../ui/syncconfigdialog.ui" line="639" />
+        <location filename="../../ui/syncconfigdialog.ui" line="133" />
+        <location filename="../../ui/syncconfigdialog.ui" line="268" />
+        <location filename="../../ui/syncconfigdialog.ui" line="372" />
+        <location filename="../../ui/syncconfigdialog.ui" line="537" />
+        <location filename="../../ui/syncconfigdialog.ui" line="679" />
         <source>&amp;Cancel</source>
         <translation>&amp;Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="130" />
+        <location filename="../../ui/syncconfigdialog.ui" line="143" />
         <source>&amp;Login</source>
         <translation>&amp;Σύνδεση</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="149" />
+        <location filename="../../ui/syncconfigdialog.ui" line="162" />
         <source>Please authorize access to your cloud service: &lt;br /&gt; copy the code from the opened browser window and paste it below</source>
         <translation>Παρακαλώ εξουσιοδοτήστε την πρόσβαση στην υπηρεσία cloud: &lt;br /&gt; αντιγράψτε τον κωδικό από το παράθυρο του περιηγητή και επικολλήστε τον παρακάτω</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="165" />
-        <location filename="../../ui/syncconfigdialog.ui" line="287" />
-        <location filename="../../widgets/syncconfigdialog.cpp" line="133" />
-        <location filename="../../widgets/syncconfigdialog.cpp" line="141" />
+        <location filename="../../ui/syncconfigdialog.ui" line="178" />
+        <location filename="../../ui/syncconfigdialog.ui" line="300" />
+        <location filename="../../widgets/syncconfigdialog.cpp" line="140" />
+        <location filename="../../widgets/syncconfigdialog.cpp" line="148" />
         <source>Please wait...</source>
         <translation>Παρακαλώ περιμένετε...</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="180" />
+        <location filename="../../ui/syncconfigdialog.ui" line="193" />
         <source>Requesting URL...</source>
         <translation>Αίτηση διεύθυνσης URL...</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="201" />
+        <location filename="../../ui/syncconfigdialog.ui" line="214" />
         <source>&amp;Code:</source>
         <translation>&amp;Κωδικός:</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="398" />
+        <location filename="../../ui/syncconfigdialog.ui" line="411" />
         <source>Please authorize access to your MEGA account</source>
         <translation>Παρακαλώ εξουσιοδοτήστε την πρόσβαση στο λογαριασμό σας MEGA</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="413" />
+        <location filename="../../ui/syncconfigdialog.ui" line="426" />
         <source>MEGA email:</source>
         <translation>Email MEGA:</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="420" />
+        <location filename="../../ui/syncconfigdialog.ui" line="433" />
         <source>name@example.com</source>
         <translation>onoma@example.com</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="427" />
+        <location filename="../../ui/syncconfigdialog.ui" line="440" />
         <source>MEGA password:</source>
         <translation>Κωδικός πρόσβασης MEGA:</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="446" />
+        <location filename="../../ui/syncconfigdialog.ui" line="459" />
         <source>Enable this if your MEGA account is protected by 2FA. &lt;br /&gt; If you don't know what this is then your account is probably not using 2FA.</source>
         <translation>Ενεργοποιήστε το αν ο λογαριασμός σας MEGA προστατεύεται με έλεγχο ταυτότητας δύο παραγόντων (2FA). &lt;br /&gt; Αν δεν γνωρίζετε τι είναι αυτό, πιθανότατα ο λογαριασμός σας δεν χρησιμοποιεί 2FA.</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="449" />
+        <location filename="../../ui/syncconfigdialog.ui" line="462" />
         <source>Use two factor authentication (2FA)</source>
         <translation>Χρήση ελέγχου ταυτότητας δύο παραγόντων (2FA)</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="456" />
+        <location filename="../../ui/syncconfigdialog.ui" line="469" />
         <source>2FA</source>
         <translation>2FA</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="462" />
+        <location filename="../../ui/syncconfigdialog.ui" line="475" />
         <source>Two factor code (2FA):</source>
         <translation>Κωδικός 2FA:</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="469" />
+        <location filename="../../ui/syncconfigdialog.ui" line="482" />
         <source>(optional, use if 2FA is enabled)</source>
         <translation>(προαιρετικό, αν το 2FA είναι ενεργοποιημένο)</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="479" />
+        <location filename="../../ui/syncconfigdialog.ui" line="492" />
         <source>&lt;i&gt;Your password will not be stored, only a session key&lt;/i&gt;</source>
         <translation>&lt;i&gt;Ο κωδικός πρόσβασής σας δεν αποθηκεύεται, μόνο ένα κλειδί συνεδρίας&lt;/i&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="556" />
+        <location filename="../../ui/syncconfigdialog.ui" line="569" />
         <source>Please configure your sync target folder</source>
         <translation>Παρακαλώ ρυθμίστε τον φάκελο προορισμού συγχρονισμού</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="571" />
+        <location filename="../../ui/syncconfigdialog.ui" line="584" />
         <source>Sync Folder:</source>
         <translation>Φάκελος Συγχρονισμού:</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="578" />
+        <location filename="../../ui/syncconfigdialog.ui" line="591" />
         <source>path to your sync folder</source>
         <translation>διαδρομή φακέλου συγχρονισμού</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="585" />
+        <location filename="../../ui/syncconfigdialog.ui" line="598" />
         <source>&amp;Browse</source>
         <translation>&amp;Αναζήτηση</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="594" />
+        <location filename="../../ui/syncconfigdialog.ui" line="609" />
+        <source>Detected Cloud Folders:</source>
+        <translation>Εντοπισμένοι Φάκελοι Cloud:</translation>
+    </message>
+    <message>
+        <location filename="../../ui/syncconfigdialog.ui" line="634" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-style:italic;"&gt;The sync folder can be any folder and will be used by Symphytum as the target for saving sync related files. For example, this folder could be located inside your Nextcloud, OwnCloud or any other folder that is then scanned and synced by your sync provider of choice.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-style:italic;"&gt;Ο φάκελος συγχρονισμού μπορεί να είναι οποιοσδήποτε φάκελος και θα χρησιμοποιηθεί από το Symphytum για την αποθήκευση αρχείων συγχρονισμού. Για παράδειγμα, μπορεί να βρίσκεται μέσα στο Nextcloud, OwnCloud ή άλλο φάκελο που συγχρονίζεται από την επιθυμητή υπηρεσία σας.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="211" />
+        <location filename="../../ui/syncconfigdialog.ui" line="224" />
         <source>Paste here the code from the browser window</source>
         <translation>Επικολλήστε εδώ τον κωδικό από το παράθυρο του περιηγητή</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="268" />
-        <location filename="../../ui/syncconfigdialog.ui" line="537" />
-        <location filename="../../ui/syncconfigdialog.ui" line="652" />
+        <location filename="../../ui/syncconfigdialog.ui" line="281" />
+        <location filename="../../ui/syncconfigdialog.ui" line="550" />
+        <location filename="../../ui/syncconfigdialog.ui" line="692" />
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="305" />
+        <location filename="../../ui/syncconfigdialog.ui" line="318" />
         <source>Authorizing...</source>
         <translation>Εξουσιοδότηση...</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="369" />
+        <location filename="../../ui/syncconfigdialog.ui" line="382" />
         <source>&amp;Retry</source>
         <translation>&amp;Επανάληψη</translation>
     </message>
     <message>
-        <location filename="../../ui/syncconfigdialog.ui" line="379" />
+        <location filename="../../ui/syncconfigdialog.ui" line="392" />
         <source>&amp;Finish</source>
         <translation>&amp;Τέλος</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="168" />
+        <location filename="../../widgets/syncconfigdialog.cpp" line="175" />
         <source>Select sync folder</source>
         <translation>Επιλογή φακέλου συγχρονισμού</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="186" />
+        <location filename="../../widgets/syncconfigdialog.cpp" line="193" />
         <source>%1 Please try again.</source>
         <translation>%1 Παρακαλώ δοκιμάστε ξανά.</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="193" />
+        <location filename="../../widgets/syncconfigdialog.cpp" line="200" />
         <source>The authentication token is invalid or expired.</source>
         <translation>Το διακριτικό ελέγχου ταυτότητας (token) δεν είναι έγκυρο ή έχει λήξει.</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="198" />
+        <location filename="../../widgets/syncconfigdialog.cpp" line="205" />
         <source>Connection to cloud service failed, check your connection.</source>
         <translation>Η σύνδεση με την υπηρεσία cloud απέτυχε, ελέγξτε τη σύνδεσή σας στο διαδίκτυο.</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="223" />
+        <location filename="../../widgets/syncconfigdialog.cpp" line="230" />
         <source>Accessing...</source>
         <translation>Πρόσβαση...</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="231" />
+        <location filename="../../widgets/syncconfigdialog.cpp" line="238" />
         <source>Logged in as %1</source>
         <translation>Συνδεδεμένος ως %1</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="247" />
+        <location filename="../../widgets/syncconfigdialog.cpp" line="256" />
+        <source>Cloud / Local Folder (OneDrive, Google Drive, Dropbox, Nextcloud...)</source>
+        <translation>Φάκελος Cloud / Τοπικός (OneDrive, Google Drive, Dropbox, Nextcloud...)</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="259" />
+        <source>Dropbox (Legacy API)</source>
+        <translation>Dropbox (Παλιό API)</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="262" />
+        <source>MEGA (requires MEGAcmd)</source>
+        <translation>MEGA (απαιτείται MEGAcmd)</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="281" />
+        <source>&lt;b&gt;Recommended:&lt;/b&gt; Automatically syncs your database with any cloud provider folder (such as &lt;b&gt;OneDrive&lt;/b&gt;, &lt;b&gt;Google Drive&lt;/b&gt;, &lt;b&gt;Dropbox&lt;/b&gt;, &lt;b&gt;Nextcloud&lt;/b&gt;, &lt;b&gt;iCloud&lt;/b&gt;) or a local/network shared folder.</source>
+        <translation>&lt;b&gt;Προτείνεται:&lt;/b&gt; Συγχρονίζει αυτόματα τη βάση δεδομένων σας με οποιονδήποτε φάκελο cloud (όπως &lt;b&gt;OneDrive&lt;/b&gt;, &lt;b&gt;Google Drive&lt;/b&gt;, &lt;b&gt;Dropbox&lt;/b&gt;, &lt;b&gt;Nextcloud&lt;/b&gt;, &lt;b&gt;iCloud&lt;/b&gt;) ή κοινόχρηστο τοπικό/δικτυακό φάκελο.</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="284" />
+        <source>&lt;b&gt;Notice:&lt;/b&gt; The direct Dropbox API is deprecated and may not connect on modern systems. We strongly recommend using the &lt;b&gt;Cloud / Local Folder&lt;/b&gt; option with your local Dropbox folder instead.</source>
+        <translation>&lt;b&gt;Ειδοποίηση:&lt;/b&gt; Το απευθείας API του Dropbox είναι παρωχημένο και ενδέχεται να μην συνδέεται σε σύγχρονα συστήματα. Συνιστούμε ανεπιφύλακτα τη χρήση της επιλογής &lt;b&gt;Φάκελος Cloud / Τοπικός&lt;/b&gt; με τον τοπικό σας φάκελο Dropbox.</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="287" />
+        <source>&lt;b&gt;Notice:&lt;/b&gt; Requires the official &lt;b&gt;MEGAcmd&lt;/b&gt; command-line tool (&lt;a href="https://mega.io/cmd"&gt;https://mega.io/cmd&lt;/a&gt;) to be installed on your computer.</source>
+        <translation>&lt;b&gt;Ειδοποίηση:&lt;/b&gt; Απαιτείται η εγκατάσταση του επίσημου εργαλείου γραμμής εντολών &lt;b&gt;MEGAcmd&lt;/b&gt; (&lt;a href="https://mega.io/cmd"&gt;https://mega.io/cmd&lt;/a&gt;) στον υπολογιστή σας.</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="305" />
+        <source>OneDrive</source>
+        <translation>OneDrive</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="311" />
+        <location filename="../../widgets/syncconfigdialog.cpp" line="313" />
+        <source>Google Drive</source>
+        <translation>Google Drive</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="318" />
         <source>Dropbox</source>
         <translation>Dropbox</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="249" />
-        <source>MEGA</source>
-        <translation>MEGA</translation>
+        <location filename="../../widgets/syncconfigdialog.cpp" line="323" />
+        <source>iCloud Drive</source>
+        <translation>iCloud Drive</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncconfigdialog.cpp" line="251" />
+        <location filename="../../widgets/syncconfigdialog.cpp" line="332" />
+        <source>Use %1 folder: %2</source>
+        <translation>Χρήση φακέλου %1: %2</translation>
+    </message>
+    <message>
+        <source>MEGA</source>
+        <translation type="vanished">MEGA</translation>
+    </message>
+    <message>
         <source>Generic provider (folder based)</source>
-        <translation>Γενικός πάροχος (βάσει φακέλου)</translation>
+        <translation type="vanished">Γενικός πάροχος (βάσει φακέλου)</translation>
     </message>
 </context>
 <context>
@@ -5584,9 +5675,9 @@ Files archive reduced by %2 MiB</source>
     <message>
         <location filename="../../widgets/syncprocessdialog.cpp" line="147" />
         <location filename="../../widgets/syncprocessdialog.cpp" line="265" />
-        <location filename="../../widgets/syncprocessdialog.cpp" line="603" />
-        <location filename="../../widgets/syncprocessdialog.cpp" line="677" />
-        <location filename="../../widgets/syncprocessdialog.cpp" line="719" />
+        <location filename="../../widgets/syncprocessdialog.cpp" line="612" />
+        <location filename="../../widgets/syncprocessdialog.cpp" line="686" />
+        <location filename="../../widgets/syncprocessdialog.cpp" line="728" />
         <source>Uploading...</source>
         <translation>Μεταφόρτωση στο cloud...</translation>
     </message>
@@ -5621,33 +5712,42 @@ Files archive reduced by %2 MiB</source>
         <translation>Αντικατάσταση...</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="312" />
-        <source>Error: Failed to delete old database file.</source>
-        <translation>Σφάλμα: Αποτυχία διαγραφής του παλιού αρχείου βάσης δεδομένων.</translation>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="317" />
+        <source>Error: Failed to replace old database file.</source>
+        <translation>Σφάλμα: Αποτυχία αντικατάστασης του παλιού αρχείου βάσης δεδομένων.</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="565" />
+        <location filename="../../widgets/syncprocessdialog.cpp" line="323" />
+        <source>Error: Failed to apply new database file. Restored from backup.</source>
+        <translation>Σφάλμα: Αποτυχία εφαρμογής της νέας βάσης δεδομένων. Έγινε επαναφορά από το αντίγραφο ασφαλείας.</translation>
+    </message>
+    <message>
+        <source>Error: Failed to delete old database file.</source>
+        <translation type="vanished">Σφάλμα: Αποτυχία διαγραφής του παλιού αρχείου βάσης δεδομένων.</translation>
+    </message>
+    <message>
+        <location filename="../../widgets/syncprocessdialog.cpp" line="574" />
         <source>Sync process could not be started: unexpected case.</source>
         <translation>Η διαδικασία συγχρονισμού δεν μπόρεσε να ξεκινήσει: μη αναμενόμενη περίπτωση.</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="608" />
-        <location filename="../../widgets/syncprocessdialog.cpp" line="685" />
+        <location filename="../../widgets/syncprocessdialog.cpp" line="617" />
+        <location filename="../../widgets/syncprocessdialog.cpp" line="694" />
         <source>Downloading...</source>
         <translation>Λήψη...</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="693" />
+        <location filename="../../widgets/syncprocessdialog.cpp" line="702" />
         <source>Removing...</source>
         <translation>Αφαίρεση...</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="708" />
+        <location filename="../../widgets/syncprocessdialog.cpp" line="717" />
         <source>Removing from cloud...</source>
         <translation>Αφαίρεση από το cloud...</translation>
     </message>
     <message>
-        <location filename="../../widgets/syncprocessdialog.cpp" line="738" />
+        <location filename="../../widgets/syncprocessdialog.cpp" line="747" />
         <source>Your database has been successfully synchronized.</source>
         <translation>Η βάση δεδομένων σας συγχρονίστηκε με επιτυχία.</translation>
     </message>

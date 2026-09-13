@@ -430,6 +430,13 @@ void DropboxSyncDriver::startRequest()
     args.append(extraArgs);
 
     m_processOutput.clear();
+#ifdef Q_OS_WIN
+    if (!QFile::exists(pythonInterpreterPath)) {
+        emit errorSignal(tr("The Dropbox client helper was not found on your system.<br /><br />"
+                            "Please use the recommended <b>'Cloud / Local Folder'</b> option with your local Dropbox folder instead."));
+        return;
+    }
+#endif
     m_process->start(pythonInterpreterPath, args);
 
     //close write channel to allow

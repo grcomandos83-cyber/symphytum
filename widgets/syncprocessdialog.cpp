@@ -305,15 +305,24 @@ void SyncProcessDialog::fileDownloadedSlot(const QString &src,
     if (src == m_metadataFileName) {
         return;
     } else if (src == m_dbName) {
-        //delete db
+        //backup and replace db
         ui->syncCurrentTaskLabel->setText(tr("Replacing..."));
         qApp->processEvents();
+
+        QString backupPath = m_dbPath + ".sync-backup";
+        QFile::remove(backupPath);
+        QFile::copy(m_dbPath, backupPath);
+
         if (!QFile::remove(m_dbPath)) {
-            syncError(tr("Error: Failed to delete old database file."));
+            syncError(tr("Error: Failed to replace old database file."));
             return;
         }
-        //rename
-        QFile::rename(dest, m_dbPath);
+        if (!QFile::rename(dest, m_dbPath)) {
+            // Restore from backup
+            QFile::copy(backupPath, m_dbPath);
+            syncError(tr("Error: Failed to apply new database file. Restored from backup."));
+            return;
+        }
         //open db
         m_databaseManager->getInstance();
 

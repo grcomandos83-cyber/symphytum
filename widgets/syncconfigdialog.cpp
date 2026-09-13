@@ -17,6 +17,9 @@
 #include <QtGui/QRegularExpressionValidator>
 #include <QtCore/QRegularExpression>
 #include <QtWidgets/QFileDialog>
+#include <QtCore/QDir>
+#include <QtCore/QProcessEnvironment>
+#include <QtWidgets/QPushButton>
 
 
 //-----------------------------------------------------------------------------
@@ -25,7 +28,7 @@
 
 SyncConfigDialog::SyncConfigDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::SyncConfigDialog), m_syncService(SyncEngine::DropboxSync),
+    ui(new Ui::SyncConfigDialog), m_syncService(SyncEngine::FolderSync),
     m_syncDriver(nullptr)
 {
     ui->setupUi(this);
@@ -43,7 +46,10 @@ void SyncConfigDialog::reauthenticateSyncService()
 {
     SettingsManager s;
     if (s.isCloudSyncActive()) {
-        ui->serviceComboBox->setCurrentIndex(s.restoreCurrentCloudSyncService());
+        int savedService = s.restoreCurrentCloudSyncService();
+        int idx = ui->serviceComboBox->findData(savedService);
+        if (idx >= 0)
+            ui->serviceComboBox->setCurrentIndex(idx);
         loginButtonClicked();
     }
 }
@@ -55,7 +61,7 @@ void SyncConfigDialog::reauthenticateSyncService()
 
 void SyncConfigDialog::loginButtonClicked()
 {
-    m_syncService = (SyncEngine::SyncService) ui->serviceComboBox->currentIndex();
+    m_syncService = (SyncEngine::SyncService) ui->serviceComboBox->currentData().toInt();
     int configPage;
 
     //create driver
@@ -116,7 +122,7 @@ void SyncConfigDialog::finishButtonClicked()
     //save cloud service config
     SettingsManager s;
     s.setCloudSyncActive(true);
-    s.saveCurrentCloudSyncService(ui->serviceComboBox->currentIndex());
+    s.saveCurrentCloudSyncService((int) m_syncService);
 
     //configure sync driver on sync engine
     SyncEngine::getInstance().reconfigureSyncDriver();
@@ -244,12 +250,17 @@ void SyncConfigDialog::init()
     ui->retryButton->setVisible(false);
     ui->codeLabel->setVisible(false);
     ui->codeLineEdit->setVisible(false);
-    ui->serviceComboBox->addItem(QIcon(":/images/icons/dropbox.png"),
-                                 tr("Dropbox"));
-    ui->serviceComboBox->addItem(QIcon(":/images/icons/megasync.png"),
-                                 tr("MEGA"));
+
+    ui->serviceComboBox->clear();
     ui->serviceComboBox->addItem(QIcon(":/images/icons/foldersync.png"),
-                                 tr("Generic provider (folder based)"));
+                                 tr("Cloud / Local Folder (OneDrive, Google Drive, Dropbox, Nextcloud...)"),
+                                 SyncEngine::FolderSync);
+    ui->serviceComboBox->addItem(QIcon(":/images/icons/dropbox.png"),
+                                 tr("Dropbox (Legacy API)"),
+                                 SyncEngine::DropboxSync);
+    ui->serviceComboBox->addItem(QIcon(":/images/icons/megasync.png"),
+                                 tr("MEGA (requires MEGAcmd)"),
+                                 SyncEngine::MegaSync);
     ui->loginButton->setDefault(true);
 
     //2FA mega
@@ -257,10 +268,82 @@ void SyncConfigDialog::init()
     QRegularExpressionValidator *mega2faValidator = new QRegularExpressionValidator(re, this);
     ui->mega2FALineEdit->setValidator(mega2faValidator);
     ui->mega2FAGroupBox->hide();
+
+    serviceComboBoxChanged(0);
+    detectCloudFolders();
+}
+
+void SyncConfigDialog::serviceComboBoxChanged(int index)
+{
+    SyncEngine::SyncService svc = (SyncEngine::SyncService) ui->serviceComboBox->itemData(index).toInt();
+    switch (svc) {
+    case SyncEngine::FolderSync:
+        ui->serviceInfoLabel->setText(tr("<b>Recommended:</b> Automatically syncs your database with any cloud provider folder (such as <b>OneDrive</b>, <b>Google Drive</b>, <b>Dropbox</b>, <b>Nextcloud</b>, <b>iCloud</b>) or a local/network shared folder."));
+        break;
+    case SyncEngine::DropboxSync:
+        ui->serviceInfoLabel->setText(tr("<b>Notice:</b> The direct Dropbox API is deprecated and may not connect on modern systems. We strongly recommend using the <b>Cloud / Local Folder</b> option with your local Dropbox folder instead."));
+        break;
+    case SyncEngine::MegaSync:
+        ui->serviceInfoLabel->setText(tr("<b>Notice:</b> Requires the official <b>MEGAcmd</b> command-line tool (<a href=\"https://mega.io/cmd\">https://mega.io/cmd</a>) to be installed on your computer."));
+        break;
+    }
+}
+
+void SyncConfigDialog::detectCloudFolders()
+{
+    struct CloudFolder {
+        QString name;
+        QString path;
+    };
+    QList<CloudFolder> detected;
+
+    // 1. OneDrive
+    QString oneDrive = qEnvironmentVariable("OneDrive");
+    if (oneDrive.isEmpty()) oneDrive = qEnvironmentVariable("OneDriveConsumer");
+    if (oneDrive.isEmpty()) oneDrive = qEnvironmentVariable("OneDriveCommercial");
+    if (!oneDrive.isEmpty() && QDir(oneDrive).exists()) {
+        detected.append({ tr("OneDrive"), oneDrive });
+    }
+
+    // 2. Google Drive
+    QString home = QDir::homePath();
+    if (QDir("G:/My Drive").exists()) {
+        detected.append({ tr("Google Drive"), "G:/My Drive" });
+    } else if (QDir(home + "/Google Drive").exists()) {
+        detected.append({ tr("Google Drive"), home + "/Google Drive" });
+    }
+
+    // 3. Dropbox
+    if (QDir(home + "/Dropbox").exists()) {
+        detected.append({ tr("Dropbox"), home + "/Dropbox" });
+    }
+
+    // 4. iCloud Drive
+    if (QDir(home + "/iCloudDrive").exists()) {
+        detected.append({ tr("iCloud Drive"), home + "/iCloudDrive" });
+    }
+
+    if (detected.isEmpty()) {
+        ui->quickDetectLabel->hide();
+    } else {
+        ui->quickDetectLabel->show();
+        for (const CloudFolder &cf : detected) {
+            QPushButton *btn = new QPushButton(QIcon(":/images/icons/foldersync.png"), cf.name, this);
+            btn->setToolTip(tr("Use %1 folder: %2").arg(cf.name, cf.path));
+            QString folderTarget = cf.path + "/Symphytum";
+            connect(btn, &QPushButton::clicked, this, [this, folderTarget]() {
+                ui->folderSyncPathLineEdit->setText(folderTarget);
+                folderSyncPathEdited();
+            });
+            ui->quickDetectLayout->insertWidget(ui->quickDetectLayout->count() - 1, btn);
+        }
+    }
 }
 
 void SyncConfigDialog::createConnections()
 {
+    connect(ui->serviceComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged),
+            this, &SyncConfigDialog::serviceComboBoxChanged);
     connect(ui->cancelButton, SIGNAL(clicked()),
             this, SLOT(reject()));
     connect(ui->cancelAuthButton, SIGNAL(clicked()),
