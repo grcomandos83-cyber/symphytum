@@ -1,7 +1,7 @@
-﻿#define MyAppName "Symphytum"
+#define MyAppName "Symphytum"
 #define MyAppVersion "2.7"
 #define MyAppPublisher "gr comandos"
-#define MyAppURL "https://github.com/grcomandos83-cyber/symphytum"
+#define MyAppURL "https://github.com/grcomandos83-cyber/symphytum-database"
 #define MyAppExeName "symphytum.exe"
 
 [Setup]

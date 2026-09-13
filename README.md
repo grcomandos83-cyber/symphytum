@@ -1,6 +1,6 @@
 [![Snap Status](https://build.snapcraft.io/badge/joshirio/symphytum-build.snapcraft.io.svg)](https://build.snapcraft.io/user/joshirio/symphytum-build.snapcraft.io)
 
-![logo](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum/master/stuff/logo/symphytum_64.png "Symphytum")
+![logo](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-database/master/stuff/logo/symphytum_64.png "Symphytum")
 # Symphytum
 Symphytum is a personal database software for everyone who desires to manage and organize data in an easy and intuitive way, without having to study complex database languages and software user interfaces.        
 
@@ -42,15 +42,15 @@ SQLite is tiny, efficient and very fast. It can handle huge amount of data while
 ### How it Looks
 Some screenshots showing the form view, table view, dynamic layout engine and the field addition dialog.
 
-![form_view_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum/master/stuff/screenshots/mainwindow.png "Form view")
-![table_view_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum/master/stuff/screenshots/tablieview.png "Table view")
-![dynamic_layout_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum/master/stuff/screenshots/dynamic_layout.gif "Dynamic layout engine")
+![form_view_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-database/master/stuff/screenshots/mainwindow.png "Form view")
+![table_view_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-database/master/stuff/screenshots/tablieview.png "Table view")
+![dynamic_layout_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-database/master/stuff/screenshots/dynamic_layout.gif "Dynamic layout engine")
 
-![add_field_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum/master/stuff/screenshots/addfield.png "Add field")
+![add_field_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-database/master/stuff/screenshots/addfield.png "Add field")
 
 ## Download
 Please see the appropriate download section for your operating system below.
-General releases, source archives and other info can be found on the [releases](https://github.com/grcomandos83-cyber/symphytum/releases) page. Thank you for downloading Symphytum.
+General releases, source archives and other info can be found on the [releases](https://github.com/grcomandos83-cyber/symphytum-database/releases) page. Thank you for downloading Symphytum.
 
 ### Windows
 For Windows 7, 8, 10, and 11 (64-bit)
@@ -58,17 +58,17 @@ For Windows 7, 8, 10, and 11 (64-bit)
 #### 1. Windows Installer (Setup .exe)
 Standard Windows installer with desktop shortcut and uninstaller support:
 
-Download [symphytum-2.7-setup.exe](https://github.com/grcomandos83-cyber/symphytum/releases/download/v2.7/symphytum-2.7-setup.exe)
+Download [symphytum-2.7-setup.exe](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7/symphytum-2.7-setup.exe)
 
 #### 2. Portable ZIP Archive (Pre-compiled & Ready to Run)
 A portable ZIP for Windows is self-contained: once extracted, it can be moved and launched on any machine without installation. The personal data is contained inside the folder alongside the main executable (`symphytum.exe`).
 
-Download [Symphytum-2.7-Windows-Portable.zip](https://github.com/grcomandos83-cyber/symphytum/releases/download/v2.7/Symphytum-2.7-Windows-Portable.zip)
+Download [Symphytum-2.7-Windows-Portable.zip](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7/Symphytum-2.7-Windows-Portable.zip)
 
 ---
 
 ### macOS & Linux
-Pre-compiled binaries and source archives are available on the [Releases](https://github.com/grcomandos83-cyber/symphytum/releases) page, or you can build directly from source using the instructions below.
+Pre-compiled binaries and source archives are available on the [Releases](https://github.com/grcomandos83-cyber/symphytum-database/releases) page, or you can build directly from source using the instructions below.
 
 ## Build from Source
 
@@ -87,10 +87,10 @@ make
 *On Windows, you can also run `Build.bat` to automatically build and deploy all dependencies.*
 
 ## Contribute
-Report an issue, bug or feature proposal at the [project's issue tracker](https://github.com/grcomandos83-cyber/symphytum/issues).
+Report an issue, bug or feature proposal at the [project's issue tracker](https://github.com/grcomandos83-cyber/symphytum-database/issues).
 
 ## License
-Symphytum is licensed under the BSD 2-Clause License, see [LICENSE](https://github.com/grcomandos83-cyber/symphytum/blob/master/LICENSE). 
+Symphytum is licensed under the BSD 2-Clause License, see [LICENSE](https://github.com/grcomandos83-cyber/symphytum-database/blob/master/LICENSE). 
 You can use Symphytum for free and for any purpose.
 
 Copyright (c) 2014-2020 Symphytum Developers  
