@@ -10,8 +10,9 @@ Symphytum is a personal database software for everyone who desires to manage and
     * [How it Looks](#how-it-looks)
 * [Download](#download)
     * [Windows](#windows)
-    * [macOS](#macos)
-    * [Linux](#linux)
+        * [Installer](#1-windows-installer-setup-exe)
+        * [Portable ZIP Archive](#2-portable-zip-archive-pre-compiled--ready-to-run)
+    * [macOS & Linux](#macos--linux)
 * [Build from Source](#build-from-source)
 * [Contribute](#contribute)
 * [License](#license)
@@ -54,7 +55,12 @@ General releases, source archives and other info can be found on the [releases](
 ### Windows
 For Windows 7, 8, 10, and 11 (64-bit)
 
-#### Portable ZIP Archive (Pre-compiled & Ready to Run)
+#### 1. Windows Installer (Setup .exe)
+Standard Windows installer with desktop shortcut and uninstaller support:
+
+Download [symphytum-2.7-setup.exe](https://github.com/grcomandos83-cyber/symphytum/releases/download/v2.7/symphytum-2.7-setup.exe)
+
+#### 2. Portable ZIP Archive (Pre-compiled & Ready to Run)
 A portable ZIP for Windows is self-contained: once extracted, it can be moved and launched on any machine without installation. The personal data is contained inside the folder alongside the main executable (`symphytum.exe`).
 
 Download [Symphytum-2.7-Windows-Portable.zip](https://github.com/grcomandos83-cyber/symphytum/releases/download/v2.7/Symphytum-2.7-Windows-Portable.zip)
