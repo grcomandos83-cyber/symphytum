@@ -152,6 +152,12 @@ set(RESOURCES
 # Executable target
 if(WIN32)
     add_executable(symphytum WIN32 ${SOURCES} ${FORMS} ${RESOURCES})
+elseif(APPLE)
+    add_executable(symphytum MACOSX_BUNDLE ${SOURCES} ${FORMS} ${RESOURCES})
+    set_target_properties(symphytum PROPERTIES
+        MACOSX_BUNDLE_BUNDLE_NAME "Symphytum"
+        MACOSX_BUNDLE_GUI_IDENTIFIER "com.giowisys.symphytum"
+    )
 else()
     add_executable(symphytum ${SOURCES} ${FORMS} ${RESOURCES})
 endif()

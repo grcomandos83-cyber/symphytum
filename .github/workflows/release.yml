@@ -170,6 +170,8 @@ jobs:
               cp "$dmgPath" "dist/Symphytum-${ver}-macOS.dmg"
             fi
             ditto -c -k --sequesterRsrc --keepParent "$appPath" "dist/Symphytum-${ver}-macOS.zip"
+          else
+            tar -czvf "dist/Symphytum-${ver}-macOS.tar.gz" -C build symphytum
           fi
 
       # -------------------------------------------------------------
