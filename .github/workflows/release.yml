@@ -23,7 +23,7 @@ jobs:
           - os: ubuntu-latest
             name: Linux
             qt_arch: gcc_64
-          - os: macos-13
+          - os: macos-latest
             name: macOS
             qt_arch: clang_64
 
@@ -51,11 +51,11 @@ jobs:
           $ver = $env:GITHUB_REF_NAME -replace '^v',''
           New-Item -ItemType Directory -Path dist -Force
 
-          # Add MinGW to PATH
-          $mingwItem = Get-ChildItem -Path "D:\a", "C:\hostedtoolcache", "C:\Qt" -Filter "g++.exe" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1
+          # Find and set 64-bit MinGW
+          $mingwItem = Get-ChildItem -Path "D:\a", "C:\hostedtoolcache", "C:\Qt" -Filter "g++.exe" -Recurse -ErrorAction SilentlyContinue | Where-Object { $_.FullName -like "*64*" } | Select-Object -First 1
           if ($mingwItem) {
               $mingwDir = $mingwItem.DirectoryName
-              Write-Host "Found MinGW at: $mingwDir"
+              Write-Host "Found 64-bit MinGW at: $mingwDir"
               $env:PATH = "$mingwDir;$env:PATH"
           }
 
@@ -65,8 +65,8 @@ jobs:
               Copy-Item "stuff\translations\symphytum_el.qm" "resources\languages\" -Force
           }
 
-          # Configure and compile with CMake & MinGW
-          cmake -B build -DCMAKE_BUILD_TYPE=Release -G "MinGW Makefiles"
+          # Configure and compile with CMake & MinGW 64-bit
+          cmake -B build -DCMAKE_BUILD_TYPE=Release -G "MinGW Makefiles" -DCMAKE_C_COMPILER="$mingwDir/gcc.exe" -DCMAKE_CXX_COMPILER="$mingwDir/g++.exe"
           cmake --build build --config Release --parallel
 
           # Locate built executable
