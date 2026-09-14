@@ -51,7 +51,7 @@ jobs:
           $ver = $env:GITHUB_REF_NAME -replace '^v',''
           New-Item -ItemType Directory -Path dist -Force
 
-          # Add MinGW to PATH if installed via aqt
+          # Add MinGW to PATH
           $mingwItem = Get-ChildItem -Path "D:\a", "C:\hostedtoolcache", "C:\Qt" -Filter "g++.exe" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1
           if ($mingwItem) {
               $mingwDir = $mingwItem.DirectoryName
@@ -67,21 +67,33 @@ jobs:
 
           # Configure and compile with CMake & MinGW
           cmake -B build -DCMAKE_BUILD_TYPE=Release -G "MinGW Makefiles"
-          cmake --build build --config Release -j$env:NUMBER_OF_PROCESSORS
+          cmake --build build --config Release --parallel
+
+          # Locate built executable
+          $exe = Get-ChildItem -Path "build" -Filter "symphytum.exe" -Recurse | Select-Object -First 1
+          if (-not $exe) {
+              throw "symphytum.exe was not found in build directory!"
+          }
 
           # Prepare portable distribution folder
           $stageDir = "dist\Symphytum-$ver-Windows-Portable"
           New-Item -ItemType Directory -Path $stageDir -Force
-          Copy-Item "build\symphytum.exe" -Destination $stageDir -Force
+          Copy-Item $exe.FullName -Destination $stageDir -Force
 
           # Deploy Qt dependencies
-          windeployqt --release --no-translations "$stageDir\symphytum.exe"
+          $qtBin = (Get-Command qmake.exe -ErrorAction SilentlyContinue).Source | Split-Path
+          if ($qtBin -and (Test-Path "$qtBin\windeployqt.exe")) {
+              & "$qtBin\windeployqt.exe" --release --no-translations "$stageDir\symphytum.exe"
+          } else {
+              windeployqt --release --no-translations "$stageDir\symphytum.exe"
+          }
 
           # Copy MinGW runtime DLLs
-          $mingwBin = (Get-Command g++.exe).Source | Split-Path
-          Copy-Item "$mingwBin\libgcc_s_*.dll" -Destination $stageDir -Force -ErrorAction SilentlyContinue
-          Copy-Item "$mingwBin\libstdc++-*.dll" -Destination $stageDir -Force -ErrorAction SilentlyContinue
-          Copy-Item "$mingwBin\libwinpthread-*.dll" -Destination $stageDir -Force -ErrorAction SilentlyContinue
+          if ($mingwDir) {
+              Copy-Item "$mingwDir\libgcc_s_*.dll" -Destination $stageDir -Force -ErrorAction SilentlyContinue
+              Copy-Item "$mingwDir\libstdc++-*.dll" -Destination $stageDir -Force -ErrorAction SilentlyContinue
+              Copy-Item "$mingwDir\libwinpthread-*.dll" -Destination $stageDir -Force -ErrorAction SilentlyContinue
+          }
 
           # Create Portable ZIP package
           Compress-Archive -Path "$stageDir\*" -DestinationPath "dist\Symphytum-$ver-Windows-Portable.zip" -Force
