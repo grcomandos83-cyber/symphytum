@@ -1,0 +1,169 @@
+name: Multi-Platform Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    name: Build & Release (${{ matrix.name }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            name: Windows
+            qt_arch: win64_mingw81
+          - os: ubuntu-latest
+            name: Linux
+            qt_arch: gcc_64
+          - os: macos-latest
+            name: macOS
+            qt_arch: clang_64
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # -------------------------------------------------------------
+      # WINDOWS BUILD
+      # -------------------------------------------------------------
+      - name: Install Qt (Windows)
+        if: runner.os == 'Windows'
+        uses: jurplel/install-qt-action@v3
+        with:
+          version: '5.15.2'
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_mingw81'
+          tools: 'tools_mingw810'
+
+      - name: Build & Package (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $ver = $env:GITHUB_REF_NAME -replace '^v',''
+          New-Item -ItemType Directory -Path dist -Force
+
+          # Update translations
+          lrelease Symphytum.pro
+          if (Test-Path "stuff\translations\symphytum_el.qm") {
+              Copy-Item "stuff\translations\symphytum_el.qm" "resources\languages\" -Force
+          }
+
+          # Configure and compile with CMake & MinGW
+          cmake -B build -DCMAKE_BUILD_TYPE=Release -G "MinGW Makefiles"
+          cmake --build build --config Release -j$env:NUMBER_OF_PROCESSORS
+
+          # Prepare portable distribution folder
+          $stageDir = "dist\Symphytum-$ver-Windows-Portable"
+          New-Item -ItemType Directory -Path $stageDir -Force
+          Copy-Item "build\symphytum.exe" -Destination $stageDir -Force
+
+          # Deploy Qt dependencies
+          windeployqt --release --no-translations "$stageDir\symphytum.exe"
+
+          # Copy MinGW runtime DLLs
+          $mingwBin = (Get-Command g++.exe).Source | Split-Path
+          Copy-Item "$mingwBin\libgcc_s_*.dll" -Destination $stageDir -Force -ErrorAction SilentlyContinue
+          Copy-Item "$mingwBin\libstdc++-*.dll" -Destination $stageDir -Force -ErrorAction SilentlyContinue
+          Copy-Item "$mingwBin\libwinpthread-*.dll" -Destination $stageDir -Force -ErrorAction SilentlyContinue
+
+          # Create Portable ZIP package
+          Compress-Archive -Path "$stageDir\*" -DestinationPath "dist\Symphytum-$ver-Windows-Portable.zip" -Force
+
+          # Build Inno Setup Installer
+          $iscc = "C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
+          if (Test-Path $iscc) {
+              & $iscc "/DMyAppVersion=$ver" "/DOutputDir=..\..\dist" "/DSourceDir=..\..\dist\Symphytum-$ver-Windows-Portable" "/DOutputBaseFilename=symphytum-$ver-setup" "stuff\installers\symphytum.iss"
+          }
+
+      # -------------------------------------------------------------
+      # LINUX BUILD
+      # -------------------------------------------------------------
+      - name: Install Linux Dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential cmake libgl1-mesa-dev qttools5-dev-tools
+
+      - name: Install Qt (Linux)
+        if: runner.os == 'Linux'
+        uses: jurplel/install-qt-action@v3
+        with:
+          version: '5.15.2'
+          arch: 'gcc_64'
+
+      - name: Build & Package (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          ver="${GITHUB_REF_NAME#v}"
+          mkdir -p dist
+
+          # Build translations & application
+          lrelease Symphytum.pro || true
+          cmake -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --config Release -j$(nproc)
+
+          # Package portable tar.gz
+          stageDir="dist/Symphytum-${ver}-Linux-x86_64"
+          mkdir -p "$stageDir/bin" "$stageDir/share/applications" "$stageDir/share/icons/hicolor/64x64/apps"
+          cp build/symphytum "$stageDir/bin/"
+          cp LICENSE "$stageDir/"
+          cp README.md "$stageDir/"
+          cp resources/images/icons/symphytum.png "$stageDir/share/icons/hicolor/64x64/apps/"
+          tar -czvf "dist/Symphytum-${ver}-Linux-x86_64.tar.gz" -C dist "Symphytum-${ver}-Linux-x86_64"
+
+      # -------------------------------------------------------------
+      # MACOS BUILD
+      # -------------------------------------------------------------
+      - name: Install Qt (macOS)
+        if: runner.os == 'macOS'
+        uses: jurplel/install-qt-action@v3
+        with:
+          version: '5.15.2'
+          arch: 'clang_64'
+
+      - name: Build & Package (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          ver="${GITHUB_REF_NAME#v}"
+          mkdir -p dist
+
+          # Build translations & application bundle
+          lrelease Symphytum.pro || true
+          cmake -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --config Release -j$(sysctl -n hw.ncpu)
+
+          # Find bundle and create DMG / ZIP
+          appPath=$(find build -name "symphytum.app" -o -name "Symphytum.app" | head -n 1)
+          if [ -d "$appPath" ]; then
+            macdeployqt "$appPath" -dmg || true
+            dmgPath=$(find build -name "*.dmg" | head -n 1)
+            if [ -f "$dmgPath" ]; then
+              cp "$dmgPath" "dist/Symphytum-${ver}-macOS.dmg"
+            fi
+            ditto -c -k --sequesterRsrc --keepParent "$appPath" "dist/Symphytum-${ver}-macOS.zip"
+          fi
+
+      # -------------------------------------------------------------
+      # PUBLISH ARTIFACTS TO GITHUB RELEASE
+      # -------------------------------------------------------------
+      - name: Upload Release Artifacts
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            dist/*.exe
+            dist/*.zip
+            dist/*.tar.gz
+            dist/*.dmg
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

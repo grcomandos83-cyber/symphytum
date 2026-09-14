@@ -1,8 +1,20 @@
 #define MyAppName "Symphytum"
+#ifndef MyAppVersion
 #define MyAppVersion "2.7"
+#endif
 #define MyAppPublisher "gr comandos"
 #define MyAppURL "https://github.com/grcomandos83-cyber/symphytum-database"
 #define MyAppExeName "symphytum.exe"
+
+#ifndef OutputDir
+#define OutputDir "..\..\dist"
+#endif
+#ifndef OutputBaseFilename
+#define OutputBaseFilename "symphytum-" + MyAppVersion + "-setup"
+#endif
+#ifndef SourceDir
+#define SourceDir "..\..\dist\Symphytum-" + MyAppVersion + "-Windows-Portable"
+#endif
 
 [Setup]
 AppId={{5BEDB836-C6DC-4299-9D8E-928C8DC83322}
@@ -14,8 +26,8 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-OutputDir=c:\Users\grego\Desktop\symphytum-master\dist
-OutputBaseFilename=symphytum-2.7-setup
+OutputDir={#OutputDir}
+OutputBaseFilename={#OutputBaseFilename}
 Compression=lzma2/ultra64
 SolidCompression=yes
 ArchitecturesInstallIn64BitMode=x64
@@ -33,7 +45,7 @@ Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}";
 
 [Files]
-Source: "c:\Users\grego\Desktop\symphytum-master\dist\Symphytum-2.7-Windows-Portable\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#SourceDir}\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"

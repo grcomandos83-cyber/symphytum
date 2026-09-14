@@ -33,8 +33,9 @@ bool DefinitionHolder::APPIMAGE_LINUX = false;
 bool DefinitionHolder::WIN_PORTABLE = false;
 bool DefinitionHolder::SNAP_LINUX = false;
 QString DefinitionHolder::COPYRIGHT =
-        QString("Copyright &copy; 2014-%1 Symphytum Developers"
-                "<br />Copyright &copy; 2012-2014 GIOWISYS Software UG (haftungsbeschr%2nkt)")
-        .arg(QDate::currentDate().toString("yyyy"))
+        QString("Copyright &copy; 2026 grcomandos83-cyber"
+                "<br />Copyright &copy; 2014-2020 Symphytum Developers"
+                "<br />Copyright &copy; 2012-2014 GIOWISYS Software UG (haftungsbeschr%1nkt)")
         .arg(QChar(228)); // 228=umlaut a
+
 

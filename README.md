@@ -1,7 +1,13 @@
-[![Snap Status](https://build.snapcraft.io/badge/joshirio/symphytum-build.snapcraft.io.svg)](https://build.snapcraft.io/user/joshirio/symphytum-build.snapcraft.io)
+[![Release](https://github.com/grcomandos83-cyber/symphytum-database/actions/workflows/release.yml/badge.svg)](https://github.com/grcomandos83-cyber/symphytum-database/actions/workflows/release.yml)
+[![License](https://img.shields.io/badge/License-BSD_2--Clause-blue.svg)](https://opensource.org/licenses/BSD-2-Clause)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/grcomandos83-cyber/symphytum-database)](https://github.com/grcomandos83-cyber/symphytum-database/releases/latest)
 
 ![logo](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-database/master/stuff/logo/symphytum_64.png "Symphytum")
-# Symphytum
+# Symphytum Database
+
+> **Project Status & Maintenance Notice:**  
+> This repository is an active continuation, modernization, and maintenance fork of the original [Symphytum](https://github.com/giowck/symphytum) personal database application following the archiving of the original repository. Development, modern Qt updates, fixes, and release packaging are actively maintained by [grcomandos83-cyber](https://github.com/grcomandos83-cyber).
+
 Symphytum is a personal database software for everyone who desires to manage and organize data in an easy and intuitive way, without having to study complex database languages and software user interfaces.        
 
 **Table of Contents**
@@ -93,5 +99,6 @@ Report an issue, bug or feature proposal at the [project's issue tracker](https:
 Symphytum is licensed under the BSD 2-Clause License, see [LICENSE](https://github.com/grcomandos83-cyber/symphytum-database/blob/master/LICENSE). 
 You can use Symphytum for free and for any purpose.
 
+Copyright (c) 2026 grcomandos83-cyber  
 Copyright (c) 2014-2020 Symphytum Developers  
 Copyright (c) 2012-2014 GIOWISYS Software UG
