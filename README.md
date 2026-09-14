@@ -1,14 +1,14 @@
-[![Release](https://github.com/grcomandos83-cyber/symphytum-database/actions/workflows/release.yml/badge.svg)](https://github.com/grcomandos83-cyber/symphytum-database/actions/workflows/release.yml)
+[![Release](https://github.com/grcomandos83-cyber/symphytum-next/actions/workflows/release.yml/badge.svg)](https://github.com/grcomandos83-cyber/symphytum-next/actions/workflows/release.yml)
 [![License](https://img.shields.io/badge/License-BSD_2--Clause-blue.svg)](https://opensource.org/licenses/BSD-2-Clause)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/grcomandos83-cyber/symphytum-database)](https://github.com/grcomandos83-cyber/symphytum-database/releases/latest)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/grcomandos83-cyber/symphytum-next)](https://github.com/grcomandos83-cyber/symphytum-next/releases/latest)
 
-![logo](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-database/master/stuff/logo/symphytum_64.png "Symphytum")
-# Symphytum Database
+![logo](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-next/master/stuff/logo/symphytum_64.png "Symphytum")
+# Symphytum Next
 
 > **Project Status & Maintenance Notice:**  
-> This repository is an active continuation, modernization, and maintenance fork of the original [Symphytum](https://github.com/giowck/symphytum) personal database application following the archiving of the original repository. Development, modern Qt updates, fixes, and release packaging are actively maintained by [grcomandos83-cyber](https://github.com/grcomandos83-cyber).
+> This repository is the official standalone continuation, modernization, and maintenance fork of the original [Symphytum](https://github.com/giowck/symphytum) personal database application. Development, modern Qt updates, fixes, and multi-platform release packaging are actively maintained by [grcomandos83-cyber](https://github.com/grcomandos83-cyber).
 
-Symphytum is a personal database software for everyone who desires to manage and organize data in an easy and intuitive way, without having to study complex database languages and software user interfaces.        
+Symphytum Next is a personal database software for everyone who desires to manage and organize data in an easy and intuitive way, without having to study complex database languages and software user interfaces.        
 
 **Table of Contents**
 * [Introduction](#introduction)
@@ -52,15 +52,15 @@ SQLite is tiny, efficient and very fast. It can handle huge amount of data while
 ### How it Looks
 Some screenshots showing the form view, table view, dynamic layout engine and the field addition dialog.
 
-![form_view_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-database/master/stuff/screenshots/mainwindow.png "Form view")
-![table_view_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-database/master/stuff/screenshots/tablieview.png "Table view")
-![dynamic_layout_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-database/master/stuff/screenshots/dynamic_layout.gif "Dynamic layout engine")
+![form_view_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-next/master/stuff/screenshots/mainwindow.png "Form view")
+![table_view_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-next/master/stuff/screenshots/tablieview.png "Table view")
+![dynamic_layout_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-next/master/stuff/screenshots/dynamic_layout.gif "Dynamic layout engine")
 
-![add_field_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-database/master/stuff/screenshots/addfield.png "Add field")
+![add_field_img](https://raw.githubusercontent.com/grcomandos83-cyber/symphytum-next/master/stuff/screenshots/addfield.png "Add field")
 
 ## Download
 Please see the appropriate download section for your operating system below.
-General releases, source archives and other info can be found on the [releases](https://github.com/grcomandos83-cyber/symphytum-database/releases) page. Thank you for downloading Symphytum.
+General releases, source archives and other info can be found on the [releases](https://github.com/grcomandos83-cyber/symphytum-next/releases) page. Thank you for downloading Symphytum.
 
 ### Windows
 For Windows 7, 8, 10, and 11 (64-bit)
@@ -68,12 +68,12 @@ For Windows 7, 8, 10, and 11 (64-bit)
 #### 1. Windows Installer (Setup .exe)
 Standard Windows installer with desktop shortcut and uninstaller support:
 
-Download [symphytum-2.7.1-setup.exe](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7.1/symphytum-2.7.1-setup.exe)
+Download [symphytum-2.7.1-setup.exe](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.1/symphytum-2.7.1-setup.exe)
 
 #### 2. Portable ZIP Archive (Pre-compiled & Ready to Run)
 A portable ZIP for Windows is self-contained: once extracted, it can be moved and launched on any machine without installation. The personal data is contained inside the folder alongside the main executable (`symphytum.exe`).
 
-Download [Symphytum-2.7.1-Windows-Portable.zip](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7.1/Symphytum-2.7.1-Windows-Portable.zip)
+Download [Symphytum-2.7.1-Windows-Portable.zip](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.1/Symphytum-2.7.1-Windows-Portable.zip)
 
 ---
 
@@ -83,12 +83,12 @@ For macOS 11 Big Sur, 12 Monterey, 13 Ventura, 14 Sonoma, 15 Sequoia (Intel & Ap
 #### 1. macOS Disk Image (.dmg)
 Standard macOS drag-and-drop installer disk image:
 
-Download [Symphytum-2.7.1-macOS.dmg](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7.1/Symphytum-2.7.1-macOS.dmg)
+Download [Symphytum-2.7.1-macOS.dmg](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.1/Symphytum-2.7.1-macOS.dmg)
 
 #### 2. macOS Portable ZIP Bundle
 Standalone application bundle archive (`Symphytum.app`):
 
-Download [Symphytum-2.7.1-macOS.zip](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7.1/Symphytum-2.7.1-macOS.zip)
+Download [Symphytum-2.7.1-macOS.zip](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.1/Symphytum-2.7.1-macOS.zip)
 
 ---
 
@@ -98,7 +98,7 @@ For modern 64-bit Linux distributions (Ubuntu, Debian, Fedora, Arch, etc.)
 #### 1. Linux Portable Archive (.tar.gz)
 Self-contained pre-compiled binaries and desktop integration resources:
 
-Download [Symphytum-2.7.1-Linux-x86_64.tar.gz](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7.1/Symphytum-2.7.1-Linux-x86_64.tar.gz)
+Download [Symphytum-2.7.1-Linux-x86_64.tar.gz](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.1/Symphytum-2.7.1-Linux-x86_64.tar.gz)
 
 ## Build from Source
 
@@ -117,10 +117,10 @@ make
 *On Windows, you can also run `Build.bat` to automatically build and deploy all dependencies.*
 
 ## Contribute
-Report an issue, bug or feature proposal at the [project's issue tracker](https://github.com/grcomandos83-cyber/symphytum-database/issues).
+Report an issue, bug or feature proposal at the [project's issue tracker](https://github.com/grcomandos83-cyber/symphytum-next/issues).
 
 ## License
-Symphytum is licensed under the BSD 2-Clause License, see [LICENSE](https://github.com/grcomandos83-cyber/symphytum-database/blob/master/LICENSE). 
+Symphytum is licensed under the BSD 2-Clause License, see [LICENSE](https://github.com/grcomandos83-cyber/symphytum-next/blob/master/LICENSE). 
 You can use Symphytum for free and for any purpose.
 
 Copyright (c) 2026 grcomandos83-cyber  

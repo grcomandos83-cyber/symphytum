@@ -84,7 +84,7 @@
            <item>
             <widget class="QLabel" name="label_4">
              <property name="text">
-              <string>&lt;b&gt;Symphytum&lt;/b&gt;</string>
+              <string>&lt;b&gt;Symphytum Next&lt;/b&gt;</string>
              </property>
             </widget>
            </item>
@@ -181,7 +181,7 @@
        <item>
         <widget class="QLabel" name="label_6">
          <property name="text">
-          <string>&lt;a href=&quot;https://github.com/grcomandos83-cyber/symphytum-database&quot;&gt;https://github.com/grcomandos83-cyber/symphytum-database&lt;/a&gt;</string>
+          <string>&lt;a href=&quot;https://github.com/grcomandos83-cyber/symphytum-next&quot;&gt;https://github.com/grcomandos83-cyber/symphytum-next&lt;/a&gt;</string>
          </property>
          <property name="openExternalLinks">
           <bool>true</bool>
@@ -225,7 +225,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:11pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:11pt;&quot;&gt;grcomandos83-cyber&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:11pt;&quot;&gt;Current Maintainer / Developer&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:11pt;&quot;&gt;https://github.com/grcomandos83-cyber/symphytum-database&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:11pt;&quot;&gt;https://github.com/grcomandos83-cyber/symphytum-next&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:11pt;&quot;&gt;2026&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:11pt;&quot;&gt;Giorgio Wicklein&lt;/span&gt;&lt;/p&gt;

@@ -21,10 +21,10 @@ QString DefinitionHolder::NAME = "Symphytum";
 QString DefinitionHolder::COMPANY = "giowisys";
 QString DefinitionHolder::DOMAIN_NAME = "giowisys.com";
 QString DefinitionHolder::UPDATE_URL = "https://raw.githubusercontent.com/grcomandos83-cyber"
-                                       "/symphytum-database/master/doc/update/raw_check/latest";
-QString DefinitionHolder::DOWNLOAD_URL = "https://github.com/grcomandos83-cyber/symphytum-database"
+                                       "/symphytum-next/master/doc/update/raw_check/latest";
+QString DefinitionHolder::DOWNLOAD_URL = "https://github.com/grcomandos83-cyber/symphytum-next"
                                          "/releases/latest";
-QString DefinitionHolder::HELP_URL = "https://github.com/grcomandos83-cyber/symphytum-database#readme";
+QString DefinitionHolder::HELP_URL = "https://github.com/grcomandos83-cyber/symphytum-next#readme";
 QString DefinitionHolder::DONATE_URL = "";
 int DefinitionHolder::SOFTWARE_BUILD = 11;
 int DefinitionHolder::DATABASE_VERSION = 4;

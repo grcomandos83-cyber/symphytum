@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.16)
 project(Symphytum
     VERSION 2.7
     DESCRIPTION "Personal database software"
-    HOMEPAGE_URL "https://github.com/grcomandos83-cyber/symphytum-database"
+    HOMEPAGE_URL "https://github.com/grcomandos83-cyber/symphytum-next"
     LANGUAGES CXX
 )
 
