@@ -24,7 +24,6 @@ Symphytum Next is a personal database software for everyone who desires to manag
     * [Linux](#linux)
         * [Portable Tarball (.tar.gz)](#1-linux-portable-archive-targz)
 * [Changelog & Version History](#changelog--version-history)
-* [Build from Source](#build-from-source)
 * [Contribute](#contribute)
 * [License](#license)
 
@@ -105,22 +104,6 @@ Download [Symphytum-2.7.1-Linux-x86_64.tar.gz](https://github.com/grcomandos83-c
 
 ## Changelog & Version History
 For the complete list of changes, new features, bug fixes, and release history across all versions, please refer to the **[CHANGELOG.md](CHANGELOG.md)** or check the GitHub [Releases](https://github.com/grcomandos83-cyber/symphytum-next/releases) page.
-
-## Build from Source
-
-### Using CMake (Recommended)
-```bash
-cmake -B build -DCMAKE_BUILD_TYPE=Release
-cmake --build build
-```
-
-### Using qmake
-```bash
-cd symphytum
-qmake -config release
-make
-```
-*On Windows, you can also run `Build.bat` to automatically build and deploy all dependencies.*
 
 ## Contribute
 Report an issue, bug or feature proposal at the [project's issue tracker](https://github.com/grcomandos83-cyber/symphytum-next/issues).
