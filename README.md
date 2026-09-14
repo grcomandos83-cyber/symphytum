@@ -23,6 +23,7 @@ Symphytum Next is a personal database software for everyone who desires to manag
         * [Portable ZIP Bundle](#2-macos-portable-zip-bundle)
     * [Linux](#linux)
         * [Portable Tarball (.tar.gz)](#1-linux-portable-archive-targz)
+* [Changelog & Version History](#changelog--version-history)
 * [Build from Source](#build-from-source)
 * [Contribute](#contribute)
 * [License](#license)
@@ -60,7 +61,7 @@ Some screenshots showing the form view, table view, dynamic layout engine and th
 
 ## Download
 Please see the appropriate download section for your operating system below.
-General releases, source archives and other info can be found on the [releases](https://github.com/grcomandos83-cyber/symphytum-next/releases) page. Thank you for downloading Symphytum.
+General releases, binary packages, and source archives can be found on the [releases](https://github.com/grcomandos83-cyber/symphytum-next/releases) page. Detailed version notes are available in the [CHANGELOG.md](CHANGELOG.md). Thank you for downloading Symphytum Next.
 
 ### Windows
 For Windows 7, 8, 10, and 11 (64-bit)
@@ -99,6 +100,11 @@ For modern 64-bit Linux distributions (Ubuntu, Debian, Fedora, Arch, etc.)
 Self-contained pre-compiled binaries and desktop integration resources:
 
 Download [Symphytum-2.7.1-Linux-x86_64.tar.gz](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.1/Symphytum-2.7.1-Linux-x86_64.tar.gz)
+
+---
+
+## Changelog & Version History
+For the complete list of changes, new features, bug fixes, and release history across all versions, please refer to the **[CHANGELOG.md](CHANGELOG.md)** or check the GitHub [Releases](https://github.com/grcomandos83-cyber/symphytum-next/releases) page.
 
 ## Build from Source
 

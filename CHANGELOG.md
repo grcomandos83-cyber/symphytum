@@ -1,4 +1,15 @@
-CHANGELOG
+# Changelog
+
+Version 2.7.1
+=============
+
+### New Features & CI/CD
+- **Automated Multi-Platform Release Workflow**: GitHub Actions CI/CD automatically building and publishing standalone release packages for:
+  - Windows: Installer (`symphytum-2.7.1-setup.exe`) and Portable (`Symphytum-2.7.1-Windows-Portable.zip`)
+  - macOS: Disk Image (`Symphytum-2.7.1-macOS.dmg`) and Portable Bundle (`Symphytum-2.7.1-macOS.zip`)
+  - Linux: Portable Tarball (`Symphytum-2.7.1-Linux-x86_64.tar.gz`)
+- **Standalone Repository Rebranding**: Transitioned from fork to independent root repository as **Symphytum Next** (`grcomandos83-cyber/symphytum-next`).
+- **Direct Download Badges & Links**: Updated README and documentation with direct release asset links.
 
 Version 2.7
 ===========
