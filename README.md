@@ -18,7 +18,11 @@ Symphytum is a personal database software for everyone who desires to manage and
     * [Windows](#windows)
         * [Installer](#1-windows-installer-setup-exe)
         * [Portable ZIP Archive](#2-portable-zip-archive-pre-compiled--ready-to-run)
-    * [macOS & Linux](#macos--linux)
+    * [macOS](#macos)
+        * [Disk Image (.dmg)](#1-macos-disk-image-dmg)
+        * [Portable ZIP Bundle](#2-macos-portable-zip-bundle)
+    * [Linux](#linux)
+        * [Portable Tarball (.tar.gz)](#1-linux-portable-archive-targz)
 * [Build from Source](#build-from-source)
 * [Contribute](#contribute)
 * [License](#license)
@@ -64,17 +68,37 @@ For Windows 7, 8, 10, and 11 (64-bit)
 #### 1. Windows Installer (Setup .exe)
 Standard Windows installer with desktop shortcut and uninstaller support:
 
-Download [symphytum-2.7-setup.exe](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7/symphytum-2.7-setup.exe)
+Download [symphytum-2.7.1-setup.exe](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7.1/symphytum-2.7.1-setup.exe)
 
 #### 2. Portable ZIP Archive (Pre-compiled & Ready to Run)
 A portable ZIP for Windows is self-contained: once extracted, it can be moved and launched on any machine without installation. The personal data is contained inside the folder alongside the main executable (`symphytum.exe`).
 
-Download [Symphytum-2.7-Windows-Portable.zip](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7/Symphytum-2.7-Windows-Portable.zip)
+Download [Symphytum-2.7.1-Windows-Portable.zip](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7.1/Symphytum-2.7.1-Windows-Portable.zip)
 
 ---
 
-### macOS & Linux
-Pre-compiled binaries and source archives are available on the [Releases](https://github.com/grcomandos83-cyber/symphytum-database/releases) page, or you can build directly from source using the instructions below.
+### macOS
+For macOS 11 Big Sur, 12 Monterey, 13 Ventura, 14 Sonoma, 15 Sequoia (Intel & Apple Silicon via Rosetta 2)
+
+#### 1. macOS Disk Image (.dmg)
+Standard macOS drag-and-drop installer disk image:
+
+Download [Symphytum-2.7.1-macOS.dmg](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7.1/Symphytum-2.7.1-macOS.dmg)
+
+#### 2. macOS Portable ZIP Bundle
+Standalone application bundle archive (`Symphytum.app`):
+
+Download [Symphytum-2.7.1-macOS.zip](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7.1/Symphytum-2.7.1-macOS.zip)
+
+---
+
+### Linux
+For modern 64-bit Linux distributions (Ubuntu, Debian, Fedora, Arch, etc.)
+
+#### 1. Linux Portable Archive (.tar.gz)
+Self-contained pre-compiled binaries and desktop integration resources:
+
+Download [Symphytum-2.7.1-Linux-x86_64.tar.gz](https://github.com/grcomandos83-cyber/symphytum-database/releases/download/v2.7.1/Symphytum-2.7.1-Linux-x86_64.tar.gz)
 
 ## Build from Source
 
