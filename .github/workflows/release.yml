@@ -23,7 +23,7 @@ jobs:
           - os: ubuntu-latest
             name: Linux
             qt_arch: gcc_64
-          - os: macos-latest
+          - os: macos-13
             name: macOS
             qt_arch: clang_64
 
@@ -42,7 +42,7 @@ jobs:
           host: 'windows'
           target: 'desktop'
           arch: 'win64_mingw81'
-          tools: 'tools_mingw810'
+          tools: 'tools_mingw81'
 
       - name: Build & Package (Windows)
         if: runner.os == 'Windows'
@@ -50,6 +50,14 @@ jobs:
         run: |
           $ver = $env:GITHUB_REF_NAME -replace '^v',''
           New-Item -ItemType Directory -Path dist -Force
+
+          # Add MinGW to PATH if installed via aqt
+          $mingwItem = Get-ChildItem -Path "D:\a", "C:\hostedtoolcache", "C:\Qt" -Filter "g++.exe" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1
+          if ($mingwItem) {
+              $mingwDir = $mingwItem.DirectoryName
+              Write-Host "Found MinGW at: $mingwDir"
+              $env:PATH = "$mingwDir;$env:PATH"
+          }
 
           # Update translations
           lrelease Symphytum.pro
@@ -136,9 +144,9 @@ jobs:
           ver="${GITHUB_REF_NAME#v}"
           mkdir -p dist
 
-          # Build translations & application bundle
+          # Build translations & application bundle targeting x86_64 (matching Qt 5.15.2)
           lrelease Symphytum.pro || true
-          cmake -B build -DCMAKE_BUILD_TYPE=Release
+          cmake -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES=x86_64
           cmake --build build --config Release -j$(sysctl -n hw.ncpu)
 
           # Find bundle and create DMG / ZIP
