@@ -16,8 +16,6 @@ Symphytum Next is a personal database software for everyone who desires to manag
     * [How it Looks](#how-it-looks)
 * [Download](#download)
     * [Windows](#windows)
-        * [Installer](#1-windows-installer-setup-exe)
-        * [Portable ZIP Archive](#2-portable-zip-archive-pre-compiled--ready-to-run)
     * [macOS](#macos)
         * [Disk Image (.dmg)](#1-macos-disk-image-dmg)
         * [Portable ZIP Bundle](#2-macos-portable-zip-bundle)
@@ -65,15 +63,9 @@ General releases, binary packages, and source archives can be found on the [rele
 ### Windows
 For Windows 7, 8, 10, and 11 (64-bit)
 
-#### 1. Windows Installer (Setup .exe)
 Standard Windows installer with desktop shortcut and uninstaller support:
 
 Download [symphytum-2.7.2-setup.exe](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.2/symphytum-2.7.2-setup.exe)
-
-#### 2. Portable ZIP Archive (Pre-compiled & Ready to Run)
-A portable ZIP for Windows is self-contained: once extracted, it can be moved and launched on any machine without installation. The personal data is contained inside the folder alongside the main executable (`symphytum.exe`).
-
-Download [Symphytum-2.7.2-Windows-Portable.zip](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.2/Symphytum-2.7.2-Windows-Portable.zip)
 
 ---
 

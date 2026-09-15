@@ -13,7 +13,7 @@
 #define OutputBaseFilename "symphytum-" + MyAppVersion + "-setup"
 #endif
 #ifndef SourceDir
-#define SourceDir "..\..\dist\Symphytum-" + MyAppVersion + "-Windows-Portable"
+#define SourceDir "..\..\dist\staging"
 #endif
 
 [Setup]

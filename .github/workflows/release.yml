@@ -75,8 +75,8 @@ jobs:
               throw "symphytum.exe was not found in build directory!"
           }
 
-          # Prepare portable distribution folder
-          $stageDir = "dist\Symphytum-$ver-Windows-Portable"
+          # Prepare staging folder for installer
+          $stageDir = "dist\staging"
           New-Item -ItemType Directory -Path $stageDir -Force
           Copy-Item $exe.FullName -Destination $stageDir -Force
 
@@ -95,14 +95,14 @@ jobs:
               Copy-Item "$mingwDir\libwinpthread-*.dll" -Destination $stageDir -Force -ErrorAction SilentlyContinue
           }
 
-          # Create Portable ZIP package
-          Compress-Archive -Path "$stageDir\*" -DestinationPath "dist\Symphytum-$ver-Windows-Portable.zip" -Force
-
           # Build Inno Setup Installer
           $iscc = "C:\Program Files (x86)\Inno Setup 6\ISCC.exe"
           if (Test-Path $iscc) {
-              & $iscc "/DMyAppVersion=$ver" "/DOutputDir=..\..\dist" "/DSourceDir=..\..\dist\Symphytum-$ver-Windows-Portable" "/DOutputBaseFilename=symphytum-$ver-setup" "stuff\installers\symphytum.iss"
+              & $iscc "/DMyAppVersion=$ver" "/DOutputDir=..\..\dist" "/DSourceDir=..\..\dist\staging" "/DOutputBaseFilename=symphytum-$ver-setup" "stuff\installers\symphytum.iss"
           }
+
+          # Clean up staging directory
+          Remove-Item -Recurse -Force $stageDir
 
       # -------------------------------------------------------------
       # LINUX BUILD
