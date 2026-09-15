@@ -193,6 +193,7 @@ void ExportDialog::exportCSVButtonClicked()
                 csvString.append(textTypeItemText(query.value(i), i));
                 break;
             case MetadataEngine::NumericType:
+            case MetadataEngine::CurrencyType:
                 csvString.append(numericTypeItemText(query.value(i), i));
                 break;
             case MetadataEngine::CreationDateType:

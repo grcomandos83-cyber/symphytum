@@ -57,7 +57,8 @@ public:
         ImageType,          /**< Image type */
         FilesType,          /**< File list type */
         URLTextType,        /**< URL text type */
-        EmailTextType       /**< Email text type */
+        EmailTextType,      /**< Email text type */
+        CurrencyType        /**< Currency / monetary type */
     };
 
     /**

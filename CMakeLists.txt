@@ -106,6 +106,8 @@ set(SOURCES
     widgets/field_widgets/urlfieldwizard.cpp
     widgets/field_widgets/emailfieldwizard.cpp
     widgets/form_widgets/emailformwidget.cpp
+    widgets/field_widgets/currencyfieldwizard.cpp
+    widgets/form_widgets/currencyformwidget.cpp
     components/sync_framework/megasyncdriver.cpp
     widgets/upgradesuccessdialog.cpp
 )

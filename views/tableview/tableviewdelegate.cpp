@@ -72,6 +72,9 @@ void TableViewDelegate::paint(QPainter *painter, const QStyleOptionViewItem &opt
     case MetadataEngine::NumericType:
         paintNumericType(painter, option, index);
         break;
+    case MetadataEngine::CurrencyType:
+        paintCurrencyType(painter, option, index);
+        break;
     case MetadataEngine::CreationDateType:
     case MetadataEngine::ModDateType:
     case MetadataEngine::DateType:
@@ -122,9 +125,12 @@ QWidget* TableViewDelegate::createEditor(QWidget *parent, const QStyleOptionView
         e = new QLineEdit(parent);
         break;
     case MetadataEngine::NumericType:
+    case MetadataEngine::CurrencyType:
     {
         QLineEdit *lineEdit;
         lineEdit = new QLineEdit(parent);
+        if (fieldType == MetadataEngine::CurrencyType)
+            lineEdit->setAlignment(Qt::AlignRight);
         //accept only double values, support locale dependent decimal point
         lineEdit->setValidator(new QDoubleValidator(parent));
         e = lineEdit;
@@ -274,6 +280,9 @@ void TableViewDelegate::setEditorData(QWidget *editor, const QModelIndex &index)
     case MetadataEngine::NumericType:
         setNumericTypeEditorData(editor, index);
         break;
+    case MetadataEngine::CurrencyType:
+        setCurrencyTypeEditorData(editor, index);
+        break;
     case MetadataEngine::CheckboxType:
         setCheckboxTypeEditorData(editor, index);
         break;
@@ -311,6 +320,7 @@ void TableViewDelegate::updateEditorGeometry(QWidget *editor,
     switch (fieldType) {
     case MetadataEngine::TextType:
     case MetadataEngine::NumericType:
+    case MetadataEngine::CurrencyType:
     case MetadataEngine::DateType:
     case MetadataEngine::CreationDateType:
     case MetadataEngine::ModDateType:
@@ -1014,4 +1024,71 @@ void TableViewDelegate::setDateTypeEditorData(QWidget *editor,
 
     dateTimeEdit = qobject_cast<QDateTimeEdit*>(editor);
     if (dateTimeEdit) dateTimeEdit->setDateTime(index.data().toDateTime());
+}
+
+void TableViewDelegate::paintCurrencyType(QPainter *painter,
+                                          const QStyleOptionViewItem &option,
+                                          const QModelIndex &index) const
+{
+    QStyleOptionViewItem opt(option);
+    opt.displayAlignment = Qt::AlignRight | Qt::AlignVCenter;
+    QString dataString;
+    bool empty = index.data().toString().trimmed().isEmpty();
+
+    QString metadata = m_metadataEngine->getFieldProperties(MetadataEngine::DisplayProperty,
+                                                            index.column());
+    MetadataPropertiesParser parser(metadata);
+
+    if ((parser.getValue("markEmpty") == "1") && empty) {
+        opt.backgroundBrush.setStyle(Qt::SolidPattern);
+        opt.backgroundBrush.setColor(QColor(255, 223, 223));
+    }
+
+    double val = index.data().toDouble();
+    if ((parser.getValue("markNegative") == "1") && (val < 0.0)) {
+        opt.palette.setColor(QPalette::Text, Qt::red);
+    }
+
+    int precision = 2;
+    QString precStr = parser.getValue("precision");
+    if (!precStr.isEmpty())
+        precision = precStr.toInt();
+
+    QString symbol = parser.getValue("currencySymbol");
+    if (symbol.isEmpty())
+        symbol = QString::fromUtf8("€");
+
+    QString position = parser.getValue("currencyPosition");
+
+    if (!empty) {
+        QLocale locale;
+        QString numStr = QString::number(val, 'f', precision);
+        numStr.replace(".", locale.decimalPoint());
+
+        if (position == "prefix") {
+            dataString = QString("%1 %2").arg(symbol, numStr).trimmed();
+        } else {
+            dataString = QString("%1 %2").arg(numStr, symbol).trimmed();
+        }
+    }
+
+    opt.text = dataString;
+    opt.widget->style()->drawControl(QStyle::CE_ItemViewItem, &opt, painter);
+}
+
+void TableViewDelegate::setCurrencyTypeEditorData(QWidget *editor,
+                                                  const QModelIndex &index) const
+{
+    QLineEdit *lineEdit = qobject_cast<QLineEdit*>(editor);
+    if (lineEdit) {
+        bool empty = index.data().toString().trimmed().isEmpty();
+        if (empty) {
+            lineEdit->clear();
+        } else {
+            QLocale locale;
+            QString valStr = QString::number(index.data().toDouble(), 'f', 2);
+            valStr.replace(".", locale.decimalPoint());
+            lineEdit->setText(valStr);
+        }
+    }
 }

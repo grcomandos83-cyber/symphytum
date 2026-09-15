@@ -225,6 +225,7 @@ void PrintDialog::print(bool pdf, QString pdfOutputPath)
                 htmlString.append(textTypeItemHtml(query.value(i), i));
                 break;
             case MetadataEngine::NumericType:
+            case MetadataEngine::CurrencyType:
                 htmlString.append(numericTypeItemHtml(query.value(i), i));
                 break;
             case MetadataEngine::CreationDateType:

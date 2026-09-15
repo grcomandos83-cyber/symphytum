@@ -26,6 +26,7 @@
 #include "../../widgets/form_widgets/filesformwidget.h"
 #include "../../widgets/form_widgets/urlformwidget.h"
 #include "../../widgets/form_widgets/emailformwidget.h"
+#include "../../widgets/form_widgets/currencyformwidget.h"
 #include "../../widgets/mainwindow.h"
 #include "../../models/standardmodel.h"
 #include "emptyformwidget.h"
@@ -1556,6 +1557,9 @@ AbstractFormWidget* FormView::createFormWidget(MetadataEngine::FieldType type,
         break;
     case MetadataEngine::EmailTextType:
         f = new EmailFormWidget(viewport());
+        break;
+    case MetadataEngine::CurrencyType:
+        f = new CurrencyFormWidget(viewport());
         break;
     default:
         f = new TestFormWidget(viewport());

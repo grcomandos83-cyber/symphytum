@@ -11,7 +11,7 @@ echo.
 
 :: 1. Define paths
 set "PROJECT_ROOT=%~dp0"
-set "SOURCE_DIR=%PROJECT_ROOT%symphytum-master"
+set "SOURCE_DIR=%PROJECT_ROOT%"
 set "BUILD_DIR=%PROJECT_ROOT%build"
 set "QT_BIN=C:\Qt\5.15.2\mingw81_64\bin"
 set "MINGW_BIN=C:\Qt\Tools\mingw810_64\bin"

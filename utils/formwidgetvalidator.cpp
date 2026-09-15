@@ -52,6 +52,7 @@ bool FormWidgetValidator::validate(const QVariant &inputData,
         valid = validateTextType(inputData, errorMessage);
         break;
     case MetadataEngine::NumericType:
+    case MetadataEngine::CurrencyType:
         valid = validateNumericType(inputData, errorMessage);
         break;
     case MetadataEngine::DateType:

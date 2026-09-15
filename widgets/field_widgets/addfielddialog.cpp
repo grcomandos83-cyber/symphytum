@@ -20,6 +20,7 @@
 #include "filesfieldwizard.h"
 #include "urlfieldwizard.h"
 #include "emailfieldwizard.h"
+#include "currencyfieldwizard.h"
 
 
 //-----------------------------------------------------------------------------
@@ -144,6 +145,10 @@ void AddFieldDialog::nextButtonClicked()
             m_currentWizard = new EmailFieldWizard(fieldName, this, m_currentMode);
             m_fieldType = MetadataEngine::EmailTextType;
             break;
+        case 12:
+            m_currentWizard = new CurrencyFieldWizard(fieldName, this, m_currentMode);
+            m_fieldType = MetadataEngine::CurrencyType;
+            break;
         default:
             return;
         }
@@ -239,6 +244,13 @@ void AddFieldDialog::updateFieldDescription()
                                          "on the inline email button"
                                          ));
         break;
+    case 12:
+        ui->descriptionLabel->setText(tr("Currency values. "
+                                         "Input field for monetary amounts with "
+                                         "customizable currency symbol (€, $, £, etc.), "
+                                         "decimal precision, and financial formatting."
+                                         ));
+        break;
     default:
         ui->descriptionLabel->setText(tr("Select a field type from "
                                          "the list on the left"));
@@ -310,6 +322,7 @@ void AddFieldDialog::init()
     ui->fieldTypeListWidget->addItem(tr("File list"));
     ui->fieldTypeListWidget->addItem(tr("Web Link"));
     ui->fieldTypeListWidget->addItem(tr("Email Address"));
+    ui->fieldTypeListWidget->addItem(tr("Currency"));
 }
 
 void AddFieldDialog::createConnections()

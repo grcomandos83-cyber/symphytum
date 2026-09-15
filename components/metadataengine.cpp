@@ -1319,6 +1319,9 @@ QString MetadataEngine::dataTypeSqlName(FieldType type)
     case ProgressType:
         s = "INTEGER";
         break;
+    case CurrencyType:
+        s = "REAL";
+        break;
     default:
         s = "TEXT";
         break;
