@@ -1,5 +1,16 @@
 # Changelog
 
+Version 2.7.2
+=============
+
+### New Features
+- **Currency Field Type (`💶 Πεδίο Νομίσματος`)**: Added a dedicated monetary/currency field type supporting customizable currency symbols (`€`, `$`, `£`, `¥`, `CHF`, Custom), configurable symbol position (prefix or suffix), custom decimal precision (0–4 decimals), negative value highlighting (in red), and right-aligned formatting in both Form View and Table View.
+- **Export & Print Integration**: Full CSV Export and PDF Printing support for Currency fields with correct symbol and decimal formatting.
+
+### Improvements & Backward Compatibility
+- **100% Database Schema & Backward Compatibility**: Currency fields use type ID `13` stored as SQLite `REAL` numbers, leaving all existing databases (`symphytum.db`) fully compatible with zero database migration overhead.
+- **Input Validation**: Form widget validator integration ensuring proper numerical and currency formatting.
+
 Version 2.7.1
 =============
 

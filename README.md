@@ -68,12 +68,12 @@ For Windows 7, 8, 10, and 11 (64-bit)
 #### 1. Windows Installer (Setup .exe)
 Standard Windows installer with desktop shortcut and uninstaller support:
 
-Download [symphytum-2.7.1-setup.exe](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.1/symphytum-2.7.1-setup.exe)
+Download [symphytum-2.7.2-setup.exe](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.2/symphytum-2.7.2-setup.exe)
 
 #### 2. Portable ZIP Archive (Pre-compiled & Ready to Run)
 A portable ZIP for Windows is self-contained: once extracted, it can be moved and launched on any machine without installation. The personal data is contained inside the folder alongside the main executable (`symphytum.exe`).
 
-Download [Symphytum-2.7.1-Windows-Portable.zip](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.1/Symphytum-2.7.1-Windows-Portable.zip)
+Download [Symphytum-2.7.2-Windows-Portable.zip](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.2/Symphytum-2.7.2-Windows-Portable.zip)
 
 ---
 
@@ -83,12 +83,12 @@ For macOS 11 Big Sur, 12 Monterey, 13 Ventura, 14 Sonoma, 15 Sequoia (Intel & Ap
 #### 1. macOS Disk Image (.dmg)
 Standard macOS drag-and-drop installer disk image:
 
-Download [Symphytum-2.7.1-macOS.dmg](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.1/Symphytum-2.7.1-macOS.dmg)
+Download [Symphytum-2.7.2-macOS.dmg](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.2/Symphytum-2.7.2-macOS.dmg)
 
 #### 2. macOS Portable ZIP Bundle
 Standalone application bundle archive (`Symphytum.app`):
 
-Download [Symphytum-2.7.1-macOS.zip](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.1/Symphytum-2.7.1-macOS.zip)
+Download [Symphytum-2.7.2-macOS.zip](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.2/Symphytum-2.7.2-macOS.zip)
 
 ---
 
@@ -98,7 +98,7 @@ For modern 64-bit Linux distributions (Ubuntu, Debian, Fedora, Arch, etc.)
 #### 1. Linux Portable Archive (.tar.gz)
 Self-contained pre-compiled binaries and desktop integration resources:
 
-Download [Symphytum-2.7.1-Linux-x86_64.tar.gz](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.1/Symphytum-2.7.1-Linux-x86_64.tar.gz)
+Download [Symphytum-2.7.2-Linux-x86_64.tar.gz](https://github.com/grcomandos83-cyber/symphytum-next/releases/download/v2.7.2/Symphytum-2.7.2-Linux-x86_64.tar.gz)
 
 ---
 
